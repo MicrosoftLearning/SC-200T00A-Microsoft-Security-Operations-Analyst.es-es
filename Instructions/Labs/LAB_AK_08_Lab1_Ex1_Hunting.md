@@ -143,7 +143,7 @@ En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de an
     |Nombre|**Búsqueda de PowerShell NRT**|
     |Descripción|**Búsqueda de PowerShell NRT**|
     |Tácticas|**Comando y control**|
-    |Gravedad|**alta**|
+    |Gravedad|**Alta**|
 
 1. Selecciona el botón **Siguiente: establecer la lógica de la regla**. 
 

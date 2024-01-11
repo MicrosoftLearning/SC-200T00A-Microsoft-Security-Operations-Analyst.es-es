@@ -2,7 +2,7 @@
 # Microsoft Security Operations Analyst
 Guía de preparación del instructor
 
-## Fin
+## Propósito
 
 Este documento está dirigido a los moderadores que se preparan para impartir el Día de aprendizaje virtual de seguridad de Microsoft para `Defend Against Threats with Extended Detection and Response` y `Configure Security Operations Using Microsoft Sentinel`. Este material es un subconjunto del curso de certificación SC-200: Analista de operaciones de seguridad de Microsoft.
 
@@ -99,7 +99,7 @@ En esta tarea, configurarás roles para su uso con grupos de dispositivos.
 
 1. En el cuadro de diálogo Añadir rol, escribe lo siguiente:
 
-    |Configuración general|Valor|
+    |Configuración general|Value|
     |---|---|
     |Nombre de rol|**Soporte técnico de nivel 1**|
     |Permisos|Funciones avanzadas de respuesta dinámica|
@@ -122,7 +122,7 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
 
 1. En la pestaña General, escribe la siguiente información:
 
-    |Configuración general|Valor|
+    |Configuración general|Value|
     |---|---|
     |Nombre del grupo de dispositivos|**Regular**|
     |Nivel de automatización|Completo: corregir las amenazas automáticamente|

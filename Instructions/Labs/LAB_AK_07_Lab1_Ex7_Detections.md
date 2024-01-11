@@ -84,8 +84,8 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
     |Entity|Identificador|Campo de datos|
     |:----|:----|:----|
-    |Account|FullName|AccountCustomEntity|
-    |Host|Hostname|HostCustomEntity|
+    |Cuenta|FullName|AccountCustomEntity|
+    |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
 
 1. Si **Nombre de host** no está seleccionado para *Entidad de host*, selecciónalo en la lista desplegable.
 
@@ -180,7 +180,7 @@ En esta tarea, crearás una detección para el segundo ataque del ejercicio ante
     |Nombre|**Agregación de usuario a administradores locales de SecurityEvent**|
     |Descripción|**Usuario agregado al grupo de administradores locales**|
     |Tácticas|**Elevación de privilegios**|
-    |Gravedad|**alta**|
+    |Gravedad|**Alta**|
 
 1. Selecciona el botón **Siguiente: establecer la lógica de la regla**. 
 

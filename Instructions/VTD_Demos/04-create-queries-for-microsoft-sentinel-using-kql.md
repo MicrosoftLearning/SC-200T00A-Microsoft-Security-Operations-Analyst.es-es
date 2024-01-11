@@ -12,7 +12,7 @@ En esta tarea, accederás a un entorno de Log Analytics donde podrás practicar 
 
 1. Explora las tablas disponibles que aparecen en la pestaña del lado izquierdo de la pantalla.
 
-1. En el editor de consultas, escribe la siguiente consulta y luego selecciona el botón Ejecutar.  Deberías ver los resultados de la consulta en la ventana inferior.
+1. En el editor de consultas, escribe la siguiente consulta y luego selecciona Ejecutar.  Deberías ver los resultados de la consulta en la ventana inferior.
 
     ```KQL
     SecurityEvent

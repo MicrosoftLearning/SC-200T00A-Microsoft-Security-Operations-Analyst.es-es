@@ -1,21 +1,21 @@
 ---
 lab:
-  title: "Ejercicio 1: Conexión de datos a Microsoft\_Sentinel mediante conectores de datos"
+  title: "Ejercicio 1: conexión de datos a Microsoft\_Sentinel mediante conectores de datos"
   module: Learning Path 6 - Connect logs to Microsoft Sentinel
 ---
 
-# Ruta de aprendizaje 6 - Laboratorio 1 - Ejercicio 1: Conexión de datos a Microsoft Sentinel mediante conectores de datos
+# Ruta de aprendizaje 6 - Laboratorio 1 - Ejercicio 1: conexión de datos a Microsoft Sentinel mediante conectores de datos
 
 ## Escenario del laboratorio
 
-![Descripción general del laboratorio.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
+![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de tu organización. La organización tiene datos de Microsoft 365, Microsoft 365 Defender, recursos de Azure, máquinas virtuales que no son de Azure, etc. Primero empezarás conectando los orígenes de Microsoft.
+Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de la organización. La organización tiene datos de Microsoft 365, Microsoft 365 Defender, recursos de Azure, máquinas virtuales que no son de Azure, etc. Primero empezarás a conectar los orígenes de Microsoft.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Connect%20data%20to%20Microsoft%20Sentinel%20using%20data%20connectors)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
-### Tarea 1: Acceso al área de trabajo de Microsoft Sentinel
+### Tarea 1: acceder al área de trabajo de Microsoft Sentinel
 
 En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
@@ -23,35 +23,35 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Abra el explorador Microsoft Edge.
 
-1. En el explorador Edge, ve a Azure Portal en https://portal.azure.com.
+1. En el explorador Edge, ve a Azure Portal en https://portal.azure.com.
 
-1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico del inquilino** que te ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Siguiente**.
+1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
-1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la **Contraseña del inquilino** que te ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Iniciar sesión**.
+1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Iniciar sesión**.
 
-1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y después selecciona **Microsoft Sentinel**.
+1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel que creaste en el laboratorio anterior.
+1. Selecciona el área de trabajo de Microsoft Sentinel que has creado en la tarea anterior.
 
-1. En el menú de navegación, selecciona Análisis.
+1. En el menú de navegación, selecciona Analytics.
 
 1. Selecciona *Crear incidentes basados en Microsoft Defender for Cloud* en las plantillas de reglas.
 
 1. Selecciona **Crear regla** en la hoja de información del conector.
 
-1. En el Asistente para reglas de análisis, selecciona **Siguiente: Respuesta automatizada** y luego selecciona **Siguiente: Revisar y crear**.
+1. En el Asistente para reglas de análisis, selecciona **Siguiente: respuesta automatizada** y luego selecciona **Siguiente: revisar y crear**.
 
 1. Seleccione **Guardar**.
 
-### Tarea 2: Conexión al conector de datos de Microsoft Defender for Cloud
+### Tarea 2: establecer una conexión con el conector de datos de Microsoft Defender for Cloud
 
-En esta tarea, conectarás el conector de datos de Microsoft Defender for Cloud.
+En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Administración de contenido* y selecciona **Centro de contenido**.
 
 1. En el *Centro de contenido*, busca la solución **Microsoft Defender for Cloud** y selecciónala en la lista.
 
-1. En la página de la solución de *Microsoft Defender for Cloud*, selecciona **Instalar**.
+1. En la página de la solución *Microsoft Defender for Cloud*, selecciona **Instalar**.
 
 1. Cuando se haya completado la instalación, selecciona **Administrar**.
 
@@ -61,13 +61,13 @@ En esta tarea, conectarás el conector de datos de Microsoft Defender for Cloud
 
 1. En la sección *Configuración*, en la pestaña *Instrucciones*, **selecciona** la casilla de la suscripción "Pase para Azure: Patrocinio" y desliza la opción **Estado** a la derecha.
 
-    >**Nota:** si vuelve al estado desconectado, revisa la Ruta de aprendizaje 3, Ejercicio 1, Tarea 1 para asignar los permisos adecuados a tu cuenta.
+    >**Nota:** si vuelves a desconectado, revisa la Ruta de aprendizaje 3, Ejercicio 1, Tarea 1 para asignar los permisos adecuados a tu cuenta.
 
-1. Ahora, el *estado* debe ser **Conectado** y la "Sincronización bidireccional" debe estar *Habilitada*.
+1. El *estado* debe ser ahora **Conectado** y la "Sincronización bidireccional" debe estar *Habilitada*.
 
-1. Desplázate hacia abajo y en el área *Crear incidentes: ¡recomendado!* verifica que *Crear incidentes automáticamente a partir de todas las alertas generadas en este servicio conectado * esté **Habilitado**.
+1. Desplázate hacia abajo y en el área *Crear incidentes: ¡recomendado!* verifica que *Cree incidentes automáticamente a partir de todas las alertas generadas en este servicio conectado * esté **Habilitado**.
 
-### Tarea 3: Conexión del conector de datos Actividad de Azure
+### Tarea 3: establecer una conexión con el conector de datos Actividad de Azure
 
 En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad de Azure*.
 
@@ -75,15 +75,15 @@ En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad 
 
 1. En el *Centro de contenido*, busca la solución **Actividad de Azure** y selecciónala en la lista.
 
-1. En la página de la solución *Actividad de Azure*, selecciona **Instalar**.
+1. En la página de solución *Actividad de Azure*, selecciona **Instalar**.
 
-1. Cuando se haya completado la instalación, selecciona **Administrar**.
+1. Cuando se haya completado la instalación, selecciona **Siguiente**.
 
-    >**Nota:** la solución *Actividad de Azure* instala el conector de datos *Actividad de Azure*, 12 reglas analíticas, 14 consultas de búsqueda y 1 libro.
+    >**Nota:** la solución *Actividad de Azure* instala el conector de datos *Actividad de Azure*, 12 reglas analíticas, 14 consultas de búsqueda y 1 libro.
 
 1. Selecciona el conector de datos *Actividad de Azure* y luego selecciona **Abrir página del conector**.
 
-1. En el área *Configuración*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecta las suscripciones..." y selecciona **Iniciar asistente para asignación de Azure Policy>**.
+1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
 
 1. En la pestaña **Aspectos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona la suscripción "Pase para Azure: Patrocinio" en la lista desplegable y haz clic en **Seleccionar**.
 

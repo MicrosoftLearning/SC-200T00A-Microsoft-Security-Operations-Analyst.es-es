@@ -37,7 +37,7 @@ En esta tarea, configurarás una suscripción de Azure necesaria para completar 
 
 1. Selecciona **Control de acceso (IAM)** y luego **Agregar asignación de roles** del cuadro * Conceder acceso a este recurso*.
 
-1. Selecciona la pestaña **Roles de administrador con privilegios** y después, **Propietario**. Seleccione **Next** (Siguiente) para continuar.
+1. Selecciona la pestaña **Roles de administrador con privilegios** y después, **Propietario**. Seleccione **Siguiente** para continuar.
 
 1. En la pestaña *Miembros*, selecciona **+ Seleccionar miembros**, la cuenta **Administrador MOD** y **Seleccionar** para continuar.
 

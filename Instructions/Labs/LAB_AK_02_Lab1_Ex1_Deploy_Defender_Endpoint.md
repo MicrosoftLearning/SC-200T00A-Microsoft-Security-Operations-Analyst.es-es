@@ -90,7 +90,7 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
 1. En el cuadro de diálogo Añadir rol, introduce las siguientes opciones:
 
-    |Configuración general|Valor|
+    |Configuración general|Value|
     |---|---|
     |Nombre de rol|**Soporte técnico de nivel 1**|
     |Permisos|Funciones avanzadas de respuesta dinámica|
@@ -115,7 +115,7 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
 
 1. En la pestaña General, escribe la siguiente información:
 
-    |Configuración general|Valor|
+    |Configuración general|Value|
     |---|---|
     |Nombre del grupo de dispositivos|**Regular**|
     |Nivel de corrección|Completo: corregir las amenazas automáticamente|
@@ -126,7 +126,7 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
  
     >**Nota:** algunos proveedores de hospedaje de laboratorio pueden haber configurado imágenes de *Windows 11* para WIN1. Puedes seleccionar una de las dos opciones siguientes:
 
-1. En la pestaña Vista previa de dispositivos, el botón *Mostrar vista previa* podría mostrar la máquina virtual WIN1, pero lo más probable es que los datos no se hayan rellenado todavía. Seleccione **Next** (Siguiente) para continuar.
+1. En la pestaña Vista previa de dispositivos, el botón *Mostrar vista previa* podría mostrar la máquina virtual WIN1, pero lo más probable es que los datos no se hayan rellenado todavía. Seleccione **Siguiente** para continuar.
 
 1. En la pestaña Acceso de usuario, selecciona **sg-IT** y luego selecciona el botón **Agregar grupos seleccionados**. Asegúrate de que aparezca en *Grupos de usuarios de Azure AD con acceso a este grupo de dispositivos*.
 

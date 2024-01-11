@@ -25,7 +25,7 @@ En esta tarea, crearás una lista de reproducción.
     Host5
     ```
 
-1. En el menú selecciona **Archivo - Guardar como**, asigna al archivo el nombre `HighValue.csv`.  Luego cambia el tipo de archivo a **Todos los archivos (*.*)**.  Después, seleccione **Guardar.**
+1. En el menú selecciona **Archivo - Guardar como**, asigna al archivo el nombre `HighValue.csv`.  Luego cambia el tipo de archivo a **Todos los archivos (*.*)**.  Después, seleccione **Guardar**.
 
 1. Cierre el Bloc de notas.
 
