@@ -581,97 +581,97 @@ En esta tarea, realizarás ataques en un host con Microsoft Defender para un pun
 1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se mostrará en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
 
 1. En el símbolo del sistema, escribe el comando en cada fila presionando la tecla Entrar después de cada fila:
-```
-cd \
-mkdir temp
-cd temp
-```
+
+    ```CommandPrompt
+    cd \
+    mkdir temp
+    cd temp
+    ```
 
 1. Copia y ejecuta este comando:
 
-```
-REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-```
+    ```CommandPrompt
+    REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
+    ```
 
 ### Tarea 2: crear un ataque C2 (comando y control)
 
 1. Inicia sesión en la máquina virtual `WIN1` como administrador con la contraseña: **Pa55w.rd**.  
 
 1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se mostrará en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
-1. 
-1. 
+
 1. Ataque 2: copiar y ejecutar este comando:
 
-```
-notepad c2.ps1
-```
+    ```CommandPrompt
+    notepad c2.ps1
+    ```
+
 Selecciona **Sí** para crear un nuevo archivo y copia el siguiente script de PowerShell en c2.ps1 y selecciona **Guardar**.
 
-**Nota**: pegar en la máquina virtual puede tener una longitud limitada.  Pégalo en tres secciones para asegurarte de que todo el script se pegue en la máquina virtual.  Asegúrate de que el script tiene el mismo aspecto que en estas instrucciones en el archivo c2.ps1 del Bloc de notas.
+>**Nota:** Pegar en la máquina virtual puede tener una longitud limitada.  Pégalo en tres secciones para asegurarte de que todo el script se pegue en la máquina virtual.  Asegúrate de que el script tiene el mismo aspecto que en estas instrucciones en el archivo c2.ps1 del Bloc de notas.
 
-```
-
-
-param(
-    [string]$Domain = "microsoft.com",
-    [string]$Subdomain = "subdomain",
-    [string]$Sub2domain = "sub2domain",
-    [string]$Sub3domain = "sub3domain",
-    [string]$QueryType = "TXT",
-        [int]$C2Interval = 8,
-        [int]$C2Jitter = 20,
-        [int]$RunTime = 240
-)
-
-
-$RunStart = Get-Date
-$RunEnd = $RunStart.addminutes($RunTime)
-
-$x2 = 1
-$x3 = 1 
-Do {
-    $TimeNow = Get-Date
-    Resolve-DnsName -type $QueryType $Subdomain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-
-    if ($x2 -eq 3 )
-    {
-        Resolve-DnsName -type $QueryType $Sub2domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-        
-        $x2 = 1
-
-    }
-    else
-    {
-        $x2 = $x2 + 1
-    }
+    ```PowerShell
     
-    if ($x3 -eq 7 )
-    {
-
-        Resolve-DnsName -type $QueryType $Sub3domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-
-        $x3 = 1
+    param(
+        [string]$Domain = "microsoft.com",
+        [string]$Subdomain = "subdomain",
+        [string]$Sub2domain = "sub2domain",
+        [string]$Sub3domain = "sub3domain",
+        [string]$QueryType = "TXT",
+            [int]$C2Interval = 8,
+            [int]$C2Jitter = 20,
+            [int]$RunTime = 240
+    )
+    
+    
+    $RunStart = Get-Date
+    $RunEnd = $RunStart.addminutes($RunTime)
+    
+    $x2 = 1
+    $x3 = 1 
+    Do {
+        $TimeNow = Get-Date
+        Resolve-DnsName -type $QueryType $Subdomain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+    
+        if ($x2 -eq 3 )
+        {
+            Resolve-DnsName -type $QueryType $Sub2domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+            
+            $x2 = 1
+    
+        }
+        else
+        {
+            $x2 = $x2 + 1
+        }
         
+        if ($x3 -eq 7 )
+        {
+    
+            Resolve-DnsName -type $QueryType $Sub3domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+    
+            $x3 = 1
+            
+        }
+        else
+        {
+            $x3 = $x3 + 1
+        }
+    
+    
+        $Jitter = ((Get-Random -Minimum -$C2Jitter -Maximum $C2Jitter) / 100 + 1) +$C2Interval
+        Start-Sleep -Seconds $Jitter
     }
-    else
-    {
-        $x3 = $x3 + 1
-    }
-
-
-    $Jitter = ((Get-Random -Minimum -$C2Jitter -Maximum $C2Jitter) / 100 + 1) +$C2Interval
-    Start-Sleep -Seconds $Jitter
-}
-Until ($TimeNow -ge $RunEnd)
-
-```
+    Until ($TimeNow -ge $RunEnd)
+    ```
 
 En el símbolo del sistema, escribe lo siguiente y escribe el comando en cada fila presionando la tecla Entrar después de cada fila:
-```
-powershell
-.\c2.ps1
-```
-**Nota:** verás que se resuelven errores. Esto es lo que se espera.
+
+    ```PowerShell
+    .\c2.ps1
+    ```
+
+>**Nota:** verás que se resuelven errores. Esto es lo que se espera.
 Deja que este comando o script de PowerShell se ejecute en segundo plano. No cierre la ventana.  El comando debe generar entradas de registro durante algunas horas.  Puedes continuar con la siguiente tarea y los ejercicios siguientes mientras se ejecuta este script.  Los datos creados por esta tarea se usarán en el laboratorio de búsqueda de amenazas más adelante.  Este proceso no creará cantidades considerables de datos o procesamiento.
 
 ### Tarea 2: ataque de Windows configurado con el agente de Azure Monitor (AMA)
@@ -692,6 +692,6 @@ En esta tarea, realizarás ataques en un host con el conector de eventos de segu
     net localgroup administrators theusernametoadd /add
     ```
 
->**Nota**: asegúrate de que solo haya un comando por línea y que puedes volver a ejecutar los comandos cambiando el nombre de usuario.
+    >**Nota**: asegúrate de que solo haya un comando por línea y que puedes volver a ejecutar los comandos cambiando el nombre de usuario.
 
 1. En la ventana `Output` deberías ver `The command completed successfully` tres veces

