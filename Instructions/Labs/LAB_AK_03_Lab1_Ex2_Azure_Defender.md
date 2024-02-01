@@ -37,22 +37,23 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 
 1. Seleccione su suscripción.
 
-1. En *Configuración de directiva*, selecciona **Directiva de seguridad** en el menú del portal.
+    >**Sugerencia:** seleccione **Expandir todo** para buscar la suscripción si es una jerarquía de grupos de administración.
 
-1. Desplázate hacia abajo y revisa los "Estándares normativos y del sector" disponibles de forma predeterminada. Ten en cuenta que *ISO 27001* ya está en desuso.
+1. En *Configuración*, seleccione **Directiva de seguridad** en el menú del portal.
 
-1. Selecciona **Agregar más estándares** para agregar el estándar normativo ISO 27001:2013 actualizado.
+1. Desplácese hacia abajo y revise los "Estándares de seguridad" disponibles de forma predeterminada.
 
-1. Selecciona el botón **Agregar** a la derecha de *ISO 27001:2013*.
+1. Utilice el cuadro de búsqueda para buscar *ISO 27001:2013*.
 
-1. Se abre una nueva página para asignar la iniciativa de Azure Policy. Confirma que la suscripción está seleccionada en *Ámbito* y haz clic en **Revisar y crear**.
+1. Seleccione y mueva el control deslizante **Estado** a la derecha de *ISO 27001:2013* a **Activado**.
 
-1. Selecciona **Crear** para asignar la iniciativa de Azure Policy a la suscripción.
+    >**Nota:** algunos estándares requieren asignar una iniciativa de Azure Policy.
 
-1. Selecciona Microsoft Defender for Cloud debajo del cuadro de búsqueda para volver a la hoja principal.
+1. Seleccione **Actualizar** en el menú de la página para confirmar que *ISO 27001:2013* está *Activado* para la suscripción.
+
+1. Cierre la página *Directivas de seguridad* seleccionando la "X" en la esquina superior derecha de la página para volver a la **configuración del entorno**.
 
     >**Nota:** es posible que quieras volver más adelante al *Cumplimiento normativo* para revisar los nuevos controles y recomendaciones estándar.
-
 
 ### Tarea 2: explorar la posición de seguridad y las recomendaciones
 

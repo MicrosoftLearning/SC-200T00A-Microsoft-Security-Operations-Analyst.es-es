@@ -37,7 +37,7 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Selecciona *Crear incidentes basados en Microsoft Defender for Cloud* en las plantillas de reglas.
 
-1. Selecciona **Crear regla** en la hoja de información del conector.
+1. Seleccione **Crear regla** en el panel de información de la regla o seleccione los puntos suspensivos (...) y **+ Crear regla**.
 
 1. En el Asistente para reglas de análisis, selecciona **Siguiente: respuesta automatizada** y luego selecciona **Siguiente: revisar y crear**.
 
