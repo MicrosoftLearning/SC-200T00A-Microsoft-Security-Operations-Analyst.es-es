@@ -41,7 +41,7 @@ En esta tarea, configurarás una suscripción de Azure necesaria para completar 
 
 1. En la pestaña *Miembros*, selecciona **+ Seleccionar miembros**, la cuenta **Administrador MOD** y **Seleccionar** para continuar.
 
-    >**Nota:** Si ves la pestaña **Condiciones** (con un punto rojo), selecciona **Siguiente** y después, **No restringido** en el tipo *Delegación.
+    >**Nota:** Si la pestaña **Condiciones** muestra un punto rojo, seleccione **Siguiente** y, o bien seleccione **No restringido** si aparece el tipo *Delegación*, o bien seleccione **Permitir al usuario asignar todos los roles (con privilegios elevados)** aparece *Lo que el usuario puede hacer*.
 
 1. Selecciona **Revisar y asignar** dos veces para asignar el rol de propietario a la cuenta de administrador.
 
@@ -124,7 +124,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. Selecciona **Generar script** en la sección "Agregar un solo servidor".
 
-1. Lee la pestaña *Requisitos previos* y selecciona **Siguiente** para continuar.
+    <!--- 1. Read through the *Prerequisites* tab and then select **Next** to continue.--->
 
 1. En la página *Agregar un servidor con Azure Arc*, selecciona el grupo de recursos que has creado anteriormente en *Detalles del proyecto*. **Sugerencia: ***RG-Defender*
 
