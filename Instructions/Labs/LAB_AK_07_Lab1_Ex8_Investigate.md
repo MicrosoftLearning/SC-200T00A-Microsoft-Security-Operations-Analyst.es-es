@@ -53,9 +53,9 @@ En esta tarea, investigarás un incidente.
 
 1. Oculte la hoja izquierda seleccionando el icono **<<** situado junto al propietario.
 
-1. Revisa la ventana **Escala de tiempo del incidente**. Para la alerta *RegKey de inicio*, selecciona el icono de puntos suspensivos **(...)** y luego **Ejecutar cuaderno de estrategias**. Verás el cuaderno de estrategias *PostMessageTeams-OnAlert*. Esta opción te ayuda a ejecutar cuadernos de estrategias manualmente.
+1. Revisa la ventana **Escala de tiempo del incidente**. Seleccione el botón **Acciones de incidente** en la parte superior derecha y, a continuación, **Ejecutar cuaderno de estrategias**. Verá el cuaderno de estrategias *PostMessageTeams-OnIncident*. Esta opción te ayuda a ejecutar cuadernos de estrategias manualmente.
 
-1. Cierra la hoja *Cuadernos de estrategias de alertas* seleccionando el icono ** x** en la parte superior derecha.
+1. Cierre la hoja *Ejecutar cuaderno de estrategias en incidente* seleccionando el icono de la **x** en la parte superior derecha.
 
 1. Revisa la ventana **Entidades**. Debería aparecer al menos la entidad *Host* que se ha asignado dentro de la consulta KQL del ejercicio anterior. **Sugerencia:** si no se muestran entidades, actualiza la página.
 

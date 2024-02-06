@@ -111,7 +111,9 @@ En esta tarea, agregarás una máquina virtual Windows que no sea de Azure Arc c
 
 1. En la pestaña **Instrucciones**, en la sección *Configuración*, edita la *regla de recopilación de datos* **AZWINDCR** seleccionando el icono de *lápiz*.
 
-1. Selecciona **Siguiente: recursos** y **+Agregar recursos**.
+1. Seleccione **Siguiente: Recursos**, y expanda la *Suscripción* en *Ámbito* en la pestaña *Recursos*.
+
+    >**Sugerencia:** puede expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
 
 1. Expande **RG-Defender** (o el grupo de recursos que has creado) y luego selecciona **WINServer**.
 

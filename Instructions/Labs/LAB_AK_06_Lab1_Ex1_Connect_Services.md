@@ -51,9 +51,11 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. En el *Centro de contenido*, busca la solución **Microsoft Defender for Cloud** y selecciónala en la lista.
 
-1. En la página de la solución *Microsoft Defender for Cloud*, selecciona **Instalar**.
+1. En la página de detalles de la solución *Microsoft Defender for Cloud*, seleccione **Instalar**.
 
-1. Cuando se haya completado la instalación, selecciona **Administrar**.
+1. Cuando finalice la instalación, busque la solución **Microsoft Defender for Cloud** y selecciónela.
+
+1. En la página de detalles de la solución de *Microsoft Defender for Cloud*, seleccione **Administrar**
 
     >**Nota:** la solución de *Microsoft Defender for Cloud* instala el conector de datos de *Microsoft Defender for Cloud basado en suscripciones (heredado)*, el conector de datos *Microsoft Defender for Cloud basado en inquilinos (versión preliminar)* y una regla analítica.
 
@@ -65,7 +67,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. El *estado* debe ser ahora **Conectado** y la "Sincronización bidireccional" debe estar *Habilitada*.
 
-1. Desplázate hacia abajo y en el área *Crear incidentes: ¡recomendado!* verifica que *Cree incidentes automáticamente a partir de todas las alertas generadas en este servicio conectado * esté **Habilitado**.
+    <!--- 1. Scroll down and under the *Create incidents - Recommended!* area, verify that *Create incidents automatically from all alerts generated in this connected service* is **Enabled**. --->
 
 ### Tarea 3: establecer una conexión con el conector de datos Actividad de Azure
 

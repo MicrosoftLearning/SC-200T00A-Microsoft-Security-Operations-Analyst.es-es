@@ -37,7 +37,7 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 
 1. Seleccione su suscripción.
 
-    >**Sugerencia:** seleccione **Expandir todo** para buscar la suscripción si es una jerarquía de grupos de administración.
+    >**Sugerencia:** seleccione **Expandir todo** para buscar la suscripción si tiene una jerarquía de grupos de administración.
 
 1. En *Configuración*, seleccione **Directiva de seguridad** en el menú del portal.
 
@@ -61,21 +61,27 @@ En esta tarea, revisarás la administración de la posición de seguridad en la 
 
 1. En *Seguridad en la nube*, selecciona **Posición de seguridad** en el menú del portal.
 
-1. La puntuación de seguridad probablemente mostrará *N/A* hasta que se calcule la puntuación.
+1. La *puntuación de seguridad* tendrá como valor predeterminado el *entorno de Azure*.
 
-1. En *General*, selecciona **Recomendaciones** en el menú del portal.
+1. En la pestaña *Entorno*, seleccione **Ver recomendaciones >**.
 
-1. Explora las recomendaciones dadas para tu suscripción y WINServer (Arc Server).
+1. En la página *Recomendaciones*, seleccione la pestaña **Todas las recomendaciones**.
 
-1. Selecciona cualquier recomendación en la que el estado no sea *"Completado"* para WINServer.
+    >**Nota:** también puede usar las *recomendaciones* de puntuación de seguridad.
 
-1. Lee la recomendación y desplázate hacia abajo para **seleccionar** la casilla WINServer. **Sugerencia:** es posible que tengas que seleccionar **Recursos afectados** para mostrarlos.
+1. Seleccione el filtro **Tipo de recurso** y el selector desplegable **Valor**.
 
-1. Selecciona **Asignar propietarios** y luego **Seleccionar propietario**.
+1. Active la casilla **Máquinas: Azure Arc** y, a continuación, seleccione el botón **Aceptar**.
 
-1. En el cuadro *Dirección de correo electrónico*, anota el correo electrónico del administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
+1. Seleccione cualquier recomendación en la que el estado no sea *"Completado"*.
 
-1. Selecciona **Atrás**, cambia la *Fecha de vencimiento* por tu preferencia y haz clic en **Guardar**.
+1. Lee la recomendación y desplázate hacia abajo para **seleccionar** la casilla WINServer. **Sugerencia:** es posible que tenga que expandir y desplazarse hacia abajo a través **de recursos** afectados para mostrarlo.
+
+1. Seleccione **Asignar propietario** y, a continuación, expanda **Detalles de asignación**.
+
+1. En el cuadro `Set owner` *dirección de correo electrónico*, escriba el correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
+
+1. Explore las opciones *Establecer plazo de corrección* y *Establecer notificaciones por correo electrónico* y seleccione **Crear**.
 
     >**Nota:** si ves el error *No se han podido crear asignaciones solicitadas*, vuelve a intentarlo más tarde.
 
@@ -89,23 +95,23 @@ En esta tarea, cargarás alertas de seguridad de ejemplo y revisarás los detall
 
 1. En *General*, selecciona **Alertas de seguridad** en el menú del portal.
 
-1. En la barra de comandos, selecciona **Alertas de ejemplo**. **Sugerencia:** es posible que tengas que seleccionar el botón de puntos suspensivos (...) de la barra de comandos.
+1. En la barra de comandos, selecciona **Alertas de ejemplo**. **Sugerencia:** es posible que tenga que seleccionar el botón de puntos suspensivos (...) de la barra de comandos.
 
 1. En el panel Crear alertas de ejemplo (versión preliminar), asegúrate de que la suscripción esté seleccionada y de que todas las alertas de ejemplo estén seleccionadas en el área *Planes de Defender for Cloud*.
 
 1. Seleccione **Create sample alerts** (Crear alertas de ejemplo).  
 
-    >**Nota:** este proceso de creación de alertas de ejemplo puede tardar unos minutos en completarse; espera la notificación *"Alertas de ejemplo creadas correctamente"*. 
+    >**Nota:** este proceso de creación de alertas de ejemplo puede tardar unos minutos en completarse; espera la notificación *"Alertas de ejemplo creadas correctamente"*.
 
-1. Una vez completado, selecciona **Actualizar** para ver las alertas en el área *Alertas de seguridad*.
+1. Una vez completado, seleccione **Actualizar** (si es necesario) para ver que las alertas aparecen en el área *Alertas de seguridad*.
 
-1. Para las alertas que han llamado tu atención, realiza las siguientes acciones:
+1. Elija una alerta interesante con una *Gravedad* *alta* y realice las siguientes acciones:
 
-    - Selecciona la alerta. Debería aparecer información sobre ella. Seleccione **View full details** (Ver detalles completos).
+    - Active la casilla de alerta y aparecerá el panel de detalles de la alerta. Seleccione **View full details** (Ver detalles completos).
 
     - Revisa y lee la pestaña *Detalles de alerta*.
 
-    - Selecciona la pestaña **Realizar acción** o selecciona el botón **Siguiente: realizar acción** al final de la página.
+    - Seleccione la pestaña **Realizar acción** o desplácese hacia abajo y seleccione el botón **Siguiente: realizar acción** al final de la página.
 
     - Revisa la información *Realizar acción*. Examina las secciones disponibles para tomar medidas en función del tipo de alerta: Inspeccionar el contexto de recursos, Mitigar la amenaza, Evitar ataques futuros, Desencadenar respuesta automatizada y Suprimir alertas similares.
 
