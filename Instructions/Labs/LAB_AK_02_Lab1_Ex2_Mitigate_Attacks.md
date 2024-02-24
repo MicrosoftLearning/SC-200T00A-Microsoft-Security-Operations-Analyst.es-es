@@ -12,10 +12,9 @@ lab:
 
 Usted es un analista de operaciones de seguridad que trabaja en una empresa que está implementando Microsoft Defender para punto de conexión. El administrador tiene previsto incorporar algunos dispositivos para dar información sobre los cambios necesarios en los procedimientos de respuesta del equipo de SecOps.
 
-Para explorar las funcionalidades de mitigación de ataques de Defender para puntos de conexión, ejecutarás dos ataques simulados.
+Para explorar las funcionalidades de mitigación de ataques de Defender para punto de conexión, comprobará la incorporación correcta de dispositivos e investigará alertas e incidentes creados durante ese proceso.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos.
-
 
 ### Tarea 1: comprobar la incorporación de dispositivos
 
@@ -33,50 +32,58 @@ En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y
 
 1. Desplázate hacia abajo y, en la sección *"2. Ejecutar una prueba de detección"*, copia el script de prueba de detección seleccionando el botón **Copiar**.  
 
-1. En la barra de búsqueda de Windows de la máquina virtual WIN1, escribe **CMD** y elige **Ejecutar como administrador** en el panel derecho de la aplicación de símbolo del sistema. 
+1. En la barra de búsqueda de Windows de la máquina virtual WIN1, escribe **CMD** y elige **Ejecutar como administrador** en el panel derecho de la aplicación de símbolo del sistema.
 
 1. Cuando se muestre la ventana "Control de cuentas de usuario", selecciona **Sí** para permitir que se ejecute la aplicación. 
 
 1. Pega el script haciendo clic con el botón derecho en las ventanas **Administrador: símbolo del sistema** y presiona **Entrar** para ejecutarlo.
 
-    >**Nota:** la ventana se cierra automáticamente después de ejecutar el script.
+    >**Nota:** La ventana se cierra automáticamente después de ejecutar correctamente el script y después de unos minutos se generan alertas en el portal de Microsoft Defender XDR.
 
-### Tarea 2: ataques simulados
+<!--- ### Task 2: Simulated Attacks
 
->**Nota:** El laboratorio de evaluación y la sección Tutoriales y simulaciones del portal ya no están disponibles. Los pasos siguientes se proporcionan solo como referencia. Consulte la **[simulación interactiva de laboratorio](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** para obtener una demostración de los ataques simulados. Estamos trabajando para encontrar un reemplazo de los ataques simulados.
+>**Note:** The Evaluation lab and the Tutorials & simulations section of the portal is no longer available. Please refer to the **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** for a demonstration of the simulated attacks.
 
-1. En el menú izquierdo, en **Puntos de conexión**, selecciona **Evaluación y tutoriales** y después, selecciona **Tutoriales y simulaciones** en el lado izquierdo.
+1. From the left menu, under **Endpoints**, select **Evaluation & tutorials** and then select **Tutorials & simulations** from the left side.
 
-1. Selecciona la pestaña **Tutoriales**.
+1. Select the **Tutorials** tab.
 
-1. En *Investigación automatizada (puerta trasera)* verás un mensaje que describe el escenario. Debajo de este párrafo, haz clic en **Leer el tutorial**. Se abre una nueva pestaña del explorador que incluye instrucciones para realizar la simulación.
+1. Under *Automated investigation (backdoor)* you will see a message describing the scenario. Below this paragraph, click **Read the walkthrough**. A new browser tab opens which includes instructions to perform the simulation.
 
-1. En la nueva pestaña del explorador, busca la sección denominada **Ejecutar la simulación** (página 5, a partir del paso 2) y siga los pasos para ejecutar el ataque. **Sugerencia:** el archivo de simulación *RS4_WinATP-Intro-Invoice.docm* se puede encontrar en el portal, justo debajo de **Leer el tutorial** que has seleccionado en el paso anterior, seleccionando el botón **Obtener archivo de simulación**.
+1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button.
 
     <!--- 1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*. This is no longer working due to win1 AV --->
 
-### Tarea 3: investigar los ataques
+### Tarea 2: Investigar alertas e incidentes
 
-1. En el portal de Microsoft Defender XDR, seleccione **incidentes y alertas** en la barra de menús de la izquierda y, a continuación, seleccione **Incidentes**.
+En esta tarea, investigará las alertas e incidentes generados por el script de prueba de detección de incorporación en la tarea anterior.
 
-1. Hay un nuevo incidente denominado "Varias familias de amenazas detectadas en un punto de conexión" en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
+1. En el portal de Microsoft Defender XDR, seleccione **incidentes y alertas** en la barra de menús de la izquierda y, a continuación, seleccione **Alertas**.
 
-    <!---    >**Note:** You should see both *Bloodhound* and Mimikatz* alerts in the **Alerts** pane. In **Assets/Devices**, the *win1* computer will now have a **Risk level** of *High*. --->
+1. En el panel **Alertas**, seleccione la alerta denominada *Línea de comandos sospechosa de PowerShell* para cargar sus detalles.
 
-1. Selecciona el botón **Administrar incidente** y aparecerá una nueva hoja de ventana. 
+1. Revise la escala de tiempo de la *Historia de la alerta* y, a continuación, revise las pestañas *Detalles* y *Recomendaciones*.
 
-1. En **Etiquetas de incidente**, escriba "Simulación" y seleccione **Simulación (Crear nueva)** para crear una nueva etiqueta. 
+    >**Nota:** En la pestaña *Detalles* de la alerta puede desplazarse hasta la sección *Detalles del incidente* y seleccionar el enlace *Incidente de ejecución en un punto de conexión* para abrir el incidente.
 
-1. Selecciona el botón de alternancia **Asignar a** y agrega tu cuenta de usuario (Me) como propietario del incidente. 
+1. En el portal de Microsoft Defender XDR, seleccione **incidentes y alertas** en la barra de menús de la izquierda y, a continuación, seleccione **Incidentes**
 
-1. En **Clasificación**, expande el menú desplegable. 
+1. Un nuevo incidente denominado *Incidente de ejecución en un punto de conexión* está en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
 
-1. En **Información, actividad esperada**, selecciona **Pruebas de seguridad**. 
+1. Seleccione el vínculo **Administrar incidentes** (con un icono de lápiz) y aparecerá una nueva hoja de ventana.
+
+1. En **Etiquetas de incidente**, escriba "Simulación" y seleccione **Simulación (Crear nueva)** para crear una nueva etiqueta.
+
+1. Selecciona el botón de alternancia **Asignar a** y agrega tu cuenta de usuario (Me) como propietario del incidente.
+
+1. En **Clasificación**, expande el menú desplegable.
+
+1. En **Información, actividad esperada**, selecciona **Pruebas de seguridad**.
 
 1. Agrega los comentarios, si quieres, y selecciona **Guardar** para actualizar el incidente y finalizar.
 
-1. Revisa el contenido de las pestañas *Ataque, Alertas, Activos, Investigaciones, Evidencia y Respuesta* y *Resumen*. Los dispositivos y los usuarios se encuentran en la pestaña *Recursos*. La pestaña *Historia de ataque* muestra el *Gráfico de incidentes*. **Sugerencia**: es posible que algunas pestañas estén ocultas debido al tamaño de la pantalla. Selecciona la pestaña de puntos suspensivos (...) para que aparezcan.
+1. Revisa el contenido de las pestañas *Ataque, Alertas, Activos, Investigaciones, Evidencia y Respuesta* y *Resumen*. Los dispositivos y los usuarios se encuentran en la pestaña *Recursos*. En un incidente real, la pestaña *Historia de ataque* muestra el *gráfico del incidente*. **Sugerencia:** Es posible que algunas pestañas estén ocultas debido al tamaño de la pantalla. Selecciona la pestaña de puntos suspensivos (...) para que aparezcan.
 
-    >**Advertencia:** Los ataques aquí simulados son una excelente forma de aprendizaje mediante práctica. Realice solo los ataques de las instrucciones proporcionadas de este laboratorio cuando use el inquilino de Azure proporcionado por el curso.  Podrá realizar otros ataques simulados *después* de que este curso de entrenamiento se complete con este inquilino.
+<!---    >**Warning:** The simulated attacks here are an excellent source of learning through practice. Only perform the attacks in the instructions provided for this lab when using the course provided Azure tenant.  You may perform other simulated attacks *after* this training course is complete with this tenant. --->
 
-## Has completado el laboratorio.
+## Has completado el laboratorio
