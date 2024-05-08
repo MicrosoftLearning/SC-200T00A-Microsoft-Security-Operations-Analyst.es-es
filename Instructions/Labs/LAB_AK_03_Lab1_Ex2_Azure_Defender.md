@@ -33,7 +33,7 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 
 1. En *Seguridad en la nube*, selecciona **Cumplimiento de regulaciones** en el menú del portal.
 
-1. Selecciona **Administrar directivas de cumplimiento** en la barra de herramientas.
+1. Seleccione **Administrar estándares de cumplimiento** en la barra de herramientas.
 
 1. Seleccione su suscripción.
 
@@ -58,6 +58,8 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 ### Tarea 2: explorar la posición de seguridad y las recomendaciones
 
 En esta tarea, revisarás la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
+
+1. Seleccione el vínculo **Microsoft Defender for Cloud | Cumplimiento normativo** en la parte superior de la página para volver a los menús superiores.
 
 1. En *Seguridad en la nube*, selecciona **Posición de seguridad** en el menú del portal.
 
