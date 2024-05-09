@@ -33,21 +33,13 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Selecciona el área de trabajo de Microsoft Sentinel que has creado en la tarea anterior.
 
-1. En el menú de navegación, selecciona Analytics.
-
-1. Selecciona *Crear incidentes basados en Microsoft Defender for Cloud* en las plantillas de reglas.
-
-1. Seleccione **Crear regla** en el panel de información de la regla o seleccione los puntos suspensivos (...) y **+ Crear regla**.
-
-1. En el Asistente para reglas de análisis, selecciona **Siguiente: respuesta automatizada** y luego selecciona **Siguiente: revisar y crear**.
-
-1. Seleccione **Guardar**.
+1. Continúe con la siguiente tarea.
 
 ### Tarea 2: establecer una conexión con el conector de datos de Microsoft Defender for Cloud
 
 En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
-1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Administración de contenido* y selecciona **Centro de contenido**.
+1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección **Administración de contenido** y selecciona **Centro de contenido**.
 
 1. En el *Centro de contenido*, busca la solución **Microsoft Defender for Cloud** y selecciónala en la lista.
 
@@ -57,7 +49,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. En la página de detalles de la solución de *Microsoft Defender for Cloud*, seleccione **Administrar**
 
-    >**Nota:** la solución de *Microsoft Defender for Cloud* instala el conector de datos de *Microsoft Defender for Cloud basado en suscripciones (heredado)*, el conector de datos *Microsoft Defender for Cloud basado en inquilinos (versión preliminar)* y una regla analítica.
+    >**Nota:** la solución de *Microsoft Defender for Cloud* instala el conector de datos de *Microsoft Defender for Cloud basado en suscripciones (heredado)*, el conector de datos *Microsoft Defender for Cloud basado en inquilinos (versión preliminar)* y una regla analítica. El *conector de datos de Microsoft Defender for Cloud (versión preliminar* ) basado en inquilinos se usa cuando un inquilino tiene varias suscripciones.
 
 1. Selecciona la casilla del conector de datos *Microsoft Defender for Cloud basado en suscripciones (heredado)* y haz clic en **Abrir página del conector**.
 
