@@ -23,13 +23,13 @@ Para empezar, inicializa el entorno de Defender para puntos de conexión. Debes 
 
 ### Tarea 1: inicialización de Microsoft Defender para puntos de conexión
 
-En esta tarea, realizarás la inicialización del portal de Microsoft Defender para puntos de conexión.
+En esta tarea, realizará la inicialización de Microsoft Defender para punto de conexión.
 
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
-1. Si aún no estás en el portal de Microsoft 365 Defender, inicia el explorador Microsoft Edge.
+1. Si aún no está en el portal de Microsoft Defender XDR, inicie el explorador Microsoft Edge.
 
-1. En el explorador Edge, ve al portal de Microsoft 365 Defender en (https://security.microsoft.com).
+1. En el explorador Edge, vaya al portal de Microsoft Defender XDR en (https://security.microsoft.com).
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -37,7 +37,7 @@ En esta tarea, realizarás la inicialización del portal de Microsoft Defender p
 
     >**Sugerencia:** la cuenta de correo electrónico del inquilino del administrador y la contraseña se pueden encontrar en la pestaña Recursos.
 
-1. En el portal de **Microsoft 365 Defender**, en el menú de navegación, seleccione **Configuración** a la izquierda.
+1. En el portal de **Defender XDR**, en el menú de navegación, seleccione **Configuración** a la izquierda.
 
 1. En la página de menú Configuración, selecciona **Detección de dispositivos**. 
 
@@ -80,7 +80,7 @@ En esta tarea, incorporarás un dispositivo para Microsoft Defender para puntos 
 
 En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
-1. En el portal de Microsoft 365 Defender, selecciona **Configuración** en la barra de menús, luego selecciona **Puntos de conexión**. 
+1. En el portal de Microsoft Defender XDR, seleccione **Configuración** en la barra de menús de la izquierda y, a continuación, seleccione**Puntos de conexión**. 
 
 1. En el área Permisos, selecciona **Roles**.
 
@@ -107,7 +107,7 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
 En esta tarea, configurarás los grupos de dispositivos que permiten el control de acceso y la configuración de automatización.
 
-1. En el portal de Microsoft 365 Defender, selecciona **Configuración** en la barra de menús, luego selecciona **Puntos de conexión**. 
+1. En el portal de Microsoft Defender XDR, seleccione **Configuración** en la barra de menús de la izquierda y, a continuación, seleccione**Puntos de conexión**. 
 
 1. Selecciona **Grupos de dispositivos** en el área de permisos.
 
