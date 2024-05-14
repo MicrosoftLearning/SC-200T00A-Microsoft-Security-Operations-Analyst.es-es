@@ -10,20 +10,20 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod3_L1_Ex2.png)
 
-Supongamos que eres un analista de operaciones de seguridad que trabaja en una empresa en la que se ha implementado Microsoft Defender para puntos de conexión. Debes responder a las recomendaciones y alertas de seguridad que ha generado Microsoft Defender for Cloud.
+Es un analista de operaciones de seguridad que trabaja en una empresa que implementó Microsoft Defender for Cloud. Debes responder a las recomendaciones y alertas de seguridad que ha generado Microsoft Defender for Cloud.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20threats%20using%20Microsoft%20Defender%20for%20Cloud)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: explorar el cumplimiento normativo
 
-En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defender for Cloud. 
+En esta tarea, revisará la configuración de cumplimiento normativo en Microsoft Defender for Cloud. 
 
 >**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
 
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Edge, abre Azure Portal en (https://portal.azure.com).
+1. En el explorador Microsoft Edge, abra Azure Portal en (https://portal.azure.com)).
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -31,7 +31,7 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 
 1. En la barra de búsqueda de Azure Portal, escribe *Defender*, luego selecciona **Microsoft Defender for Cloud**.
 
-1. En *Seguridad en la nube*, selecciona **Cumplimiento de regulaciones** en el menú del portal.
+1. En *Cloud Security*, seleccione **Cumplimiento normativo** en los elementos de menú de la izquierda.
 
 1. Seleccione **Administrar estándares de cumplimiento** en la barra de herramientas.
 
@@ -57,29 +57,25 @@ En esta tarea, revisarás la configuración del cumplimiento en Microsoft Defend
 
 ### Tarea 2: explorar la posición de seguridad y las recomendaciones
 
-En esta tarea, revisarás la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
+En esta tarea, revisará la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
 
-1. Seleccione el vínculo **Microsoft Defender for Cloud | Cumplimiento normativo** en la parte superior de la página para volver a los menús superiores.
+1. En *Seguridad en la nube*, seleccione **Posición de seguridad** en los elementos de menú de la izquierda.
 
-1. En *Seguridad en la nube*, selecciona **Posición de seguridad** en el menú del portal.
+1. La *puntuación de seguridad* tiene como valor predeterminado el *entorno de Azure*.
 
-1. La *puntuación de seguridad* tendrá como valor predeterminado el *entorno de Azure*.
+1. En la pestaña *Entorno*, seleccione **Ver recomendaciones > vínculo **.
 
-1. En la pestaña *Entorno*, seleccione **Ver recomendaciones >**.
+1. Seleccione **Agregar filtro** y, después, seleccione **Tipo de recurso**.
 
-1. En la página *Recomendaciones*, seleccione la pestaña **Todas las recomendaciones**.
+1. Active la casilla **Máquinas: Azure Arc** y, a continuación, seleccione el botón **Aplicar**.
 
-    >**Nota:** también puede usar las *recomendaciones* de puntuación de seguridad.
-
-1. Seleccione el filtro **Tipo de recurso** y el selector desplegable **Valor**.
-
-1. Active la casilla **Máquinas: Azure Arc** y, a continuación, seleccione el botón **Aceptar**.
+    >**Nota:** Si no ve **Máquinas: Azure Arc** en la lista, asegúrese de que ha completado la ruta de aprendizaje 3: Laboratorio 1: Ejercicio 1 tarea 4..
 
 1. Seleccione cualquier recomendación en la que el estado no sea *"Completado"*.
 
-1. Lee la recomendación y desplázate hacia abajo para **seleccionar** la casilla WINServer. **Sugerencia:** es posible que tenga que expandir y desplazarse hacia abajo a través **de recursos** afectados para mostrarlo.
+1. Revise la recomendación y, en la pestaña **Tomar acción** desplácese hacia abajo hasta **Delegado** y seleccione **Asignar propietario y establecer fecha de vencimiento**.
 
-1. Seleccione **Asignar propietario** y, a continuación, expanda **Detalles de asignación**.
+1. En la ventana **Crear asignación**, deje *Tipo* establecido en *Defender for Cloud* y expanda los detalles de **Asignación**.
 
 1. En el cuadro `Set owner` *dirección de correo electrónico*, escriba el correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
 
@@ -92,7 +88,7 @@ En esta tarea, revisarás la administración de la posición de seguridad en la 
 
 ### Tarea 3: mitigar alertas de seguridad
 
-En esta tarea, cargarás alertas de seguridad de ejemplo y revisarás los detalles de la alerta.
+En esta tarea, cargará alertas de seguridad de ejemplo y revisará los detalles de la alerta.
 
 
 1. En *General*, selecciona **Alertas de seguridad** en el menú del portal.
