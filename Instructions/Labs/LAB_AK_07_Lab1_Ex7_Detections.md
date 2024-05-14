@@ -80,14 +80,14 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. Selecciona el botón **Siguiente: establecer la lógica de la regla**.
 
-1. En la pestaña *Establecer lógica de regla*, la *Consulta de regla* debe rellenarse ya con la consulta KQL, así como las entidades en *Enriquecimiento de alertas: asignación de entidades*.
+1. En la pestaña *Establecer lógica de regla*, la *consulta de regla* debe rellenarse ya con la consulta KQL, así como las entidades de *Mejora de alertas: asignación de entidades*.
 
     |Entity|Identificador|Campo de datos|
     |:----|:----|:----|
     |Cuenta|FullName|AccountCustomEntity|
     |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
 
-1. Si **Nombre de host** no está seleccionado para *Entidad de host*, selecciónalo en la lista desplegable.
+1. Si **Nombre de host** no está seleccionado para Entidad de *host*, selecciónela en la lista desplegable y use los parámetros de la tabla anterior para rellenar los campos.
 
 1. En *Programación de consultas*, establece lo siguiente:
 
@@ -117,9 +117,9 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. Seleccione **Aplicar**.
 
-1. Luego selecciona el botón **Siguiente: revisar >**.
+1. Seleccione **Siguiente: Revisión y creación >**.
   
-1. En la pestaña *Revisar y crear*, selecciona el botón **Crear** para crear la nueva regla de Análisis programado.
+1. En la pestaña *Revisar y crear*, seleccione el botón **Guardar** para crear la nueva regla de Análisis programados.
 
 ### Tarea 2: detectar ataques de elevación de privilegios
 
@@ -182,9 +182,16 @@ En esta tarea, crearás una detección para el segundo ataque del ejercicio ante
     |Tácticas|**Elevación de privilegios**|
     |Gravedad|**Alta**|
 
-1. Selecciona el botón **Siguiente: establecer la lógica de la regla**. 
+1. Selecciona el botón **Siguiente: establecer la lógica de la regla**.
 
-1. En la pestaña *Establecer lógica de regla*, la *Consulta de regla* debería estar rellenada ya con tu consulta KQL, así como las entidades en *Enriquecimiento de alertas: asignación de entidades*.
+1. En la pestaña *Establecer lógica de regla*, la *consulta de regla* debe rellenarse ya con la consulta KQL, así como las entidades de *Mejora de alertas: asignación de entidades*.
+
+    |Entity|Identificador|Campo de datos|
+    |:----|:----|:----|
+    |Cuenta|FullName|AccountCustomEntity|
+    |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
+
+1. Si **Nombre de host** no está seleccionado para Entidad de *host*, selecciónela en la lista desplegable y use los parámetros de la tabla anterior para rellenar los campos.
 
 1. En *Programación de consultas*, establece lo siguiente:
 
