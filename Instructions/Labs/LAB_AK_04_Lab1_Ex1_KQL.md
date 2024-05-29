@@ -48,11 +48,17 @@ En esta tarea, crearás instrucciones KQL básicas.
 
 >**Importante:** para cada consulta, borra la instrucción anterior de la ventana Consulta o abra una nueva ventana de consulta seleccionando **+** después de la última pestaña abierta (hasta 25).
 
-1. En la siguiente instrucción se muestra el operador **search**, que busca en todas las columnas de la tabla el valor. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
+1. En la siguiente instrucción se muestra el operador **search**, que busca en todas las columnas de la tabla el valor. 
+
+1. Cambia el *Intervalo de tiempo* por **Últimos 30 minutos** en la ventana de consulta.
+
+1. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**:
 
     ```KQL
-    search "new"
+    search "location"
     ```
+
+    >**Nota:** El uso del operador *Search* sin tablas específicas o cláusulas aptas es menos eficaz que el filtrado de texto específico de la tabla y específico de columna.
 
 1. En la siguiente instrucción se muestra **search** en tablas enumeradas en la cláusula **in**. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
 
