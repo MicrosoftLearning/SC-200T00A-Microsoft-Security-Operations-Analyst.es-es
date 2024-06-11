@@ -1,16 +1,16 @@
 ---
 lab:
-  title: "Ejercicio 1: exploración de Microsoft\_365\_Defender"
-  module: Learning Path 1 - Mitigate threats using Microsoft 365 Defender
+  title: 'Ejercicio 1: Explorar Microsoft Defender XDR'
+  module: Learning Path 1 - Mitigate threats using Microsoft Defender XDR
 ---
 
-# Ruta de aprendizaje 1 - Laboratorio 1 - Ejercicio 1: exploración de Microsoft 365 Defender
+# Ruta de aprendizaje 1 - Laboratorio 1 - Ejercicio 1 - Explorar Microsoft Defender XDR
 
 ## Escenario del laboratorio
 
 ![M365 Defender](../Media/SC-200-Lab_M1_L1_Ex1.png)
 
-Eres analista de operaciones de seguridad y trabajas en una empresa que está implementando Microsoft 365 Defender para puntos de conexión. Empieza asignando directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365.
+Usted es un analista de operaciones de seguridad que trabaja en una empresa que está implementando Microsoft Defender XDR. Empieza asignando directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20Microsoft%20365%20Defender)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos.
 
@@ -34,7 +34,7 @@ En esta tarea, asignarás directivas de seguridad preestablecidas para Exchange 
 
 1. Abre el explorador Microsoft Edge.
 
-1. En el explorador Edge, ve al portal de Microsoft 365 Defender en (https://security.microsoft.com).
+1. En el navegador Edge, vaya al portal de Microsoft Defender XDR en (https://security.microsoft.com).
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino para el nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -42,7 +42,7 @@ En esta tarea, asignarás directivas de seguridad preestablecidas para Exchange 
 
     >**Nota:** si recibes un mensaje "La operación no se ha podido completar. Inténtelo de nuevo más tarde. Si el persiste el problema, ponte en contacto con el Soporte técnico de Microsoft." y haz clic en **Aceptar** para continuar.  
 
-1. Si se muestra, cierra la ventana emergente de introducción a Microsoft 365 Defender. **Sugerencia:** más adelante en este laboratorio, tendrás que esperar hasta que se aprovisione el área de trabajo de Defender. Puede aprovechar este tiempo para tomar las visitas guiadas y obtener más información sobre Microsoft 365 Defender.
+1. Si se muestra, cierre la ventana emergente de visita rápida de Microsoft Defender XDR. **Sugerencia:** Más adelante en este laboratorio, tendrá que esperar hasta que se aprovisione el área de trabajo de Defender, puede aprovechar este tiempo para navegar por las visitas guiadas para obtener más información sobre Microsoft Defender XDR.
 
 1. En el menú de navegación, en el área *Correo electrónico y colaboración*, selecciona **Directivas y reglas**.
 
@@ -86,24 +86,20 @@ En esta tarea, asignarás directivas de seguridad preestablecidas para Exchange 
 
     >**Nota:** si recibes el mensaje *"El URI https://outlook.office365.com/psws/service.svc/AntiPhishPolicy" no es válido para la operación PUT. El URI debe dirigir a un único recurso para las operaciones PUT".* simplemente selecciona **Aceptar** y **Cancelar** para volver a la página principal. Verás que la opción *Protección estricta está activada* está habilitada.
 
-### Tarea 3: preparar el área de trabajo de Microsoft 365 Defender
+### Tarea 3: Preparación del área de trabajo de Microsoft Defender XDR
 
-1. En el portal de **Microsoft 365 Defender**, en el menú de navegación, selecciona **Inicio** a la izquierda.
+1. En el portal de **Microsoft Defender** en el menú de navegación, seleccione **Inicio** a la izquierda.
 
     >**Nota:** es posible que tengas que desplazarte hasta la parte superior del menú.
 
-1. En la página del portal **Inicio**, se muestra **Bienvenido a Microsoft 365 Defender**.
+1. En la página de **Inicio** del portal, se muestra el banner **Obtenga su SIEM y XDR en un solo lugar**.
 
-1. Desplázate hacia abajo por los iconos hasta que encuentres el icono con la etiqueta **Microsoft 365 Defender** con el mensaje, **Activar Microsoft 365 Defender.**
+1. Desplácese por los elementos del menú hasta **Activos** y seleccione **Dispositivos**.
 
-    >**Sugerencia:** debe estar en la parte inferior derecha de los iconos.
+1. El proceso para implementar el área de trabajo de Defender XDR debería comenzar y debería ver mensajes que digan *cargando e Inicializando* brevemente en la parte superior de la página, y luego va a ver una imagen de una taza de café y un mensaje que dice: **¡Espera! Preparamos nuevos espacios para sus datos y los conectamos.** Este proceso puede tardar 5 minutos aproximadamente en finalizar. *Deja abierta la página y asegúrate de que finaliza, ya que es necesario para el siguiente laboratorio.*
 
-1. Selecciona el botón que indica **Activar nuevas características.**
+    >**Nota:** si no aparece el mensaje " Estamos preparando nuevos espacios para sus datos y conectándolos» no aparece, o se abre la página “Configuración > Microsoft Defender XDR > Cuenta”, pero aparece el mensaje »Error al cargar la ubicación de almacenamiento de datos. Vuelve a intentarlo más tarde", selecciona "Configuración del servicio de alertas" en el menú "General" o ve al menú de navegación. Desplázate hacia abajo hasta la sección "Recursos" y selecciona "Dispositivos".
 
-1. Verás mensajes que indican *cargando e inicializando* brevemente en la parte superior de la página y luego verás una imagen de una taza de café y un mensaje que indica: **estamos preparando nuevos espacios para tus datos y conectándolos.** Este proceso puede tardar 5 minutos aproximadamente en finalizar. *Deja abierta la página y asegúrate de que finaliza, ya que es necesario para el siguiente laboratorio.*
-
-    >**Nota:** si no aparece el mensaje " Estamos preparando nuevos espacios para tus datos y conectándolos" o se abre la página "Configuración > Cuenta de microsoft 365 Defender >", pero ves el mensaje "No se ha podido cargar la ubicación de almacenamiento de datos. Vuelve a intentarlo más tarde", selecciona "Configuración del servicio de alertas" en el menú "General" o ve al menú de navegación. Desplázate hacia abajo hasta la sección "Recursos" y selecciona "Dispositivos".
-
-1. Cuando el nuevo espacio se complete correctamente, verás la configuración general de Microsoft 365 Defender para la cuenta, las notificaciones por correo electrónico, la configuración del servicio de alertas, los permisos y los roles y la API de streaming. También verás **Características en vista previa** activadas.
+1. Cuando el nuevo espacio se complete correctamente, verá la configuración general de Microsoft Defender XDR para Cuenta, Notificaciones por correo electrónico, Configuración del servicio de alertas, Permisos, roles y Streaming API. También verás **Características en vista previa** activadas.
 
 ## Has completado el laboratorio

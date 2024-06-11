@@ -30,6 +30,8 @@ En esta tarea, crearás un equipo de Microsoft Teams para usarlo en el laborator
 
 1. Cierra los elementos emergentes de Teams que puedan aparecer.
 
+    >**Nota:** Si se le pide que utilice **New Teams** acepte y continúe con el ejercicio.
+
 1. Si aún no está seleccionado, selecciona **Teams** en el menú izquierdo y, en la parte superior, selecciona el ![icono de signo más](../Media/plus-sign-icon-lab.png).
 
 1. Selecciona la opción **Crear equipo**.
@@ -97,25 +99,25 @@ En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con
 
 1. Selecciona **Automatización** en el área *Configuración* y luego selecciona la pestaña **Cuadernos de estrategias activos**.
 
-1. Selecciona **Actualizar** en la barra de comandos en caso de que no veas ningún cuaderno de estrategias. Deberías ver el cuaderno de estrategias creado en el paso anterior con el *tipo de desencadenador* **Incidente de Microsoft Sentinel**.
+1. Selecciona **Actualizar** en la barra de comandos en caso de que no veas ningún cuaderno de estrategias. Debería ver el cuaderno de estrategias creado a partir del paso anterior.
 
-1. Selecciona el nombre del cuaderno de estrategias **PostMessageTeams-OnIncident**.
+1. Seleccione el nombre del cuaderno de estrategias **PostMessageTeams**.
 
-1. En la página Aplicación lógica de *PostMessageTeams-OnIncident*, en el menú de comandos, selecciona **Editar**.
+1. En la página Aplicación lógica de *PostMessageTeams*, en el menú de comandos, seleccione **Editar**.
 
     >**Nota:**: es posible que tengas que actualizar la página.
 
-1. Selecciona el *primer* bloque, **Incidente de Microsoft Sentinel (versión preliminar).**
+1. Seleccione el *primer* bloque, **incidente de Microsoft Sentinel**.
 
 1. Selecciona el vínculo **Cambiar conexión**.
 
 1. Selecciona **Agregar nuevo** y selecciona **Iniciar sesión**. En la nueva ventana, selecciona las credenciales de administrador de la suscripción de Azure cuando se te solicite. La última línea del bloque ahora debería decir "Conectado a nombre-usuario-admin".
 
-1. Ahora selecciona el *segundo* bloque, **Conexiones**.
+1. Ahora seleccione el *segundo* bloque, **Publicar un mensaje (V3)**.
 
-1. Selecciona **Agregar nuevo** y selecciona las credenciales de administrador de Azure cuando se te solicite. La última línea del bloque ahora debería decir "Conectado a nombre-usuario-admin".
+1. En la pestaña Prameters (Prameters), desplácese hacia abajo y seleccione el vínculo **Cambiar conexión** y, a continuación, seleccione **Agregar nuevo** e **Iniciar sesión**. Elija las credenciales de administrador de Azure cuando se le solicite. La pestaña Prameters debe leer ahora "Conectado a su nombre de usuario-administrador".
 
-1. El bloque ahora ha pasado a llamarse **Publicar un mensaje (V3)(versión preliminar),** al final del campo *Equipo*, selecciona la **X** para borrar el contenido. El campo cambia a una lista desplegable con una lista de los equipos disponibles de Microsoft Teams. Selecciona **SOC**.
+1. Al final del campo *Equipo*, seleccione la **X** para borrar el contenido. El campo cambia a una lista desplegable con una lista de los equipos disponibles de Microsoft Teams. Selecciona **SOC**.
 
 1. Haz lo mismo para el campo *Canal*, selecciona la **X** al final del campo para borrar el contenido. El campo cambia a una lista desplegable con una lista de los canales de equipos de SOC. Selecciona **Nuevas alertas**.
 

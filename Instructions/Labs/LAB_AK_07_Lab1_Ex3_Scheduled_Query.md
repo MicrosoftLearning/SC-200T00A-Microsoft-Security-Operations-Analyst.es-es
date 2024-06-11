@@ -19,7 +19,7 @@ Las reglas de análisis buscan eventos o conjuntos de eventos específicos en tu
 
 ### Tarea 1: crear una consulta programada
 
-En esta tarea, crearás una consulta programada y la conectarás al canal de Teams que has creado en el ejercicio anterior.
+En esta tarea creará una consulta programada y la conectará al canal de Teams que creó en el ejercicio anterior.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
@@ -97,13 +97,19 @@ En esta tarea, crearás una consulta programada y la conectarás al canal de Tea
 
 ### Tarea 2: probar tu nueva regla
 
-En esta tarea, probarás la nueva regla de consulta programada.
+En esta tarea probará la nueva regla de consulta programada.
 
 1. En la barra superior de Azure Portal, selecciona el icono **>_** que corresponde a Cloud Shell. Es posible que tengas que seleccionar primero el icono de puntos suspensivos **(...)** si la resolución de pantalla es demasiado baja.
 
-1. Selecciona **PowerShell** y luego **Crear almacenamiento**. Espera hasta que se aprovisione Cloud Shell.
+1. En la ventana *Le damos la bienvenida a Azure Cloud Shell*, seleccione **Powershell**.
 
-1. Cierra la ventana de Azure Cloud Shell.
+1. En la página *Introducción*, seleccione la **cuenta de almacenamiento de montaje** y, después, seleccione **Pase para Azure: patrocinio** en el elemento de menú desplegable *Suscripción de la cuenta de almacenamiento* y seleccione el botón **Aplicar**.
+
+    >**Importante:** No seleccione la opción de botón de radio *No se requiere ninguna cuenta de almacenamiento*. Esto hará que se produzca un error en la creación del incidente.
+
+1. En la página *Cuenta de almacenamiento de montaje*, seleccione **Crearemos una cuenta de almacenamiento para usted** y, a continuación, seleccione **Siguiente**.
+
+1. Espere hasta que se aprovisione Cloud Shell y cierre la ventana de Azure Cloud Shell.
 
 1. En la barra de búsqueda de Azure Portal, escribe *Actividad* y luego selecciona **Registro de actividad**.
 

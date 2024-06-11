@@ -37,8 +37,9 @@ En esta tarea, crearás un área de trabajo de Microsoft Sentinel.
 
     >**Nota:** si no ves un área de trabajo de Log Analytics aquí, consulta el Módulo 3, Ejercicio 1, Tarea 2 para crear una.
 
-1. Navega por el área de trabajo de Microsoft Sentinel recién creada para familiarizarte con las opciones de la interfaz de usuario.
+1. En **Microsoft Sentinel** debe estar en la sección **General** *Noticias y guías* y ver un aviso que indica *Prueba de Microsoft Sentinel activada*. Presiona el botón **Aceptar**.
 
+1. Navega por el área de trabajo de Microsoft Sentinel recién creada para familiarizarte con las opciones de la interfaz de usuario.
 
 ### Tarea 2: crear una lista de reproducción
 

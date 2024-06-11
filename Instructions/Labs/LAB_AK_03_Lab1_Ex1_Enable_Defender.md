@@ -118,7 +118,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. En la barra de búsqueda de Azure Portal, escribe *Arc* y luego selecciona **Azure Arc**.
 
-1. En el panel de navegación, en **Infraestructura**, selecciona **Máquinas.**
+1. En el panel de navegación de **recursos de Azure Arc** seleccione **Máquinas**
 
 1. Selecciona **+ Agregar o crear** y después, **Agregar una máquina**.
 
@@ -205,7 +205,15 @@ En esta tarea, instalarás manualmente el *agente de Azure Monitor* agregando un
 
     >**Nota:** para fines de este laboratorio, puedes seleccionar *Registros de eventos de Windows*. Estas selecciones se pueden revisar más adelante.
 
-1. Selecciona **Agregar origen de datos** y selecciona **Revisar y crear.**
+1. Haga clic en la pestaña **Destino**
+
+1. Seleccione **Registros de Azure Monitor** en la lista desplegable **Tipo de destino**
+
+1. Seleccione la suscripción *Pase para Azure: Patrocinio* en la lista desplegable **Suscripción**
+
+1. Seleccione el nombre del área de trabajo **Sugerencia:** *RG-Defender* en el menú desplegable **Cuenta o espacio de nombres**
+
+1.  Selecciona **Agregar origen de datos** y selecciona **Revisar y crear.**
 
 1. Una vez que aparezca **Validación superada**, selecciona *Crear*.
 
