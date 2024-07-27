@@ -85,7 +85,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Revisa los recursos de Azure que ahora están protegidos con los planes de Defender for Cloud.
 
-    >**Importante:** si todos los planes de Defender están desactivados**, selecciona **Habilitar todos los planes** y haz clic en **Guardar**. Espera a que la notificación *"Plan de recursos en la suscripción Pase para Azure se ha guardado correctamente"* aparezca.
+    >**Importante:** Si todos los planes de Defender están *Desactivados*, seleccione **Habilitar todos los planes**. Seleccione el *Plan 1 de Microsoft Defender para API de 200 USD/mes* y, luego, **Guardar**. Seleccione **Guardar** en la parte superior de la página y espere a que la notificación *"Los planes de Defender (para la suscripción) se han guardado correctamente"* aparezca.
 
 1. Selecciona la pestaña **Configuración y supervisión** en el área Configuración (junto a Guardar).
 
