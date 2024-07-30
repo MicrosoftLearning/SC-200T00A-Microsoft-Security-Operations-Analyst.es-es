@@ -10,16 +10,16 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex3.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. Después de conectar los orígenes de datos a Microsoft Sentinel, crea reglas de análisis personalizadas que te ayuden a detectar las amenazas y los comportamientos anómalos de tu entorno.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. Después de conectar los orígenes de datos a Microsoft Sentinel, crea reglas de análisis personalizadas que te ayuden a detectar las amenazas y los comportamientos anómalos de tu entorno.
 
 Las reglas de análisis buscan eventos o conjuntos de eventos específicos en tu entorno, te avisan cuando se alcanzan determinados umbrales de eventos o condiciones, generan incidentes para que el SOC evalúe e investigue, y responden a las amenazas con procesos de seguimiento y corrección automatizados.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: crear una consulta programada
 
-En esta tarea creará una consulta programada y la conectará al canal de Teams que creó en el ejercicio anterior.
+En esta tarea crearás una consulta programada y la conectarás al canal de Teams que creaste en el ejercicio anterior.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
@@ -68,7 +68,7 @@ En esta tarea creará una consulta programada y la conectará al canal de Teams 
 
 1. Selecciona el botón **Siguiente: respuesta automatizada >**.
 
-1. En la pestaña *Respuesta automatizada* en *Reglas de automatización*, selecciona **Agregar nuevo**.
+1. En la pestaña *Respuesta automatizada* en *Reglas de automatización*, selecciona **+ Agregar nuevo**.
 
 1. En *Nombre de la regla de Automation*, escribe **Nivel 2**.
 
@@ -129,7 +129,7 @@ En esta tarea probará la nueva regla de consulta programada.
 
 1. Selecciona el incidente y revisa la información de la hoja derecha.
 
-1. Vuelve a Microsoft Teams seleccionando la pestaña en el explorador de Microsoft Edge. Si la has cerrado, abre una nueva pestaña y escribe https://teams.microsoft.com. Ve a *SOC* Teams, selecciona el canal *Nuevas alertas* y verás la publicación del mensaje sobre el incidente.
+1. Vuelve a Microsoft Teams seleccionando la pestaña en el explorador de Microsoft Edge. Si la has cerrado, abre una nueva pestaña y escribe <https://teams.microsoft.com>. Ve a *SOC* Teams, selecciona el canal *Nuevas alertas* y verás la publicación del mensaje sobre el incidente.
 
 
 ## Continúa con el ejercicio 4

@@ -10,11 +10,11 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex8.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft. Las reglas de Fusion y de análisis de anomalías también están habilitadas en tu entorno. Ahora es el momento de investigar los incidentes que han creado.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft. Las reglas de Fusion y de análisis de anomalías también están habilitadas en tu entorno. Ahora es el momento de investigar los incidentes que han creado.
 
 Un incidente puede incluir varias alertas, Es una agregacion de todas las pruebas relevantes en una investigación en concreto. Las propiedades relacionadas con alertas, como la gravedad y el estado, se establecen en el nivel de incidente. Después de indicar a Microsoft Sentinel qué tipos de amenazas estás buscando y cómo detectarlas, puedes supervisar las amenazas que se detecten investigando cada incidente.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Investigate%20incidents)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Investigate%20incidents)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: investigar un incidente
@@ -51,19 +51,19 @@ En esta tarea, investigarás un incidente.
 
 1. Desplázate hacia abajo y en el cuadro *Escribir un comentario...* escribe: *investigaré esto* y selecciona el icono **>** para enviar el nuevo comentario.
 
-1. Oculte la hoja izquierda seleccionando el icono **<<** situado junto al propietario.
+1. Oculta la hoja izquierda seleccionando el icono **<<** situado junto al propietario.
 
-1. Revisa la ventana **Escala de tiempo del incidente**. Seleccione el botón **Acciones de incidente** en la parte superior derecha y, a continuación, **Ejecutar cuaderno de estrategias**. Verá el cuaderno de estrategias *PostMessageTeams-OnIncident*. Esta opción te ayuda a ejecutar cuadernos de estrategias manualmente.
+1. Revisa la ventana **Escala de tiempo del incidente**. Selecciona el botón **Acciones de incidente** en la parte superior derecha y, a continuación, **Ejecutar cuaderno de estrategias**. Verás el cuaderno de estrategias *PostMessageTeams-OnIncident*. Esta opción te ayuda a ejecutar cuadernos de estrategias manualmente.
 
-1. Cierre la hoja *Ejecutar cuaderno de estrategias en incidente* seleccionando el icono de la **x** en la parte superior derecha.
+1. Cierra la hoja *Ejecutar cuaderno de estrategias en incidente* seleccionando el icono de la **x** en la parte superior derecha.
 
 1. Revisa la ventana **Entidades**. Debería aparecer al menos la entidad *Host* que se ha asignado dentro de la consulta KQL del ejercicio anterior. **Sugerencia:** si no se muestran entidades, actualiza la página.
 
-1. Selecciona el nuevo botón **Tareas (versión preliminar)** en la barra de comandos.
+1. Selecciona el botón nuevas **Tareas** en la barra de comandos.
 
 1. Selecciona **+ Agregar tarea**, escribe **Revisar quién es el propietario de la máquina** en el cuadro Título y selecciona **Guardar**.
 
-1. Cierra la hoja *Tareas de incidentes (versión preliminar)* seleccionando el icono **x** en la parte superior derecha.
+1. Cierra la hoja *Tareas de incidentes* seleccionando el icono **x** en la parte superior derecha.
 
 1. Selecciona el nuevo botón **Registro de actividad** en la barra de comandos.
 

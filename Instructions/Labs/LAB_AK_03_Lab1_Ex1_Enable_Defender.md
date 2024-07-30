@@ -10,7 +10,7 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod3_L1_Ex1.png)
 
-Usted es analista de operaciones de seguridad que trabaja en una empresa que va a implementar la protección de cargas de trabajo en la nube con Microsoft Defender for Cloud.  En este laboratorio, descubrirás Microsoft Defender for Cloud.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que va a implementar la protección de cargas de trabajo en la nube con Microsoft Defender for Cloud. En este laboratorio, habilitarás Microsoft Defender for Cloud.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Enable%20Microsoft%20Defender%20for%20Cloud)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
@@ -23,7 +23,7 @@ En esta tarea, configurarás una suscripción de Azure necesaria para completar 
 
 1. Abre el explorador Microsoft Edge o una nueva pestaña si ya está abierta.
 
-1. En el explorador, ve a Azure Portal en (https://portal.azure.com).
+1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -50,9 +50,9 @@ En esta tarea, configurarás una suscripción de Azure necesaria para completar 
 
 ### Tarea 2: crear un área de trabajo de Log Analytics
 
-Ahora puedes seleccionar el área de trabajo de Log Analytics creada manualmente para usarla con Microsoft Defender for Cloud.
+En esta tarea puedes crear el área de trabajo de Log Analytics para usarla con Azure Monitoring, Microsoft Sentinel y Microsoft Defender for Cloud.
 
-1. En la barra de búsqueda de Azure Portal, escribe *Áreas de trabajo* de Log Analytics y luego selecciona el mismo nombre de servicio.
+1. En la barra de búsqueda de Azure Portal, escribe *Áreas de trabajo de Log Analytics* y luego selecciona el mismo nombre de servicio.
 
 1. En la barra de comandos, selecciona **+Crear**.
 
@@ -62,7 +62,7 @@ Ahora puedes seleccionar el área de trabajo de Log Analytics creada manualmente
 
 1. En Nombre, escribe algo único como: *uniquenameDefender*.
 
-1. Seleccione **Revisar + crear**.
+1. Selecciona **Revisar + crear**.
 
 1. Una vez que pase la validación del área de trabajo, selecciona **Crear**. Espera a que se provisione el área de trabajo. Esta operación puede tardar unos minutos.
 
@@ -77,7 +77,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
     >**Sugerencia:** puedes hacer clic en el botón de campana de la barra superior para revisar las notificaciones de Azure Portal.
 
-    >**Nota:** si ves el error *"No se ha podido iniciar la prueba de Azure Defender en la suscripción",* continúa con los pasos siguientes para habilitar todos los planes de Defender en el paso 5.
+    >**Nota:** si ves el error *"No se ha podido iniciar la prueba de Azure Defender en la suscripción"*, continúa con los pasos siguientes para habilitar todos los planes de Defender en el paso 5.
 
 1. En el menú izquierdo de Microsoft Defender for Cloud, en Administración, selecciona **Configuración del entorno**.
 
@@ -85,7 +85,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Revisa los recursos de Azure que ahora están protegidos con los planes de Defender for Cloud.
 
-    >**Importante:** Si todos los planes de Defender están *Desactivados*, seleccione **Habilitar todos los planes**. Seleccione el *Plan 1 de Microsoft Defender para API de 200 USD/mes* y, luego, **Guardar**. Seleccione **Guardar** en la parte superior de la página y espere a que la notificación *"Los planes de Defender (para la suscripción) se han guardado correctamente"* aparezca.
+    >**Importante:** si todos los planes de Defender están *Desactivados*, selecciona **Habilitar todos los planes**. Selecciona el *Plan 1 de Microsoft Defender para API de 200 USD/mes* y, luego, **Guardar**. Selecciona **Guardar** en la parte superior de la página y espera a que la notificación *"Los planes de Defender (para la suscripción) se han guardado correctamente"* aparezca.
 
 1. Selecciona la pestaña **Configuración y supervisión** en el área Configuración (junto a Guardar).
 
@@ -106,11 +106,11 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 En esta tarea, instalarás Azure Arc en un servidor local para facilitar la incorporación.
 
->**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
+>**Importante:** los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
 
 1. Inicia sesión en la máquina virtual **WINServer** como administrador con la contraseña: **Passw0rd!** si es necesario.  
 
-1. Abre el explorador Microsoft Edge y ve a Azure Portal en https://portal.azure.com.
+1. Abre el explorador Microsoft Edge y ve a Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -118,7 +118,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. En la barra de búsqueda de Azure Portal, escribe *Arc* y luego selecciona **Azure Arc**.
 
-1. En el panel de navegación de **recursos de Azure Arc** seleccione **Máquinas**
+1. En el panel de navegación de **recursos de Azure Arc** selecciona **Máquinas**
 
 1. Selecciona **+ Agregar o crear** y después, **Agregar una máquina**.
 
@@ -136,7 +136,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. Revisa las etiquetas disponibles predeterminadas. Selecciona **Siguiente** para ir a la pestaña Descargar y ejecutar script.
 
-1. Desplázate hacia abajo y selecciona el botón **Descargar**. **Sugerencia:** si el explorador bloquea la descarga, realiza una acción en el explorador para permitirla. En el explorador Edge, selecciona el botón de puntos suspensivos (...) si es necesario y luego selecciona **Mantener**.
+1. Desplázate hacia abajo y selecciona el botón **Descargar**. **Sugerencia:** si el explorador bloquea la descarga, realiza una acción en el explorador para permitirla. En el explorador Microsoft Edge, selecciona el botón de puntos suspensivos (...) si es necesario y luego selecciona **Mantener**.
 
 1. Haz clic con el botón derecho en Inicio de Windows y selecciona **Windows PowerShell (Administrador)**.
 
@@ -156,7 +156,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. Escribe **R** para ejecutar una vez y presiona entrar (esto puede tardar un par de minutos).
 
-1. El proceso de configuración abrirá una nueva pestaña del explorador Edge para autenticar al agente de Azure Arc. Selecciona la cuenta de administrador, espera el mensaje "Autenticación completada" y vuelve a la ventana de Windows PowerShell.
+1. El proceso de configuración abrirá una nueva pestaña del explorador Microsoft Edge para autenticar al agente de Azure Arc. Selecciona la cuenta de administrador, espera el mensaje "Autenticación completada" y vuelve a la ventana de Windows PowerShell.
 
 1. Cuando finalice la instalación, vuelve a la página de Azure Portal donde has descargado el script y selecciona **Cerrar**. Cierra la página **Agregar servidores con Azure Arc** para volver a la página **Máquinas** de Azure Arc.
 
@@ -167,21 +167,21 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 ### Tarea 5: proteger un servidor local
 
-En esta tarea, instalarás manualmente el *agente de Azure Monitor* agregando una *regla de recopilación de datos (DCR)* en la **máquina virtual WINServer**.
+En esta tarea, instalarás manualmente el *agente de Azure Monitor* agregando una *regla de recopilación de datos (DCR)* en la máquina virtual **WINServer**.
 
 1. Ve a **Microsoft Defender for Cloud** y selecciona la página **Introducción** en el menú de la izquierda.
 
-1. Seleccione la pestaña **Comenzar**.
+1. Selecciona la pestaña **Comenzar**.
 
 1. Desplázate hacia abajo y selecciona **Configurar** en la sección *Agregar servidores que no son de Azure*.
 
-1. Selecciona **Actualizar** junto al área de trabajo que has creado antes. Esto puede tardar unos minutos. Espera hasta que veas la notificación *"El plan de Microsoft Defender para el área de trabajo se uniquenameDefender se ha guardado correctamente"*.
+1. Selecciona **Actualizar** junto al área de trabajo que has creado antes. Esto puede tardar unos minutos. Espera hasta que veas la notificación *"El plan de Microsoft Defender para el área de trabajo de uniquenameDefender se ha guardado correctamente"*.
 
 1. Selecciona **+ Agregar servidores** junto al área de trabajo que has creado anteriormente.
 
 1. Selecciona **Reglas de recopilación de datos**
 
-1. Seleccione **+ Create** (+ Crear).
+1. Selecciona **+ Crear**.
 
 1. Escribe **WINServer** como Nombre de regla.
 
@@ -197,7 +197,7 @@ En esta tarea, instalarás manualmente el *agente de Azure Monitor* agregando un
 
     >**Nota:** es posible que tengas que establecer el filtro de columna para *Tipo de recurso* en *Server-Azure Arc* si **no se muestra WINServer**.
 
-1. Selecciona **Siguiente: recopilar y entregar**.
+1. Selecciona **Siguiente: Recopilar y entregar**.
 
 1. En la pestaña **Recopilar y entregar**, selecciona **+ Agregar origen de datos**.
 
@@ -205,15 +205,15 @@ En esta tarea, instalarás manualmente el *agente de Azure Monitor* agregando un
 
     >**Nota:** para fines de este laboratorio, puedes seleccionar *Registros de eventos de Windows*. Estas selecciones se pueden revisar más adelante.
 
-1. Haga clic en la pestaña **Destino**
+1. Selecciona la pestaña **Destino**.
 
-1. Seleccione **Registros de Azure Monitor** en la lista desplegable **Tipo de destino**
+1. Selecciona **Registros de Azure Monitor** en la lista desplegable **Tipo de destino**
 
-1. Seleccione la suscripción *Pase para Azure: Patrocinio* en la lista desplegable **Suscripción**
+1. Selecciona la suscripción *Pase para Azure: Patrocinio* en la lista desplegable **Suscripción**
 
-1. Seleccione el nombre del área de trabajo **Sugerencia:** *RG-Defender* en el menú desplegable **Cuenta o espacio de nombres**
+1. Selecciona el nombre del área de trabajo **Sugerencia:***RG-Defender* en el menú desplegable **Cuenta o espacio de nombres**
 
-1.  Selecciona **Agregar origen de datos** y selecciona **Revisar y crear.**
+1. Selecciona **Agregar origen de datos** y selecciona **Revisar y crear.**
 
 1. Una vez que aparezca **Validación superada**, selecciona *Crear*.
 

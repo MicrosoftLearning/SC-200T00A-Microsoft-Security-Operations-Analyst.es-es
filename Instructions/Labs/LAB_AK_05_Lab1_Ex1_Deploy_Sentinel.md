@@ -65,7 +65,7 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. En Microsoft Sentinel, selecciona la opción **Lista de control** en el área Configuración.
 
-1. Selecciona **+ Agregar nuevo** en la barra de comandos.
+1. Seleccione **+Nuevo** en la barra de comandos.
 
 1. En el Asistente para lista de seguimiento, escribe lo siguiente:
 
@@ -108,7 +108,7 @@ En esta tarea, crearás un indicador en Microsoft Sentinel.
 
 1. Para el dominio, escribe el nombre del dominio; por ejemplo, *contoso.com*.
 
-1. *En Tipos de amenazas*, selecciona **+ Agregar** y escribe **actividad malintencionada**. Seleccione **Aceptar**.
+1. *En Tipos de amenazas*, selecciona **+ Agregar** y escribe **actividad malintencionada**. Seleccione **Aplicar**.
 
 1. Escriba una **Descripción**.
 

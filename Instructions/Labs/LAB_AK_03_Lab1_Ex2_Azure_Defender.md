@@ -10,20 +10,20 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod3_L1_Ex2.png)
 
-Es un analista de operaciones de seguridad que trabaja en una empresa que implementó Microsoft Defender for Cloud. Debes responder a las recomendaciones y alertas de seguridad que ha generado Microsoft Defender for Cloud.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que implementó Microsoft Defender for Cloud. Debes responder a las recomendaciones y alertas de seguridad que ha generado Microsoft Defender for Cloud.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20threats%20using%20Microsoft%20Defender%20for%20Cloud)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20threats%20using%20Microsoft%20Defender%20for%20Cloud)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: explorar el cumplimiento normativo
 
-En esta tarea, revisará la configuración de cumplimiento normativo en Microsoft Defender for Cloud. 
+En esta tarea, revisarás la configuración de cumplimiento normativo en Microsoft Defender for Cloud. 
 
->**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
+>**Importante:** los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
 
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Microsoft Edge, abra Azure Portal en (https://portal.azure.com)).
+1. En el explorador Microsoft Edge, abre Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -31,55 +31,55 @@ En esta tarea, revisará la configuración de cumplimiento normativo en Microsof
 
 1. En la barra de búsqueda de Azure Portal, escribe *Defender*, luego selecciona **Microsoft Defender for Cloud**.
 
-1. En *Cloud Security*, seleccione **Cumplimiento normativo** en los elementos de menú de la izquierda.
+1. En *Seguridad en la nube*, selecciona **Cumplimiento normativo** en los elementos de menú de la izquierda.
 
-1. Seleccione **Administrar estándares de cumplimiento** en la barra de herramientas.
+1. Selecciona **Administrar estándares de cumplimiento** en la barra de herramientas.
 
-1. Seleccione su suscripción.
+1. Selecciona tu suscripción.
 
-    >**Sugerencia:** seleccione **Expandir todo** para buscar la suscripción si tiene una jerarquía de grupos de administración.
+    >**Sugerencia:** selecciona **Expandir todo** para buscar la suscripción si tienes una jerarquía de grupos de administración.
 
-1. En *Configuración*, seleccione **Directiva de seguridad** en el menú del portal.
+1. En *Configuración*, selecciona **Directivas de seguridad** en el menú del portal.
 
-1. Desplácese hacia abajo y revise los "Estándares de seguridad" disponibles de forma predeterminada.
+1. Desplázate hacia abajo y revisa los "Estándares de seguridad" disponibles de forma predeterminada.
 
-1. Utilice el cuadro de búsqueda para buscar *ISO 27001:2013*.
+1. Utiliza el cuadro de búsqueda para buscar *ISO 27001:2013*.
 
-1. Seleccione y mueva el control deslizante **Estado** a la derecha de *ISO 27001:2013* a **Activado**.
+1. Selecciona y mueve el control deslizante **Estado** a la derecha de *ISO 27001:2013* a **Activado**.
 
     >**Nota:** algunos estándares requieren asignar una iniciativa de Azure Policy.
 
-1. Seleccione **Actualizar** en el menú de la página para confirmar que *ISO 27001:2013* está *Activado* para la suscripción.
+1. Selecciona **Actualizar** en el menú de la página para confirmar que *ISO 27001:2013* está *Activado* para la suscripción.
 
-1. Cierre la página *Directivas de seguridad* seleccionando la "X" en la esquina superior derecha de la página para volver a la **configuración del entorno**.
+1. Cierra la página *Directivas de seguridad* seleccionando la "X" en la esquina superior derecha de la página para volver a la **configuración del entorno**.
 
     >**Nota:** es posible que quieras volver más adelante al *Cumplimiento normativo* para revisar los nuevos controles y recomendaciones estándar.
 
 ### Tarea 2: explorar la posición de seguridad y las recomendaciones
 
-En esta tarea, revisará la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
+En esta tarea, revisarás la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
 
-1. En *Seguridad en la nube*, seleccione **Posición de seguridad** en los elementos de menú de la izquierda.
+1. En *Seguridad en la nube*, selecciona **Posición de seguridad** en los elementos de menú de la izquierda.
 
 1. La *puntuación de seguridad* tiene como valor predeterminado el *entorno de Azure*.
 
-1. En la pestaña *Entorno*, seleccione **Ver recomendaciones > vínculo **.
+1. En la pestaña *Entorno*, selecciona **Ver recomendaciones > vínculo **.
 
-1. Seleccione **Agregar filtro** y, después, seleccione **Tipo de recurso**.
+1. Selecciona **Agregar filtro** y, después, selecciona **Tipo de recurso**.
 
-1. Active la casilla **Máquinas: Azure Arc** y, a continuación, seleccione el botón **Aplicar**.
+1. Activa la casilla **Máquinas: Azure Arc** y, a continuación, selecciona el botón **Aplicar**.
 
-    >**Nota:** Si no ve **Máquinas: Azure Arc** en la lista, asegúrese de que ha completado la ruta de aprendizaje 3: Laboratorio 1: Ejercicio 1 tarea 4..
+    >**Nota:** si no ves **Máquinas: Azure Arc** en la lista, asegúrate de que has completado la ruta de aprendizaje 3: Laboratorio 1: Ejercicio 1 tarea 4..
 
-1. Seleccione cualquier recomendación en la que el estado no sea *"Completado"*.
+1. Selecciona cualquier recomendación en la que el estado no sea *"Completado"*.
 
-1. Revise la recomendación y, en la pestaña **Tomar acción** desplácese hacia abajo hasta **Delegado** y seleccione **Asignar propietario y establecer fecha de vencimiento**.
+1. Revisa la recomendación y, en la pestaña **Tomar acción** desplázate hacia abajo hasta **Delegado** y selecciona **Asignar propietario y establecer fecha de vencimiento**.
 
-1. En la ventana **Crear asignación**, deje *Tipo* establecido en *Defender for Cloud* y expanda los detalles de **Asignación**.
+1. En la ventana **Crear asignación**, deje *Tipo* establecido en *Defender for Cloud* y expande los detalles de **Asignación**.
 
-1. En el cuadro `Set owner` *dirección de correo electrónico*, escriba el correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
+1. En el cuadro `Set owner`*dirección de correo electrónico*, escribe el correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
 
-1. Explore las opciones *Establecer plazo de corrección* y *Establecer notificaciones por correo electrónico* y seleccione **Crear**.
+1. Explora las opciones *Establecer plazo de corrección* y *Establecer notificaciones por correo electrónico* y selecciona **Crear**.
 
     >**Nota:** si ves el error *No se han podido crear asignaciones solicitadas*, vuelve a intentarlo más tarde.
 
@@ -88,7 +88,7 @@ En esta tarea, revisará la administración de la posición de seguridad en la n
 
 ### Tarea 3: mitigar alertas de seguridad
 
-En esta tarea, cargará alertas de seguridad de ejemplo y revisará los detalles de la alerta.
+En esta tarea, cargarás alertas de seguridad de ejemplo y revisarás los detalles de la alerta.
 
 
 1. En *General*, selecciona **Alertas de seguridad** en el menú del portal.
