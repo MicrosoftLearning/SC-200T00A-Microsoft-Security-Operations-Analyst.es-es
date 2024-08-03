@@ -10,17 +10,17 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex7.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Vas a trabajar con consultas KQL de Log Analytics y, a partir de ahí, crearás reglas de análisis personalizadas para ayudar a descubrir amenazas y comportamientos anómalos en tu entorno.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Vas a trabajar con consultas KQL de Log Analytics y, a partir de ahí, crearás reglas de análisis personalizadas para ayudar a descubrir amenazas y comportamientos anómalos en tu entorno.
 
 Las reglas de análisis buscan eventos o conjuntos de eventos específicos en tu entorno, te avisan cuando se alcanzan determinados umbrales de eventos o condiciones, generan incidentes para que el SOC evalúe e investigue, y responden a las amenazas con procesos de seguimiento y corrección automatizados.
 
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20detections)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20detections)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: detectar ataques de persistencia
 
->**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
+>**Importante:** los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
 
 En esta tarea, crearás una detección para el primer ataque del ejercicio anterior.
 
@@ -44,7 +44,7 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
     search "temp\\startup.bat"
     ```
 
-    >**Nota:** Un resultado con el evento puede tardar hasta 5 minutos en aparecer. Espera hasta que lo haga. Si no aparece, asegúrate de haber reiniciado WINServer como se indica en el ejercicio anterior y de haber completado la Tarea nº 3 del Laboratorio de la Ruta de aprendizaje 6, Ejercicio 2.
+    >**Nota:** un resultado con el evento puede tardar hasta 5 minutos en aparecer. Espera hasta que lo haga. Si no aparece, asegúrate de haber reiniciado WINServer como se indica en el ejercicio anterior y de haber completado la Tarea nº 3 del Laboratorio de la Ruta de aprendizaje 6, Ejercicio 2.
 
 1. La tabla *SecurityEvent* busca tener los datos ya normalizados y fáciles de consultar. Expande la fila para ver todas las columnas relacionadas con el registro.
 
@@ -80,14 +80,14 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. Selecciona el botón **Siguiente: establecer la lógica de la regla**.
 
-1. En la pestaña *Establecer lógica de regla*, la *consulta de regla* debe rellenarse ya con la consulta KQL, así como las entidades de *Mejora de alertas: asignación de entidades*.
+1. En la pestaña *Establecer la lógica de la regla*, la *consulta de regla* debe estar ya rellenada con la consulta KQL.
 
-    |Entity|Identificador|Campo de datos|
+1. Configura las entidades en *Mejora de alertas: asignación de entidades* mediante los parámetros de la tabla siguiente.
+
+    |Entity|Identifier|Campo de datos|
     |:----|:----|:----|
     |Cuenta|FullName|AccountCustomEntity|
     |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
-
-1. Si **Nombre de host** no está seleccionado para Entidad de *host*, selecciónela en la lista desplegable y use los parámetros de la tabla anterior para rellenar los campos.
 
 1. En *Programación de consultas*, establece lo siguiente:
 

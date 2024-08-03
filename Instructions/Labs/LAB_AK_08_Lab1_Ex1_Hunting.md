@@ -10,13 +10,13 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod8_L1_Ex1.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Has recibido inteligencia sobre amenazas referente a una técnica de comando y control (C2 o C&C). Debes realizar una búsqueda y vigilar la amenaza.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Has recibido inteligencia sobre amenazas referente a una técnica de comando y control (C2 o C&C). Debes realizar una búsqueda y vigilar la amenaza.
 
 >**Importante:** los datos de registro usados en el laboratorio se han creado en el módulo anterior. Consulta **Ataque 3** en el servidor WIN1 en el ejercicio 5.
 
 >**Nota:** puesto que ya has experimentado el proceso de exploración de datos en un módulo anterior, este laboratorio facilita una instrucción KQL para empezar.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20threat%20hunting%20in%20Microsoft%20Sentinel)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20threat%20hunting%20in%20Microsoft%20Sentinel)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: crear una consulta de búsqueda
@@ -25,7 +25,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Edge, ve a Azure Portal en https://portal.azure.com.
+1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -56,7 +56,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. Activa la casilla de los resultados que muestra "*-file c2.ps1"*.
 
-1. En la barra de comandos central, selecciona el botón **Agregar marcador**.
+1. En la barra de comandos central del panel *Resultados*, selecciona el botón **Agregar marcador**.
 
 1. Selecciona **+ Agregar nueva entidad** en *Asignación de entidades*.
 
@@ -64,7 +64,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. En *Tácticas y técnicas*, selecciona **Comando y control**.
 
-1. Vuelve a la hoja *Agregar marcador* y selecciona **Crear**. Asignaremos este marcador a un incidente más adelante.
+1. En la hoja *Agregar marcador*, selecciona **Crear**. Asignaremos este marcador a un incidente más adelante.
 
 1. Cierra la ventana *Registros* seleccionando la **X** en la parte superior derecha de la ventana y selecciona **Aceptar** para descartar los cambios. 
 
@@ -123,7 +123,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. Selecciona **Agregar a incidente existente**. Todos los incidentes aparecen en el panel derecho.
 
-1. Selecciona un incidente y después, **Agregar**. 
+1. Selecciona un incidente y después, **Agregar**.
 
 1. Desplázate a la izquierda para observar que la columna *Gravedad* se rellena ahora con los datos del incidente.
 
@@ -132,11 +132,11 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de análisis NRT. Las reglas NRT se ejecutan cada minuto y retroceden un minuto. Una ventaja de las reglas NRT es que pueden usar la lógica de creación de alertas e incidentes.
 
-1. Selecciona la página **Análisis** en *Configuración* de Microsoft Sentinel. 
+1. Selecciona la página **Análisis** en *Configuración* en Microsoft Sentinel. 
 
-1. Selecciona la pestaña **Crear** y después, **Regla de consulta NRT (versión preliminar).**
+1. Selecciona la pestaña **Crear** y después **Regla de consulta de NRT**.
 
-1. Se abre el Asistente para reglas de análisis. Para el tipo de pestaña *General*:
+1. Esto inicia el "Asistente de reglas de análisis". Para el tipo de pestaña *General*:
 
     |Configuración|Value|
     |---|---|
@@ -171,9 +171,11 @@ En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de an
     - En la lista desplegable *Identificador*, selecciona **HostName**.
     - En la lista desplegable *Valor*, selecciona **Equipo**.
 
-1. Desplázate hacia abajo y selecciona el botón **Siguiente: configuración de los incidentes>**.
+1. Desplázate hacia abajo y selecciona el botón **Siguiente: Configuración de incidentes>**.
 
-1. En la pestaña *Configuración de incidentes*, deja los valores predeterminados y selecciona el botón **Siguiente: revisar y crear >**.
+1. En la pestaña *Configuración de incidentes*, deja los valores predeterminados y selecciona el botón **Siguiente: respuesta automatizada >**.
+
+1. Selecciona el botón *Respuesta automatizada* y luego selecciona el botón **Siguiente: revisar y crear**.
 
 1. En la pestaña *Revisar y crear*, selecciona el botón **Guardar** para crear y guardar la nueva regla de Análisis programado.
 

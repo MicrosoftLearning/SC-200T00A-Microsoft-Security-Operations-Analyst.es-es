@@ -10,9 +10,9 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex9.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes modelar analizadores de ASIM para un evento de registro de Windows específico. Estos analizadores se finalizarán más adelante siguiendo la [Referencia del esquema de normalización de eventos del registro del Modelo de información de seguridad avanzada (ASIM)](https://docs.microsoft.com/en-us/azure/sentinel/registry-event-normalization-schema).
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes modelar analizadores de ASIM para un evento de registro de Windows específico. Estos analizadores se finalizarán más adelante siguiendo la [Referencia del esquema de normalización de eventos del registro del Modelo de información de seguridad avanzada (ASIM)](https://docs.microsoft.com/en-us/azure/sentinel/registry-event-normalization-schema).
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20Advanced%20Security%20Information%20Model%20Parsers)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20Advanced%20Security%20Information%20Model%20Parsers)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 ### Tarea 1: Implementación de analizadores de ASIM del esquema de registro
 
@@ -56,16 +56,18 @@ En esta tarea, revisarás los analizadores de esquemas del registro que se inclu
 
 1. En la barra de *Búsqueda*, escribe **registro** y desplázate hacia abajo por las funciones del analizador de ASIM hasta que veas el siguiente *_Im_RegistryEvent_MicrosoftWindowsEventxxx* para Microsoft Windows en el encabezado *Microsoft Sentinel*.
 
-    >**Nota:** Usamos las letras xxx en el nombre de la función del analizador de ASIM para tener en cuenta los cambios de versión. En el momento en que se actualizó este laboratorio, la función era *_Im_RegistryEvent_MicrosoftWindowsEventV02*.
+    >**Nota:** usamos las letras xxx en el nombre de la función del analizador de ASIM para tener en cuenta los cambios de versión. En el momento en que se actualizó este laboratorio, la función era *_Im_RegistryEvent_MicrosoftWindowsEventV02*.
 
 1. Mantén el puntero sobre la función de ASIM **_Im_RegistryEvent_MicrosoftWindowsEventxxx** y, después, selecciona **Cargar el código de función** en la ventana emergente.
 
 1. Revisa el KQL que analiza el identificador de evento 4657 para simplificar el análisis de los datos en el área de trabajo de Microsoft Sentinel.
 
-    >**Sugerencia:** Al escribir Ctrl+F en la ventana de código, se abre *Buscar* y se realiza la búsqueda de *EventID: 4657* de forma mucho más sencilla.
+    >**Sugerencia:** al escribir Ctrl+F en la ventana de código, se abre *Buscar* y se realiza la búsqueda de *EventID: 4657* de forma mucho más sencilla.
+
+1. En *Registros*, abre una pestaña de nueva consulta.
 
 1. Vuelve a la hoja *Esquema y filtro* y mantén el puntero sobre el *analizador de filtrado de eventos del Registro ASIM para eventos de Microsoft Windows y eventos de seguridad* **_Im_RegistryEvent_MicrosoftWindowsEventxxx** y, después, selecciona **Usar en el editor**.
 
-1. **Ejecutar** la consulta de función ASIM. No debes obtener ningún resultado ni errores, es solo para fines de validación.
+1. **Ejecutar** la consulta de función ASIM. Si has completado los ejercicios de laboratorio anteriores, deberías ver los resultados y los mensajes noerror.
 
 ## Continúa con el ejercicio 10

@@ -8,9 +8,9 @@ lab:
 
 ## Escenario del laboratorio
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft.  Debes centralizar las reglas analíticas en un repositorio de Azure DevOps.  Luego conecta Sentinel al repositorio de Azure DevOps e importa el contenido. 
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft.  Debes centralizar las reglas analíticas en un repositorio de Azure DevOps.  Luego conecta Sentinel al repositorio de Azure DevOps e importa el contenido. 
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Use%20repositories%20in%20Microsoft%20Sentinel)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Use%20repositories%20in%20Microsoft%20Sentinel)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: crear y exportar una regla analítica
@@ -31,7 +31,7 @@ En esta tarea, habilitarás el análisis de comportamiento de entidades en Micro
 
 1. Selecciona la regla **RegKey de inicio** que has creado anteriormente.
 
-1. En la barra de herramientas, selecciona **Exportar**. **Sugerencia:** es posible que tengas que seleccionar el icono **de puntos suspensivos (...)** para verlo.
+1. En la barra de herramientas, selecciona **Exportar**. **Sugerencia:** es posible que tengas que seleccionar el icono de puntos suspensivos **(...)** para verlo.
 
 1. La regla se exporta a un archivo de texto denominado *Azure_Sentinel_analytic_rule.json*.
 
@@ -46,7 +46,7 @@ En esta tarea, habilitarás el análisis de comportamiento de entidades en Micro
 
 En este caso, debes crear primero un repositorio de Azure DevOps.
 
-1. Abre otra pestaña del explorador y ve a (https://aexprodcus1.vsaex.visualstudio.com/me?mkt=en-US).
+1. Abre otra pestaña del explorador y ve a <https://aexprodcus1.vsaex.visualstudio.com/me?mkt=en-US>.
 
 1. En la página *Necesitamos algunos detalles más*, selecciona **Continuar**.
 
@@ -66,11 +66,11 @@ En este caso, debes crear primero un repositorio de Azure DevOps.
 
 1. En la hoja Archivos (lado derecho de la página), la barra de herramientas incluye opciones *Configurar compilación*, *Clonar*, ... Selecciona el icono de dos puntos **(:)** para mostrar más opciones.
 
-1. Seleccione **Cargar archivos**.
+1. Selecciona **Cargar archivos**.
 
 1. Selecciona **Examinar** y selecciona el archivo **Azure_Sentinel_analytic_rule.json** en el directorio *Descargas*.
 
-1. Seleccione **Confirmar**.
+1. Selecciona **Confirmar**.
 
 1. Luego selecciona **Guardar** en la esquina superior izquierda de la página.  Esto muestra la organización y los proyectos.
 

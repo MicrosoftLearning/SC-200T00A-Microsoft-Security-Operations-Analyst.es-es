@@ -8,12 +8,12 @@ lab:
 
 ## Escenario del laboratorio
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft. 
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Ya has creado reglas programadas y de análisis de seguridad de Microsoft. 
 
 
 Debes configurar Microsoft Sentinel para realizar el análisis de comportamiento de entidades para detectar anomalías y dar páginas de análisis de entidades.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20entity%20behavior%20analytics)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20entity%20behavior%20analytics)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentres pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 ### Tarea 1: explorar el comportamiento de la entidad 
 
@@ -35,13 +35,13 @@ En esta tarea, explorarás el análisis de comportamiento de entidades en Micros
 
 1. En el elemento emergente de la *Configuración del comportamiento de la entidad*, selecciona **Establecer UEBA**.
 
-1. En la página siguiente, selecciona **Establecer UEBA**.
+1. En la pestaña *Configuración*, en *Análisis de comportamiento de entidades*, selecciona **Establecer UEBA**.
 
 1. Revisa los tres pasos previos para habilitar el análisis de comportamiento de entidades.
 
 1. Cierra la página *Configuración del comportamiento de la entidad * seleccionando la "x" en la parte superior derecha de la página.
 
-1. Desplázate hacia abajo en la página *Configuración* y lee el párrafo *Anomalías*.
+1. Desplázate hacia abajo en la página *Configuración* hasta *Anomalías* y lee el párrafo.
 
 1. Selecciona **Ir a análisis para configurar las anomalías**.
 
@@ -74,7 +74,7 @@ En esta tarea, confirmarás que las reglas de análisis de anomalías están hab
 
 1. Establece el valor en **1** y luego selecciona **Siguiente: enviar comentarios**.
 
-1. Selecciona **Siguiente: revisar** y luego **Guardar** para actualizar la regla.
+1. Selecciona **Siguiente: revisar y crear** y luego **Guardar** para actualizar la regla.
 
     >**Nota:** puedes actualizar la regla **Lanzamiento como paquete piloto** a **Producción** cambiando la configuración de esta regla y guardando los cambios. La regla **Producción** se convertirá en la regla **Lanzamiento como paquete piloto** después.
     
