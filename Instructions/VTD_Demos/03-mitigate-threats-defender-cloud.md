@@ -1,6 +1,8 @@
 # Módulo 3: Mitigación de amenazas con Microsoft Defender for Cloud
 
-**Nota**: la finalización correcta de esta demostración depende de completar todos los pasos del [documento de requisitos previos](00-prerequisites.md). 
+**Nota**: La finalización correcta de esta demostración depende de completar todos los pasos del [documento de requisitos previos](00-prerequisites.md).
+
+**Importante:** esta demostración no es necesaria para VTD-5002-FY25.
 
 ## Mitigación de alertas de seguridad
 
