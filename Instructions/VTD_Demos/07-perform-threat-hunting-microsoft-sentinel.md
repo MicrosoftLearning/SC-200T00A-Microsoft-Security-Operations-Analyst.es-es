@@ -1,6 +1,8 @@
 # Módulo 7: Búsqueda de amenazas en Microsoft Sentinel
 
-**Nota**: la finalización correcta de esta demostración depende de completar todos los pasos del [documento de requisitos previos](00-prerequisites.md). 
+**Nota**: la finalización correcta de esta demostración depende de completar todos los pasos del [documento de requisitos previos](00-prerequisites.md).
+
+**Importante:** esta demostración no es necesaria para VTD-5002-FY25.
 
 ## Crear una consulta de búsqueda
 
