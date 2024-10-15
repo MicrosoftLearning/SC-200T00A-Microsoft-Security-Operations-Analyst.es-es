@@ -10,7 +10,7 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex2.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. Ahora, quieres responder y corregir acciones que se pueden ejecutar desde Microsoft Sentinel como rutina.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. Ahora, quieres responder y corregir acciones que se pueden ejecutar desde Microsoft Sentinel como rutina.
 
 Un cuaderno de estrategias puede ayudarte a automatizar y organizar la respuesta a las amenazas, se puede integrar con otros sistemas de manera interna y externa, y se puede configurar para ejecutarse automáticamente en respuesta a alertas o incidentes específicos, cuando se desencadena mediante una regla de análisis o una regla de automatización, respectivamente. 
 

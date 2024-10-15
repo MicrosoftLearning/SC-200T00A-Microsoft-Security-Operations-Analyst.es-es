@@ -186,7 +186,7 @@ En esta tarea, crearás una detección para el segundo ataque del ejercicio ante
 
 1. En la pestaña *Establecer lógica de regla*, la *consulta de regla* debe rellenarse ya con la consulta KQL, así como las entidades de *Mejora de alertas: asignación de entidades*.
 
-    |Entity|Identificador|Campo de datos|
+    |Entity|Identifier|Campo de datos|
     |:----|:----|:----|
     |Cuenta|FullName|AccountCustomEntity|
     |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
