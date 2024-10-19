@@ -10,9 +10,11 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex1.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. En primer lugar, debes filtrar las alertas procedentes de Defender for Cloud en Microsoft Sentinel, por gravedad. 
+Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a detectar y mitigar amenazas mediante Microsoft Sentinel. En primer lugar, debes filtrar las alertas procedentes de Defender for Cloud en Microsoft Sentinel, por gravedad.
 
 >**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Modify%20a%20Microsoft%20Security%20rule)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+
+>**Importante:** si completaste el laboratorio anterior *Ruta de aprendizaje 6: Laboratorio1: Ejercicio 4: Conexión de Defender XDR a Microsoft Sentinel mediante conectores de datos*, puedes saltarte este laboratorio y pasar al siguiente ejercicio.
 
 
 ### Tarea 1: activación de una regla de seguridad de Microsoft

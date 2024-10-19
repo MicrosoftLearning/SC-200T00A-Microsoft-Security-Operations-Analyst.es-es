@@ -88,4 +88,4 @@ En esta tarea, conectarás un área de trabajo de Microsoft Sentinel a Microsof
 
  >**Nota:** la sincronización entre Microsoft Sentinel y Microsoft Defender XDR puede tardar unos minutos en completarse, por lo que es posible que no veas todos los *Conectores de datos* instalados, por ejemplo.
 
-## Ha completado el laboratorio
+## Completaste el laboratorio. Ve a Ruta de aprendizaje 7 - Laboratorio 1 - Ejercicio 2: crear un cuaderno de estrategias de Microsoft Sentinel
