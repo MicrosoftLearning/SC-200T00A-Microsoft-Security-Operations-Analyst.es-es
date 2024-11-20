@@ -12,10 +12,7 @@ lab:
 
 Usted es un analista de operaciones de seguridad que trabaja en una empresa que implementa Microsoft Sentinel. Es responsable de analizar los datos de los registros para buscar actividad malintencionada, mostrar visualizaciones y buscar amenazas. Para consultar los datos de los registros, utiliza el lenguaje de consulta Kusto (KQL).
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20queries%20for%20Microsoft%20Sentinel%20using%20Kusto%20Query%20Language)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos.
-
->**Importante:** este laboratorio implica escribir muchos scripts KQL en Microsoft Sentinel. Los scripts se han facilitado en un archivo al principio de este laboratorio. Una ubicación alternativa para descargarlos es: https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
-
+>**Importante:** este laboratorio implica escribir muchos scripts KQL en Microsoft Sentinel. Los scripts se han facilitado en un archivo al principio de este laboratorio. Una ubicación alternativa para descargarlos es: <https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles>
 
 ### Tarea 1: acceder al área de pruebas de KQL
 
@@ -23,7 +20,7 @@ En esta tarea, accederás a un entorno de Log Analytics donde podrás practicar 
 
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador, vaya a https://aka.ms/lademo. Inicia sesión con credenciales de administrador MOD.
+1. En el explorador, vaya a <https://aka.ms/lademo>. Inicia sesión con credenciales de administrador MOD.
 
 1. Cierra la ventana emergente del vídeo de Log Analytics que aparece.
 
@@ -48,7 +45,7 @@ En esta tarea, crearás instrucciones KQL básicas.
 
 >**Importante:** para cada consulta, borra la instrucción anterior de la ventana Consulta o abra una nueva ventana de consulta seleccionando **+** después de la última pestaña abierta (hasta 25).
 
-1. En la siguiente instrucción se muestra el operador **search**, que busca en todas las columnas de la tabla el valor. 
+1. En la siguiente instrucción se muestra el operador **search**, que busca en todas las columnas de la tabla el valor.
 
 1. Cambia el *Intervalo de tiempo* por **Últimos 30 minutos** en la ventana de consulta.
 
@@ -97,7 +94,7 @@ En esta tarea, crearás instrucciones KQL básicas.
  
     ```
 
-1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar *variables*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
+1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar *variables*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**:
 
     ```KQL
     let timeOffset = 1h;
@@ -107,7 +104,7 @@ En esta tarea, crearás instrucciones KQL básicas.
     | where EventID != discardEventId
     ```
 
-1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar una *lista dinámica*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
+1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar una *lista dinámica*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**:
 
     ```KQL
     let suspiciousAccounts = datatable(account: string) [
@@ -121,7 +118,7 @@ En esta tarea, crearás instrucciones KQL básicas.
 
     >**Sugerencia:** puedes volver a dar formato a la consulta fácilmente seleccionando los puntos suspensivos (...) en la ventana Consulta y seleccionando **Dar formato a consulta**.
 
-1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar una *tabla dinámica*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
+1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar una *tabla dinámica*. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**:
 
     ```KQL
     let LowActivityAccounts =
@@ -332,7 +329,7 @@ En esta tarea, crearás instrucciones KQL de varias tablas.
     | summarize count() by Type
     ```
 
-1. La siguiente instrucción muestra el operador **join**, que combina las filas de dos tablas para formar una nueva tabla haciendo coincidir los valores de las columnas especificadas de cada tabla. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
+1. La siguiente instrucción muestra el operador **join**, que combina las filas de dos tablas para formar una nueva tabla haciendo coincidir los valores de las columnas especificadas de cada tabla. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**:
 
     ```KQL
     SecurityEvent  
@@ -388,6 +385,8 @@ En esta tarea, trabajarás con campos de cadena estructurados y no estructurados
     | parse EventText with * "resourceName=" resourceName ", totalSlices=" totalSlices:long * "sliceNumber=" sliceNumber:long * "lockTime=" lockTime ", releaseTime=" releaseTime:date "," * "previousLockTime=" previousLockTime:date ")" *  
     | project resourceName, totalSlices, sliceNumber, lockTime, releaseTime, previousLockTime
     ```
+
+>**Importante:** Las siguientes consultas actualmente no generan resultados en el entorno lademo usado para este laboratorio. Se han eliminado las entradas de la tabla *SigninLogs*. Sin embargo, las consultas KQL muestran conceptos y casos de uso importantes, así que tómate tu tiempo para revisarlas.
 
 1. En la siguiente instrucción se muestra cómo trabajar con campos **dinámicos**, que son especiales, ya que pueden asumir cualquier valor de otros tipos de datos. En este ejemplo, el campo DeviceDetail de la tabla SigninLogs es de tipo **dinámico**. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
 
@@ -445,4 +444,4 @@ En esta tarea, trabajarás con campos de cadena estructurados y no estructurados
     PrivLogins  
     ```
 
-## Has completado el laboratorio.
+## Has completado el laboratorio
