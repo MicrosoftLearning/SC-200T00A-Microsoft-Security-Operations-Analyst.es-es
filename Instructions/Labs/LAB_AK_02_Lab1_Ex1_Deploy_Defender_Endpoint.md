@@ -10,16 +10,13 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod2_L1_Ex1.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que está implementando Microsoft Defender para punto de conexión. El administrador tiene previsto incorporar algunos dispositivos para dar información sobre los cambios necesarios en los procedimientos de respuesta del equipo de SecOps.
+Es un analista de operaciones de seguridad que trabaja en una empresa que está implementando Microsoft Defender para punto de conexión. El administrador tiene previsto incorporar algunos dispositivos para dar información sobre los cambios necesarios en los procedimientos de respuesta del equipo de SecOps.
 
 Para empezar, inicializa el entorno de Defender para puntos de conexión. Debes empezar inicializando el entorno de Defender para puntos de conexión. Luego incorpora los dispositivos iniciales para la implementación mediante la ejecución del script de incorporación en los dispositivos. Configure la seguridad para el entorno. Por último crea grupos de dispositivos y asigna los dispositivos adecuados.
 
 >**Importante:** las máquinas virtuales de laboratorio se usan a través de diferentes módulos. GUARDA las máquinas virtuales. Si sales del laboratorio sin guardarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
 >**Nota:** asegúrate de que has completado correctamente la tarea 3 del módulo anterior.
-
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Deploy%20Microsoft%20Defender%20for%20Endpoint)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
-
 
 ### Tarea 1: inicialización de Microsoft Defender para puntos de conexión
 
@@ -29,7 +26,7 @@ En esta tarea, realizará la inicialización de Microsoft Defender para punto de
 
 1. Si aún no está en el portal de Microsoft Defender XDR, inicie el explorador Microsoft Edge.
 
-1. En el explorador Edge, vaya al portal de Microsoft Defender XDR en (https://security.microsoft.com).
+1. En el explorador Microsoft Edge, ve al portal de Defender XDR en <https://security.microsoft.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -37,9 +34,11 @@ En esta tarea, realizará la inicialización de Microsoft Defender para punto de
 
     >**Sugerencia:** la cuenta de correo electrónico del inquilino del administrador y la contraseña se pueden encontrar en la pestaña Recursos.
 
-1. En el portal de **Defender XDR**, en el menú de navegación, seleccione **Configuración** a la izquierda.
+1. En el portal de **Defender XDR**, en el menú de navegación de la izquierda, desplázate hacia abajo, expande la sección **Sistema** y selecciona **Configuración**.
 
-1. En la página de menú Configuración, selecciona **Detección de dispositivos**. 
+    >**Nota:** Puede que algunas versiones del portal no tengan la opción **Configuración** en la sección **Sistema**. La opción **Configuración** puede aparecer agrupada con *Informes* y *Auditoría*.
+
+1. En la página de menú Configuración, selecciona **Detección de dispositivos**.
 
     >**Nota:** si no ves la opción **Detección de dispositivos** en **Configuración**, cierra la sesión seleccionando el círculo superior derecho con las iniciales de la cuenta y selecciona **Cerrar sesión**. Otra opción que puedes intentar es actualizar la página con Ctrl+F5 o abrir la página en modo InPrivate. Vuelva a iniciar sesión con las credenciales de **Correo electrónico del inquilino**.
 
@@ -52,7 +51,7 @@ En esta tarea, realizará la inicialización de Microsoft Defender para punto de
 
 En esta tarea, incorporarás un dispositivo para Microsoft Defender para puntos de conexión mediante un script de incorporación.
 
-1. Selecciona **Configuración** en la barra de menús de la izquierda. Después, en la página Configuración, selecciona **Puntos de conexión**.
+1. En el portal de **Defender XDR**, en el menú de navegación de la izquierda, desplázate hacia abajo, expande la sección **Sistema** y selecciona **Configuración**; luego, en la página de Configuración, selecciona **Puntos de conexión**.
 
 1. Selecciona **Incorporación** en la sección Administración de dispositivos.
 
@@ -64,25 +63,25 @@ En esta tarea, incorporarás un dispositivo para Microsoft Defender para puntos 
 
     >**Sugerencia:** si el explorador bloquea la descarga, realiza una acción en el explorador para permitirla. En el Explorador Microsoft Edge, puedes ver el mensaje "*WindowsDefenderATPOnboardingPackage.zip no se descarga normalmente. Asegúrese de que confía en...*, selecciona el botón de puntos suspensivos (...) si es necesario y luego selecciona **Mantener**. En Microsoft Edge aparece un segundo elemento emergente con el mensaje "*Asegúrese de que confía en WindowsDefenderATPOnboardingPackage.zip antes de abrirlo*", selecciona **Mostrar más** para expandir las selecciones y selecciona **Mantener de todos modos**.
 
-
 1. Haz clic con el botón derecho en el archivo ZIP descargado y selecciona **Extraer todo...**, asegúrate de que la opción *Mostrar archivos extraídos cuando haya finalizado* esté marcada y selecciona **Extraer**.
 
 1. Haz clic con el botón derecho en el archivo extraído "WindowsDefenderATPLocalOnboardingScript.cmd" y selecciona **Propiedades**. Selecciona la casilla **Desbloquear** en la parte inferior derecha de las ventanas Propiedades y selecciona **Aceptar**.
 
-1. Haz clic con el botón derecho en el archivo extraído "WindowsDefenderATPLocalOnboardingScript.cmd" de nuevo y elige **Ejecutar como administrador**.  **Sugerencia:** si encuentras la ventana SmartScreen de Windows, selecciona **Más información** y elige **Ejecutar de todos modos**. 
-    
+1. Haz clic con el botón derecho en el archivo extraído "WindowsDefenderATPLocalOnboardingScript.cmd" de nuevo y elige **Ejecutar como administrador**.  **Sugerencia:** si encuentras la ventana SmartScreen de Windows, selecciona **Más información** y elige **Ejecutar de todos modos**.
+
 1. Cuando aparece la ventana "Control de cuentas de usuario", selecciona **Sí** para permitir que el script se ejecute y responde **Y** a la pregunta presentada por el script, y presiona **Entrar**. Cuando hayas terminado, deberías ver un mensaje en la pantalla de comandos que indica *Máquina incorporada correctamente en Microsoft Defender para puntos de conexión*.
 
 1. Presione cualquier tecla para continuar. Esto cierra la ventana del símbolo del sistema.
-
 
 ### Tarea 3: configurar roles
 
 En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
-1. En el portal de Microsoft Defender XDR, seleccione **Configuración** en la barra de menús de la izquierda y, a continuación, seleccione**Puntos de conexión**. 
+1. En la barra de menú izquierda del portal de Microsoft Defender XDR, expande la sección **Sistema**, selecciona **Configuración** y luego selecciona **Puntos de conexión**.
 
-1. En el área Permisos, selecciona **Roles**.
+    >**Nota:** Puede que algunas versiones del portal no tengan la opción **Configuración** en la sección **Sistema**. La opción **Configuración** puede aparecer agrupada con *Informes* y *Auditoría*.
+
+1. Selecciona **Roles** en la sección de permisos.
 
 1. Seleccione el botón **Activar roles**.
 
@@ -97,7 +96,7 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
 1. Seleccione **Siguiente**.
 
-1. Selecciona la pestaña **Grupos de usuarios asignados** en la parte superior. Selecciona **sg-IT** y luego selecciona **Agregar grupos seleccionados**. Asegúrate de que aparezca en *Grupos de usuarios de Azure AD con este rol*.
+1. En la página **Grupos de usuario asignado**, escribe **sg-IT** en el formulario *Filtrar grupos de usuarios* y luego selecciona **Agregar grupos seleccionados**. Asegúrate de que aparezca en *Grupos de usuarios de Azure AD con este rol*.
 
 1. Selecciona **Enviar** y después, **Listo** cuando termines.
 
@@ -107,7 +106,7 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
 En esta tarea, configurarás los grupos de dispositivos que permiten el control de acceso y la configuración de automatización.
 
-1. En el portal de Microsoft Defender XDR, seleccione **Configuración** en la barra de menús de la izquierda y, a continuación, seleccione**Puntos de conexión**. 
+1. En la barra de menú izquierda del portal de Microsoft Defender XDR, expande la sección **Sistema**, selecciona **Configuración** y luego selecciona **Puntos de conexión**.
 
 1. Selecciona **Grupos de dispositivos** en el área de permisos.
 
@@ -123,7 +122,7 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
 1. Seleccione **Siguiente**.
 
 1. En la pestaña Dispositivos, para la condición del sistema operativo, selecciona **Windows 10** y **Siguiente**.
- 
+
     >**Nota:** algunos proveedores de hospedaje de laboratorio pueden haber configurado imágenes de *Windows 11* para WIN1. Puedes seleccionar una de las dos opciones siguientes:
 
 1. En la pestaña Vista previa de dispositivos, el botón *Mostrar vista previa* podría mostrar la máquina virtual WIN1, pero lo más probable es que los datos no se hayan rellenado todavía. Seleccione **Siguiente** para continuar.

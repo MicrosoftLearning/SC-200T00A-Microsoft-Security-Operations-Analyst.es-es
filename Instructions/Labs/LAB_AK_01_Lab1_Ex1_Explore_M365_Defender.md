@@ -12,9 +12,7 @@ lab:
 
 Imagine que es un analista de operaciones de seguridad que trabaja en una empresa que está implementando Microsoft Defender XDR. Empieza por asignar directivas de seguridad preestablecidas usadas en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20Microsoft%20365%20Defender)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos.
-
->**Nota:** **Inquilinos de WWL: términos de uso** Si, como parte de un curso impartido por un instructor, se te facilita un inquilino, ten en cuenta que el inquilino está a tu disposición con el fin de apoyar los laboratorios prácticos en los cursos dirigidos por un instructor. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
+>**Nota:** **Inquilinos de WWL: términos de uso** Si, como parte de un curso impartido por un instructor, se te facilita un inquilino, ten en cuenta que el inquilino está a tu disposición con el fin de apoyar los laboratorios prácticos en los cursos dirigidos por un instructor. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no es apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
 
 
 ### Tarea 1: obtener tus credenciales de Microsoft 365
@@ -34,7 +32,7 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 1. Abre el explorador Microsoft Edge.
 
-1. En el navegador de Microsoft Edge, vaya al portal de Microsoft Defender XDR en (https://security.microsoft.com)).
+1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender XDR en (<https://security.microsoft.com>).
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -70,7 +68,7 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 1. Lee el contenido en *Revise y confirme los cambios* y selecciona **Confirmar** para aplicar los cambios y luego selecciona **Listo** para finalizar.
 
-    >**Nota:** si recibes el mensaje *"El URI https://outlook.office365.com/psws/service.svc/AntiPhishPolicy" no es válido para la operación PUT. El URI debe dirigir a un único recurso para las operaciones PUT".* simplemente selecciona **Aceptar** y **Cancelar** para volver a la página principal. Verás que la opción *La protección estándar está activada* está habilitada.
+    >**Nota:** si recibes el mensaje *"El URI <https://outlook.office365.com/psws/service.svc/AntiPhishPolicy>" no es válido para la operación PUT. El URI debe dirigir a un único recurso para las operaciones PUT".* simplemente selecciona **Aceptar** y **Cancelar** para volver a la página principal. Verás que la opción *La protección estándar está activada* está habilitada.
 
 1. En *Protección estricta*, selecciona **Administrar la configuración de protección**. **Sugerencia:** *protección estricta* se encuentra en "Correo electrónico y colaboración - Directivas y reglas - Directivas de amenazas - Directivas de seguridad preestablecidas".
 

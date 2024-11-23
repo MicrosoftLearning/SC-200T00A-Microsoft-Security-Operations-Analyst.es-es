@@ -14,13 +14,11 @@ Usted es un analista de operaciones de seguridad que trabaja en una empresa que 
 
 Para explorar las funcionalidades de mitigación de ataques de Defender para punto de conexión, comprobará la incorporación correcta de dispositivos e investigará alertas e incidentes creados durante ese proceso.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20attacks%20with%20Microsoft%20Defender%20for%20Endpoint)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos.
-
 ### Tarea 1: comprobar la incorporación de dispositivos
 
 En esta tarea, confirmarás que el dispositivo se ha incorporado correctamente y crearás una alerta de prueba.
 
-1. Si aún no está en el portal de Microsoft Defender XDR en el explorador Microsoft Edge, vaya a (https://security.microsoft.com) e inicie sesión como Administrador del inquilino.
+1. Si aún no estás en el portal de Microsoft Defender XDR en el explorador Microsoft Edge, ve a (<https://security.microsoft.com>) e inicia sesión como administrador del inquilino.
 
 1. En el menú de la izquierda, en el área **Recursos**, selecciona **Dispositivos**. Espere hasta que WIN1 aparezca en la página Dispositivos antes de continuar. De lo contrario, es posible que tengas que repetir esta tarea para ver las alertas que se generarán más adelante.
 
@@ -70,7 +68,7 @@ En esta tarea, investigará las alertas e incidentes generados por el script de 
 
 1. En **Información, actividad esperada**, selecciona **Pruebas de seguridad**.
 
-1. Agrega los comentarios, si quieres, y selecciona **Guardar** para actualizar el incidente y finalizar.
+1. Selecciona **Guardar** para actualizar el incidente y finalizar.
 
 1. Revisa el contenido de las pestañas *Ataque, Alertas, Activos, Investigaciones, Evidencia y Respuesta* y *Resumen*. Los dispositivos y los usuarios se encuentran en la pestaña *Recursos*. En un incidente real, la pestaña *Historia de ataque* muestra el *gráfico del incidente*. **Sugerencia:** Es posible que algunas pestañas estén ocultas debido al tamaño de la pantalla. Selecciona la pestaña de puntos suspensivos (...) para que aparezcan.
 
