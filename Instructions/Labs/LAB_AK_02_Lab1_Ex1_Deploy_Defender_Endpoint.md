@@ -26,7 +26,7 @@ En esta tarea, realizará la inicialización de Microsoft Defender para punto de
 
 1. Si aún no está en el portal de Microsoft Defender XDR, inicie el explorador Microsoft Edge.
 
-1. En el explorador Microsoft Edge, ve al portal de Defender XDR en <https://security.microsoft.com>.
+1. En el explorador Microsoft Edge, ve al portal de Defender XDR en (<https://security.microsoft.com>).
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -47,7 +47,7 @@ En esta tarea, realizará la inicialización de Microsoft Defender para punto de
     >**Sugerencia:** si no ves la opción, actualiza la página.
 
 
-### Tarea 2: incorporar un dispositivo.
+### Tarea 2: incorporar un dispositivo
 
 En esta tarea, incorporarás un dispositivo para Microsoft Defender para puntos de conexión mediante un script de incorporación.
 

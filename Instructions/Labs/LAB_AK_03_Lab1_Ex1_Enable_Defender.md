@@ -12,7 +12,7 @@ lab:
 
 Eres un analista de operaciones de seguridad que trabaja en una empresa que va a implementar la protección de cargas de trabajo en la nube con Microsoft Defender for Cloud. En este laboratorio, habilitarás Microsoft Defender for Cloud.
 
->**Nota:** Hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Enable%20Microsoft%20Defender%20for%20Cloud)** que le permite realizar sus propias selecciones a su entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
+>**Nota:** hay disponible una **[simulación de laboratorio interactiva](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Enable%20Microsoft%20Defender%20for%20Cloud)** que te permite realizar tus propias selecciones a tu entera discreción. Es posible que encuentre pequeñas diferencias entre la simulación interactiva y el laboratorio hospedado, pero las ideas y los conceptos básicos que se muestran son los mismos. 
 
 
 ### Tarea 1: acceder a Azure Portal y configuración de una suscripción
