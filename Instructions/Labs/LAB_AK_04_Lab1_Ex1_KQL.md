@@ -386,7 +386,7 @@ En esta tarea, trabajarás con campos de cadena estructurados y no estructurados
     | project resourceName, totalSlices, sliceNumber, lockTime, releaseTime, previousLockTime
     ```
 
->**Importante:** Las siguientes consultas actualmente no generan resultados en el entorno lademo usado para este laboratorio. Se han eliminado las entradas de la tabla *SigninLogs*. Sin embargo, las consultas KQL muestran conceptos y casos de uso importantes, así que tómate tu tiempo para revisarlas.
+>**Importante:** las siguientes consultas no generan actualmente resultados en el entorno lademo usado para este laboratorio. Se han eliminado las entradas de la tabla *SigninLogs*. Sin embargo, las consultas KQL muestran conceptos y casos de uso importantes, así que tómate tu tiempo para revisarlas.
 
 1. En la siguiente instrucción se muestra cómo trabajar con campos **dinámicos**, que son especiales, ya que pueden asumir cualquier valor de otros tipos de datos. En este ejemplo, el campo DeviceDetail de la tabla SigninLogs es de tipo **dinámico**. En la ventana de consulta, escribe la siguiente instrucción y selecciona **Ejecutar**: 
 
