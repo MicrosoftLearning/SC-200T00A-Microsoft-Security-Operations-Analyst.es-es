@@ -22,8 +22,6 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
   
-    >**Nota:** Selecciona la pestaña **Recursos** para el *Nombre de usuario* y la *Contraseña* para el laboratorio. Usa la cuenta **<LabUser-XXXXXXXX@LODSPRODXXX.onmicrosoft.com>** para este laboratorio.
-
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
 1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la contraseña de inquilino del administrador que ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Iniciar sesión**.
@@ -56,7 +54,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**. --->
 
-### Tarea 3: Reconocer el panel de Microsoft Defender for Cloud
+### Tarea 2: Describir el panel de Microsoft Defender for Cloud
 
 1. En la barra de búsqueda de Microsoft Azure Portal, escribe *Defender*, luego selecciona **Microsoft Defender for Cloud**.
 

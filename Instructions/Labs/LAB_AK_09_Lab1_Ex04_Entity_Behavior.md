@@ -20,6 +20,8 @@ Debes configurar Microsoft Sentinel para realizar el análisis de comportamiento
 
 En esta tarea, explorarás el análisis de comportamiento de entidades en Microsoft Sentinel.
 
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
 1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
@@ -30,7 +32,7 @@ En esta tarea, explorarás el análisis de comportamiento de entidades en Micros
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel.
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
 
 1. Selecciona la página **Comportamiento de la entidad**.
 
