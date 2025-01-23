@@ -22,15 +22,13 @@ Cree un área de trabajo de Log Analytics, incluida la opción de región. Obten
 
 1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
   
-    >**Nota:** Selecciona la pestaña **Recursos** en el *Nombre de usuario* y *Contraseña* en el laboratorio. Usa la cuenta **<LabUser-XXXXXXXX@LODSPRODXXX.onmicrosoft.com>** para este laboratorio.
-
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
 1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la contraseña de inquilino del administrador que ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Iniciar sesión**.
 
 1. En la barra de búsqueda de Azure Portal, escribe "Microsoft Sentinel" y luego selecciona
 
-1. Selecciona **+ Crear**.
+1. Seleccione **+ Create (+ Crear)**.
 
 1. Seleccione **Crear área de trabajo**.
 
