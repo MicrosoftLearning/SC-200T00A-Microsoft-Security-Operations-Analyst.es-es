@@ -20,6 +20,8 @@ Usted es un analista de operaciones de seguridad que trabaja en una empresa que 
 
 En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
 1. Abra el explorador Microsoft Edge.
@@ -32,7 +34,7 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel que has creado en la tarea anterior.
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
 
 1. Continúe con la siguiente tarea.
 
@@ -40,23 +42,19 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
-1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección **Administración de contenido** y selecciona **Centro de contenido**.
+   >**Importante:** para *habilitar* la sincronización bidireccional, revisa la ruta de aprendizaje 5, el ejercicio 1, la tarea 1 y selecciona **Configurar** en el menú de navegación de *Microsoft Defender for Cloud* para comprobar que se han incorporado todas las suscripciones de Azure aptas.
+
+1. En el menú de navegación de Microsoft Sentinel, desplázate hacia abajo hasta la sección **Gestión de contenidos** y selecciona **Centro de contenido**.
 
 1. En el *Centro de contenido*, busca la solución **Microsoft Defender for Cloud** y selecciónala en la lista.
 
-1. En la página de detalles de la solución *Microsoft Defender for Cloud*, seleccione **Instalar**.
-
-1. Cuando finalice la instalación, busque la solución **Microsoft Defender for Cloud** y selecciónela.
-
-1. En la página de detalles de la solución de *Microsoft Defender for Cloud*, seleccione **Administrar**
+1. En la página de detalles de la solución de *Microsoft Defender for Cloud*, selecciona **Administrar**.
 
     >**Nota:** la solución de *Microsoft Defender for Cloud* instala el conector de datos de *Microsoft Defender for Cloud basado en suscripciones (heredado)*, el conector de datos *Microsoft Defender for Cloud basado en inquilinos (versión preliminar)* y una regla analítica. El *conector de datos de Microsoft Defender for Cloud (versión preliminar* ) basado en inquilinos se usa cuando un inquilino tiene varias suscripciones.
 
 1. Selecciona la casilla del conector de datos *Microsoft Defender for Cloud basado en suscripciones (heredado)* y haz clic en **Abrir página del conector**.
 
 1. En la sección *Configuración*, en la pestaña *Instrucciones*, **selecciona** la casilla de la suscripción "Pase para Azure: Patrocinio" y desliza la opción **Estado** a la derecha.
-
-    >**Nota:** si vuelves a desconectado, revisa la Ruta de aprendizaje 3, Ejercicio 1, Tarea 1 para asignar los permisos adecuados a tu cuenta.
 
 1. El *estado* debe ser ahora **Conectado** y la "Sincronización bidireccional" debe estar *Habilitada*.
 
@@ -66,13 +64,11 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad de Azure*.
 
-1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Administración de contenido* y selecciona **Centro de contenido**.
+1. En el menú de navegación de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Gestión de contenidos* y selecciona **Centro de contenido**.
 
 1. En el *Centro de contenido*, busca la solución **Actividad de Azure** y selecciónala en la lista.
 
-1. En la página de solución *Actividad de Azure*, selecciona **Instalar**.
-
-1. Cuando se haya completado la instalación, selecciona **Siguiente**.
+1. En la página de detalles de la solución *Actividad de Azure*, selecciona **Administrar**.
 
     >**Nota:** la solución *Actividad de Azure* instala el conector de datos *Actividad de Azure*, 12 reglas analíticas, 14 consultas de búsqueda y 1 libro.
 

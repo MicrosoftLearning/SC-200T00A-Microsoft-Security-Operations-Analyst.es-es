@@ -20,6 +20,8 @@ Eres un analista de operaciones de seguridad que trabaja en una empresa que ha i
 
 En esta tarea, revisarás los analizadores de esquemas del registro que se incluyen con la implementación de Microsoft Sentinel.
 
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
 1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
@@ -30,7 +32,7 @@ En esta tarea, revisarás los analizadores de esquemas del registro que se inclu
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel.
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
 
 <!--- 1. In the Edge browser, open a new tab (Ctrl+T) and navigate to the Microsoft Sentinel GitHub ASIM page <https://github.com/Azure/Azure-Sentinel/tree/master/ASIM>.
 
@@ -50,7 +52,7 @@ En esta tarea, revisarás los analizadores de esquemas del registro que se inclu
 
 1. After the deployment completes return to the *Microsoft Sentinel* tab. --->
 
-1. En el menú izquierdo, en **General**, selecciona *Registros*.
+1. Selecciona **Registros** en la sección *General* del menú de navegación.
 
 1. Abre la hoja *Esquema y filtro*; para ello, selecciona **>>** si es necesario.
 

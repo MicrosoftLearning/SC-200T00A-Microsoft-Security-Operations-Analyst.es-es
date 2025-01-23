@@ -22,6 +22,8 @@ Eres un analista de operaciones de seguridad que trabaja en una empresa que ha i
 
 En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crearás una secuencia en vivo.
 
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
 1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
@@ -32,7 +34,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel.
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
 
 1. Selecciona **Registros**
 
@@ -136,7 +138,7 @@ En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de an
 
 1. Esto inicia el "Asistente de reglas de análisis". Para el tipo de pestaña *General*:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**Búsqueda de PowerShell NRT**|
     |Descripción|**Búsqueda de PowerShell NRT**|

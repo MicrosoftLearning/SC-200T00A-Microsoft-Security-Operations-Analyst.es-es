@@ -24,6 +24,8 @@ Las reglas de análisis buscan eventos o conjuntos de eventos específicos en tu
 
 En esta tarea, crearás una detección para el primer ataque del ejercicio anterior.
 
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
 1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
@@ -34,7 +36,7 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Selecciona el área de trabajo de Microsoft Sentinel.
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
 
 1. En la sección **Registros**, selecciona *General*.
 
@@ -71,7 +73,7 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. Se abre el Asistente para reglas de análisis. Para el tipo de pestaña *General*:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|RegKey de inicio|
     |Descripción|RegKey de inicio en c:\temp|
@@ -175,7 +177,7 @@ En esta tarea, crearás una detección para el segundo ataque del ejercicio ante
 
 1. Se abre el Asistente para reglas de análisis. Para el tipo de pestaña *General*:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**Agregación de usuario a administradores locales de SecurityEvent**|
     |Descripción|**Usuario agregado al grupo de administradores locales**|
