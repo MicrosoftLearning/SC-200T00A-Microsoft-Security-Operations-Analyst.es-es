@@ -13,7 +13,7 @@ La organización para la que trabajas quiere aumentar la eficacia y las capacida
 En este ejercicio, pasarás por la *primera experiencia de ejecución* de Microsoft Copilot Security para aprovisionar Copilot con una unidad computacional de seguridad (SCU).
 
 >**Nota:**  El entorno de este ejercicio es una simulación generada a partir del producto. Al ser una simulación limitada, es posible que los vínculos de alguna página no estén habilitados y que no se admiten las entradas de texto que se encuentren fuera del script especificado. Se mostrará el siguiente mensaje emergente: "Esta característica no está disponible dentro de la simulación".  Cuando esto ocurra, selecciona Aceptar y continúa con los pasos del ejercicio.  
-> :::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Captura de pantalla de la pantalla emergente que indica que esta característica no está disponible dentro de la simulación.":::
+> :::image type="content" source="../Media/simulation-pop-up-error.png" alt-text="Captura de pantalla de la pantalla emergente que indica que esta característica no está disponible dentro de la simulación.":::
 
 ### Tiempo estimado para completar este laboratorio: 45 minutos
 
@@ -103,7 +103,7 @@ En esta tarea, la exploración comienza en el menú Inicio.
 
 1. Para abrir el entorno simulado, seleccione este vínculo: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. Selecciona el icono de **Menú** ![icono de menú de inicio](../media/home-menu-icon.png), que a veces se conoce como icono de hamburguesa.
+1. Selecciona el icono de **Menú** ![icono de menú de inicio](../Media/home-menu-icon.png), que a veces se conoce como icono de hamburguesa.
 
 1. Seleccione **Mis sesiones** y anote las opciones disponibles.
     1. Seleccione reciente para ver las sesiones más recientes
@@ -174,7 +174,7 @@ La siguiente sección de la página de aterrizaje de Copilot gira en torno a las
 
 En el centro inferior de la página se encuentra la barra de indicaciones. La barra de indicaciones incluye las indicaciones y el icono de orígenes, que usted explora en esta tarea. En los ejercicios posteriores, escribirá las entradas directamente en la barra de indicaciones.
 
-1. En la barra de indicaciones puede seleccionar el icono de indicaciones para seleccionar una indicación integrada o una libro de indicaciones. Selecciona el **icono de indicaciones**![icono de indicaciones](../media/prompt-icon.png).
+1. En la barra de indicaciones puede seleccionar el icono de indicaciones para seleccionar una indicación integrada o una libro de indicaciones. Selecciona el **icono de indicaciones**![icono de indicaciones](../Media/prompt-icon.png).
     1. Seleccione **Ver todas las secuencias de consultas**
         1. Desplácese para ver todas las secuencias de consultas disponibles.
         1. Seleccione la **flecha atrás** junto a la barra de búsqueda para volver.
@@ -182,7 +182,7 @@ En el centro inferior de la página se encuentra la barra de indicaciones. La ba
         1. Desplácese para ver todas las secuencias de consultas disponibles.
         1. Seleccione la **flecha atrás** junto a la barra de búsqueda para volver.
 
-1. Selecciona el **icono de orígenes**![](../media/sources-icon.png).
+1. Selecciona el **icono de orígenes**![](../Media/sources-icon.png).
     1. El icono de orígenes abre la ventana Administrar orígenes. Desde aquí, puede acceder a complementos o archivos. La pestaña **Complementos** está seleccionada de forma predeterminada.
         1. Seleccione si desea ver todos los complementos, los que están habilitados (on) o los que están deshabilitados (off).
         1. Expanda o contraiga la lista de complementos personalizados de Microsoft o de otros fabricantes.
@@ -246,13 +246,15 @@ Este ejercicio debería tardar en completarse **30** minutos aproximadamente.
 
 #### Subarea 3: explorar el análisis de scripts
 
-1. Vamos a centrarnos en la historia de alertas. Selecciona **Maximizar ![icono de maximizar](../media/maximize-icon.png)**, situado en el panel principal de la alerta, justo debajo de la tarjeta que lleva la etiqueta "partycity\jonaw" para obtener una mejor vista del árbol de procesos. Desde la vista maximizada, comienza a obtener una vista más clara de cómo llegó a ser este incidente. Muchos elementos de línea indican que powershell.exe ejecutaron un script. Dado que el usuario Jonathan Wolcott es un ejecutivo de cuentas, es razonable suponer que la ejecución de scripts de PowerShell no es algo que es probable que este usuario esté haciendo con regularidad.
+1. Vamos a centrarnos en la historia de alertas. Selecciona **Maximizar ![icono de maximizar](../Media/maximize-icon.png)**, situado en el panel principal de la alerta, justo debajo de la tarjeta que lleva la etiqueta "partycity\jonaw" para obtener una mejor vista del árbol de procesos. Desde la vista maximizada, comienza a obtener una vista más clara de cómo llegó a ser este incidente. Muchos elementos de línea indican que powershell.exe ejecutaron un script. Dado que el usuario Jonathan Wolcott es un ejecutivo de cuentas, es razonable suponer que la ejecución de scripts de PowerShell no es algo que es probable que este usuario esté haciendo con regularidad.
 
 1. Expanda la primera instancia de **powershell.exe ejecutar un script**, es la que muestra la marca de tiempo de 4:57:11 a. m. Copilot tiene la capacidad de analizar scripts. Seleccione **Analizar**.
     1. Copilot genera un análisis del script y sugiere que podría ser un intento de suplantación de identidad (phishing) o se usa para entregar una vulnerabilidad de seguridad basada en web.
     1. Seleccione **Mostrar código**. El código muestra una dirección URL desfangada.
 
 1. Hay otros elementos que indican powershell.exe ejecutar un script. Expanda la etiqueta **powershell.exe -EncodedCommand...** con la marca de tiempo 5:00:47 AM. El script original estaba codificado en base 64, pero Defender lo ha descodificado. Para la versión descodificada, seleccione **Analizar**. El análisis resalta la sofisticación del script usado en este ataque.
+
+    >**Nota:** la marca de tiempo se ajustará para reflejar la zona horaria del explorador del usuario. La zona horaria de la simulación se establece en Hora del Pacífico.
 
 1. Cierre la página del artículo de alertas seleccionando la **X** (la X situada a la izquierda del panel de Copilot). Ahora use la ruta de navegación para volver al incidente. Seleccione **El ataque de ransomware operado por humanos se lanzó desde un activo comprometido (interrupción del ataque)**.
 
@@ -274,15 +276,15 @@ Esta tarea es compleja y requiere la participación de más analistas de alto ni
 
 1. Seleccione los puntos suspensivos junto al resumen de incidentes de Copilot y seleccione **Abrir en Copilot para seguridad**.
 
-1. Copilot se abre en la experiencia independiente y muestra el resumen de incidentes. También puede ejecutar más mensajes. En este caso, ejecutará la secuencia de indicaciones para un incidente. Selecciona el **icono de indicación**![icono de indicación](../media/prompt-icon.png). 
+1. Copilot se abre en la experiencia independiente y muestra el resumen de incidentes. También puede ejecutar más mensajes. En este caso, ejecutará la secuencia de indicaciones para un incidente. Selecciona el **icono de indicación**![icono de indicación](../Media/prompt-icon.png). 
     1. Seleccione **Ver todos los mensajes**.
     1. Seleccione **Investigación de incidentes**de Microsoft 365 Defender.
     1. La página del libro de mensajes se abre y solicita el identificador de incidente de Defender. Escriba **30342** y seleccione **Ejecutar**.
     1. Revise la información que se proporciona. Al dinamizar la experiencia independiente y ejecutar el promptbook, la investigación puede invocar funcionalidades desde una solución de seguridad de conjunto más amplia, más allá de solo Defender XDR, en función de los complementos habilitados.
 
-1. Selecciona el **icono de cuadro ![icono de cuadro](../media/box-icon.png)** situado junto al icono de anclaje para seleccionar todas las indicaciones y las respuestas correspondientes y, después, selecciona el **icono de anclaje![icono de anclaje](../media/pin-icon.png)** para guardar esas respuestas en el panel de anclaje.
+1. Selecciona el **icono de cuadro ![icono de cuadro](../Media/box-icon.png)** situado junto al icono de anclaje para seleccionar todas las indicaciones y las respuestas correspondientes y, después, selecciona el **icono de anclaje![icono de anclaje](../Media/pin-icon.png)** para guardar esas respuestas en el panel de anclaje.
 
-1. El panel de anclaje se abre automáticamente. La placa de anclaje contiene los mensajes y respuestas guardados, junto con un resumen de cada uno. Para abrir y cerrar el panel de anclaje, selecciona el **icono de panel de anclaje ![icono de panel de anclaje](../media/pinboard-icon.png)**.
+1. El panel de anclaje se abre automáticamente. La placa de anclaje contiene los mensajes y respuestas guardados, junto con un resumen de cada uno. Para abrir y cerrar el panel de anclaje, selecciona el **icono de panel de anclaje ![icono de panel de anclaje](../Media/pinboard-icon.png)**.
 
 1. En la parte superior de la página, seleccione **Compartir** para ver las opciones. Al compartir el incidente a través de un vínculo o correo electrónico, las personas de su organización con acceso a Copilot pueden ver esta sesión. Cierre la ventana seleccionando la **X**.
 
