@@ -18,7 +18,7 @@ Vas a simular los ataques que usarás más adelante para detectar e investigar e
 
 ### Tarea 1: ataque de persistencia con adición de clave del registro
 
->**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
+>**Importante:** los pasos siguientes se realizan en una máquina diferente de aquella en la que estabas trabajando anteriormente. Busca el nombre de máquina virtual en la pestaña de referencias.
 
 En esta tarea, realizarás ataques en el host conectado a Azure Arc que tiene configurado el agente de Azure Monitor.
 
@@ -123,6 +123,5 @@ En esta tarea, realizarás ataques en el host conectado a Azure Arc que tiene co
     ```
 
 >**Importante:** no cierres estas ventanas. Deja que este script de PowerShell se ejecute en segundo plano. El comando debe generar entradas de registro durante algunas horas. Puedes continuar con la siguiente tarea y los ejercicios siguientes mientras se ejecuta este script. Los datos creados por esta tarea se usarán en el laboratorio de búsqueda de amenazas más adelante. Este proceso no creará cantidades considerables de datos o procesamiento.
-
 
 ## Continúa con el ejercicio 7

@@ -12,9 +12,45 @@ Eres un analista de operaciones de seguridad que trabaja en una compañía que e
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 5 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
-### Tiempo estimado para completar este laboratorio: 15 minutos
+### Tiempo estimado para completar este laboratorio: 25 minutos
 
-### Tarea 1: Habilitar Microsoft Defender for Cloud
+### Tarea 1: conectar a un servidor local
+
+En esta tarea, conectarás un servidor local a tu suscripción a Azure. Azure Arc se instaló previamente en este servidor. El servidor se usará en los ejercicios siguientes para proporcionar un recurso para aplicar estándares de cumplimiento y protecciones de cargas de trabajo.
+
+>**Importante:** los pasos siguientes se realizan en una máquina diferente de aquella en la que estabas trabajando anteriormente. Busca el nombre de máquina virtual en la pestaña de referencias.
+
+1. Inicia sesión en la máquina virtual **WINServer** como administrador con la contraseña: **Passw0rd!** si es necesario.  
+
+Como se ha descrito anteriormente, Azure Arc se ha instalado previamente en la máquina **WINServer**. Ahora conectarás esta máquina a tu suscripción a Azure.
+
+1. En la máquina *WINServer*, selecciona el icono de *búsqueda* y escribe **cmd**.
+
+1. En los resultados de la búsqueda, haz clic con el botón derecho en *Símbolo del sistema* y selecciona **Ejecutar como administrador**.
+
+1. En la ventana del símbolo del sistema, escribe el comando siguiente. *No presiones Entrar*:
+
+    ```cmd
+    azcmagent connect -g "defender-RG" -l "EastUS" -s "Subscription ID string"
+    ```
+
+1. Reemplaza la **cadena de Id. de suscripción** por el *Id. de suscripción* proporcionado por el host de laboratorio (pestaña*Recursos). Asegúrate de mantener las comillas.
+
+1. Escribe **Entrar** para ejecutar el comando (esto puede tardar un par de minutos).
+
+    >**Nota**: si ves la ventana de selección del explorador *¿Cómo deseas abrir esto?*, selecciona **Microsoft Edge**.
+
+1. En el cuadro de diálogo *Iniciar sesión*, escribe tu **Correo electrónico de inquilino** y **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y selecciona **Iniciar sesión**. Espera al mensaje *Autenticación completa*, cierra la pestaña del explorador y vuelve a la ventana del *símbolo del sistema*.
+
+1. Cuando se complete la ejecución de los comandos, deja abierta la ventana del *símbolo del sistema* y escribe el siguiente comando para confirmar que la conexión se realizó correctamente:
+
+    ```cmd
+    azcmagent show
+    ```
+
+1. En la salida del comando, comprueba que el *estado del agente* sea **Conectado**.
+
+### Tarea 2: Habilitar Microsoft Defender for Cloud
 
 En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
@@ -54,7 +90,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**. --->
 
-### Tarea 2: Describir el panel de Microsoft Defender for Cloud
+### Tarea 3: Reconocer el panel de Microsoft Defender for Cloud
 
 1. En la barra de búsqueda de Microsoft Azure Portal, escribe *Defender*, luego selecciona **Microsoft Defender for Cloud**.
 
