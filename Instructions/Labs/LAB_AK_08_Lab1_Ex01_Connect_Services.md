@@ -42,7 +42,7 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
-   >**Importante:** para *habilitar* la sincronización bidireccional, revisa la ruta de aprendizaje 5, el ejercicio 1, la tarea 1 y selecciona **Configurar** en el menú de navegación de *Microsoft Defender for Cloud* para comprobar que se han incorporado todas las suscripciones de Azure aptas.
+   <!--- >>**Important:** To *Enable* Bi-directional sync, please rerun  **[Lab 05 Exercise 1](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_05_Lab1_Ex01_Enable_MDC.html)**, Task 2, and select **Setup** from the *Microsoft Defender for Cloud* navigation menu to verify all eligible Azure subscriptions are onboarded. --->
 
 1. En el menú de navegación de Microsoft Sentinel, desplázate hacia abajo hasta la sección **Gestión de contenidos** y selecciona **Centro de contenido**.
 
@@ -54,9 +54,15 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Selecciona la casilla del conector de datos *Microsoft Defender for Cloud basado en suscripciones (heredado)* y haz clic en **Abrir página del conector**.
 
-1. En la sección *Configuración*, en la pestaña *Instrucciones*, **selecciona** la casilla de la suscripción "Pase para Azure: Patrocinio" y desliza la opción **Estado** a la derecha.
+1. En la sección *Configuración*, **selecciona** la casilla de *MOC Subscription-XXXXXXXXXXX* y selecciona el vínculo **Conectar** o desliza la opción **Estado** a la derecha.
 
-1. El *estado* debe ser ahora **Conectado** y la "Sincronización bidireccional" debe estar *Habilitada*.
+1. Para habilitar la sincronización bidireccional, selecciona el vínculo **Habilitar Microsoft Defender para todas las suscripciones**.
+
+1. En la página *Microsoft Defender for Cloud - Introducción*, la casilla de *MOC Subscription-XXXXXXXXXXX* debe estar seleccionada y el *plan de Microsoft Defender* debe mostrar *Activo - Parcial (30 días de prueba restantes).*
+
+1. A continuación, selecciona el botón **X (Cerrar)** de la esquina superior derecha para cerrar la página *Introducción*. Debes regresar a la página de configuración de *Microsoft Defender for Cloud*.
+
+1. El *Estado* para *MOC Subscription-XXXXXXXXXXX* debe ser ahora **Conectado** y la *sincronización bidireccional* debe ser *Habilitada*.
 
     <!--- 1. Scroll down and under the *Create incidents - Recommended!* area, verify that *Create incidents automatically from all alerts generated in this connected service* is **Enabled**. --->
 
@@ -76,7 +82,7 @@ En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad 
 
 1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
 
-1. En la pestaña **Aspectos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona la suscripción "Pase para Azure: Patrocinio" en la lista desplegable y haz clic en **Seleccionar**.
+1. En la pestaña **Datos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona tu suscripción *MOC Subscription-XXXXXXXXXXX* en la lista desplegable y haz clic en **Seleccionar**.
 
 1. Seleccione la pestaña **Parámetros** y elija el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
 

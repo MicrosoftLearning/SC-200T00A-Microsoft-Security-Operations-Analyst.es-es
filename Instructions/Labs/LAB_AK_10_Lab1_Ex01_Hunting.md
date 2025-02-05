@@ -14,23 +14,167 @@ Eres un analista de operaciones de seguridad que trabaja en una empresa que ha i
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 10 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
->**Nota:** los datos de registro creados en los ejercicios de laboratorio en la ruta de aprendizaje 9 no estarán disponibles en este laboratorio sin volver a ejecutar las tareas 1 y 2 del ejercicio 5 y volver a ejecutar el *Ataque 3* en el servidor WIN1 del ejercicio 6. Puedes abrir esas instrucciones en una nueva pestaña del explorador. Para ello, selecciona estos vínculos:
+Los datos de registro creados en los ejercicios de laboratorio de la Ruta de aprendizaje 9 no estarán disponibles en este laboratorio sin volver a ejecutar las tareas de requisito previo.
 
-**[Laboratorio 09, Ejercicio 5](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_09_Lab1_Ex05_Attacks.html)**
+<!--- **[Lab 09 Exercise 5](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_09_Lab1_Ex05_Attacks.html)**
 
-**[Laboratorio 09, Ejercicio 6](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_09_Lab1_Ex06_Perform_Attacks.html)**
+**[Lab 09 Exercise 6](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_09_Lab1_Ex06_Perform_Attacks.html)** --->
 
-### Tiempo estimado para completar este laboratorio: 40 minutos
+### Tiempo estimado para completar este laboratorio: 45 - 60 minutos
+
+### Tarea de requisito previo 1: conectar a un servidor local
+
+En esta tarea, conectarás un servidor local a tu suscripción a Azure. Azure Arc se instaló previamente en este servidor. El servidor se utilizará en ejercicios posteriores para ejecutar ataques simulados que detectarás e investigarás más adelante en Microsoft Sentinel.
+
+>**Importante:** los pasos siguientes se realizan en una máquina diferente de aquella en la que estabas trabajando anteriormente. Busca el nombre de máquina virtual en la pestaña de referencias.
+
+1. Inicia sesión en la máquina virtual **WINServer** como administrador con la contraseña: **Passw0rd!** si es necesario.  
+
+Como se ha descrito anteriormente, Azure Arc se ha instalado previamente en la máquina **WINServer**. Ahora conectarás esta máquina a tu suscripción a Azure.
+
+1. En la máquina *WINServer*, selecciona el icono de *búsqueda* y escribe **cmd**.
+
+1. En los resultados de la búsqueda, haz clic con el botón derecho en *Símbolo del sistema* y selecciona **Ejecutar como administrador**.
+
+1. En la ventana del símbolo del sistema, escribe el comando siguiente. *No presiones Entrar*:
+
+    ```cmd
+    azcmagent connect -g "defender-RG" -l "EastUS" -s "Subscription ID string"
+    ```
+
+1. Reemplaza la **cadena de Id. de suscripción** por el *Id. de suscripción* proporcionado por el host de laboratorio (pestaña*Recursos). Asegúrate de mantener las comillas.
+
+1. Escribe **Entrar** para ejecutar el comando (esto puede tardar un par de minutos).
+
+    >**Nota**: si ves la ventana de selección del explorador *¿Cómo deseas abrir esto?*, selecciona **Microsoft Edge**.
+
+1. En el cuadro de diálogo *Iniciar sesión*, escribe tu **Correo electrónico de inquilino** y **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y selecciona **Iniciar sesión**. Espera al mensaje *Autenticación completa*, cierra la pestaña del explorador y vuelve a la ventana del *símbolo del sistema*.
+
+1. Cuando se complete la ejecución de los comandos, deja abierta la ventana del *símbolo del sistema* y escribe el siguiente comando para confirmar que la conexión se realizó correctamente:
+
+    ```cmd
+    azcmagent show
+    ```
+
+1. En la salida del comando, comprueba que el *estado del agente* sea **Conectado**.
+
+## Tarea de requisito previo 2: conectar una máquina Windows que no es de Azure
+
+En esta tarea, agregarás una máquina local de Azure Arc conectada a Microsoft Sentinel.  
+
+>**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
+1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
+
+1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
+
+1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
+
+1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Iniciar sesión**.
+
+1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
+
+1. Selecciona **defenderWorkspace** de Microsoft Sentinel.
+
+1. En el menú de navegación izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Configuración* y selecciona **Conectores de datos**.
+
+1. En los *Conectores de datos*, busca la solución **Eventos de seguridad de Windows vía AMA** y selecciónala en la lista.
+
+1. En el panel de detalles de *Eventos de seguridad de Windows vía AMA*, selecciona la **página Abrir conector**.
+
+    >**Nota:** la solución *Eventos de seguridad de Windows* instala los *eventos de seguridad de Windows a través de AMA* y los *Eventos de seguridad a través del agente heredado*. Además de 2 libros, 20 reglas analíticas y 43 consultas de búsqueda.
+
+1. En la sección *Configuración*, en la pestaña *Instrucciones*, selecciona **Crear regla de recopilación de datos**.
+
+1. Escribe **AZWINDCR** como Nombre de regla y luego selecciona **Siguiente: recursos**.
+
+1. Expande tu *Suscripción* en *Ámbito* en la pestaña *Recursos*.
+
+    >**Sugerencia:** puede expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
+
+1. Expande el grupo de recursos **defender-RG** y luego selecciona **WINServer**.
+
+1. Selecciona **Siguiente: Recopilar** y deja seleccionada la opción *Todos los eventos de seguridad*.
+
+1. Seleccione **Siguiente: Review + create** (Revisar y crear).
+
+1. Una vez que aparezca **Validación superada**, selecciona *Crear*.
+
+### Tarea de requisito previo 3: ataque de comando y control con DNS
+
+1. Copia y ejecuta este comando para crear un script que simulará una consulta DNS en un servidor C2:
+
+    ```CommandPrompt
+    notepad c2.ps1
+    ```
+
+1. Selecciona **Sí** para crear un nuevo archivo y copia el siguiente script de PowerShell en *c2.ps1*.
+
+    >**Nota:** Es posible que, al pegar en el archivo de máquina, se muestre la longitud completa del script. Asegúrate de que el script coincida con las instrucciones del archivo *c2.ps1*.
+
+    ```PowerShell
+    param(
+        [string]$Domain = "microsoft.com",
+        [string]$Subdomain = "subdomain",
+        [string]$Sub2domain = "sub2domain",
+        [string]$Sub3domain = "sub3domain",
+        [string]$QueryType = "TXT",
+        [int]$C2Interval = 8,
+        [int]$C2Jitter = 20,
+        [int]$RunTime = 240
+    )
+    $RunStart = Get-Date
+    $RunEnd = $RunStart.addminutes($RunTime)
+    $x2 = 1
+    $x3 = 1 
+    Do {
+        $TimeNow = Get-Date
+        Resolve-DnsName -type $QueryType $Subdomain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+        if ($x2 -eq 3 )
+        {
+            Resolve-DnsName -type $QueryType $Sub2domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+            $x2 = 1
+        }
+        else
+        {
+            $x2 = $x2 + 1
+        }    
+        if ($x3 -eq 7 )
+        {
+            Resolve-DnsName -type $QueryType $Sub3domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
+            $x3 = 1
+        }
+        else
+        {
+            $x3 = $x3 + 1
+        }
+        $Jitter = ((Get-Random -Minimum -$C2Jitter -Maximum $C2Jitter) / 100 + 1) +$C2Interval
+        Start-Sleep -Seconds $Jitter
+    }
+    Until ($TimeNow -ge $RunEnd)
+    ```
+
+1. En el menú Bloc de notas, selecciona **Archivo** y luego **Guardar**. 
+
+1. En la ventana del símbolo del sistema, copia el siguiente comando y presiona Entrar. 
+
+    >**Nota:** verás errores de resolución de DNS. Se espera que esto sea así.
+
+    ```CommandPrompt
+    Start PowerShell.exe -file c2.ps1
+    ```
+
+>**Importante:** no cierres estas ventanas. Deja que este script de PowerShell se ejecute en segundo plano. El comando debe generar entradas de registro durante algunas horas. Puedes continuar con la siguiente tarea y los ejercicios siguientes mientras se ejecuta este script. Los datos creados por esta tarea se usarán en el laboratorio de búsqueda de amenazas más adelante. Este proceso no creará cantidades considerables de datos o procesamiento.
 
 ### Tarea 1: crear una consulta de búsqueda
 
-En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crearás una secuencia en vivo.
+En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crearás una retransmisión en directo.
 
 >**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
+1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -116,11 +260,11 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 1. Selecciona la pestaña **Marcadores** en el panel central.
 
-1. Selecciona el marcador que acabas de crear en la lista de resultados.
+1. Selecciona el marcador que creaste en la lista de resultados.
 
 1. En el panel derecho, desplázate hacia abajo y selecciona el botón **Investigar**. **Sugerencia:** puede tardar un par de minutos en mostrar el gráfico de investigación.
 
-1. Explora el gráfico de investigación al igual que lo hiciste con el módulo anterior. Observa el gran número de *Alertas relacionadas* para *WINServer*.
+1. Explora el gráfico de investigación al igual que hiciste en el módulo anterior. Observa el gran número de *Alertas relacionadas* para *WINServer*.
 
 1. Cierra la ventana del gráfico *Investigación* seleccionando la **X** de la esquina superior derecha de la ventana. 
 
@@ -134,7 +278,7 @@ En esta tarea, crearás una consulta de búsqueda, marcarás un resultado y crea
 
 ### Tarea 2: crear una regla de consulta NRT
 
-En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de análisis NRT. Las reglas NRT se ejecutan cada minuto y retroceden un minuto. Una ventaja de las reglas NRT es que pueden usar la lógica de creación de alertas e incidentes.
+En esta tarea, en lugar de usar una retransmisión en directo, crearás una regla de consulta de análisis NRT. Las reglas NRT se ejecutan cada minuto y retroceden un minuto. Una ventaja de las reglas NRT es que pueden usar la lógica de creación de alertas e incidentes.
 
 1. Selecciona la página **Análisis** en *Configuración* en Microsoft Sentinel. 
 
@@ -187,7 +331,7 @@ En esta tarea, en lugar de usar LiveStream, crearás una regla de consulta de an
 
 En esta tarea, usarás un trabajo de búsqueda para buscar un C2.
 
-<!--- >**Note:** The *Restore* operation incurs costs that can deplete your Azure Pass subscription credits. For that reason, you will not be performing the restore operation in this lab. However, you can follow the steps below to perform the restore operation in your own environment. --->
+**Nota:** la operación *Restaurar* incurre en costes que pueden agotar los créditos de suscripción a Azure. Por este motivo, no realizarás la operación de restauración en este laboratorio. Pero puedes hacer lo siguiente para realizar la operación de restauración en tu propio entorno.
 
 1. Selecciona la página **Buscar** en *General* en Microsoft Sentinel.
 
@@ -258,7 +402,7 @@ En esta tarea, usarás un trabajo de búsqueda para buscar un C2.
     - Expande Administración de amenazas.
     - Selecciona Búsqueda.
     - Selecciona Añadir filtro.
-    - Establece el filtro en tactics:persistence.
+    - Establece el filtro en tácticas: persistencia.
     - Añade otro filtro.
     - Establece el segundo filtro para que tenga las técnicas: T1098.
 
