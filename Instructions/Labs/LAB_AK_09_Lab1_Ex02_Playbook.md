@@ -60,6 +60,8 @@ En esta tarea, crearás una aplicación lógica que se usa como cuaderno de estr
 
 En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con la información de conexión adecuada.
 
+1. Cuando se complete la tarea anterior, debes estar en la página *Defender_XDR_Ransomware_Playbook_SecOps-Tasks | Diseñador de aplicación lógica*. Si no lo estás, completa los pasos 1 a 5 siguientes.
+
 1. En la barra de búsqueda de Azure Portal, escribe Sentinel y luego selecciona Microsoft Sentinel.
 
 1. Selecciona el área de trabajo de Microsoft Sentinel.
@@ -68,9 +70,9 @@ En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con
 
 1. Selecciona Actualizar en la barra de comandos en caso de que no veas ningún cuaderno de estrategias. Debería ver el cuaderno de estrategias creado a partir del paso anterior.
 
-1. Selecciona el nombre del cuaderno de estrategias **Defender_XDR_Ransomware_Playbook_SecOps_Tasks**.
+1. Selecciona el vínculo del nombre del cuaderno de estrategias **Defender_XDR_Ransomware_Playbook_SecOps_Tasks**.
 
-1. En la página Aplicación lógica de **Defender_XDR_Ransomware_Playbook_SecOps_Tasks**, en el menú de comandos, selecciona Editar.
+1. En la página del Diseñador de aplicación lógica de **Defender_XDR_Ransomware_Playbook_SecOps_Tasks**, en el menú de comandos, selecciona Editar.
 
     >**Nota:**: es posible que tengas que actualizar la página.
 
@@ -80,13 +82,13 @@ En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con
 
 1. Selecciona Agregar nuevo y selecciona Iniciar sesión. En la nueva ventana, selecciona las credenciales de administrador de la suscripción de Azure cuando se te solicite. La última línea del bloque ahora debería decir "Conectado a nombre-usuario-admin".
 
-1. A continuación, en la división lógica, selecciona Agregar tarea al incidente.
+<!--- 1. Below within the logic split (+ sign), select Add an action to incident.--->
 
 1. Seleccione Guardar en la barra de comandos. La aplicación lógica se usará en un laboratorio futuro.
 
 ### Tarea 3: Crear una regla de automatización
 
-1. En Microsoft Sentinel, ve a Automatización en Configuración.
+1. En Microsoft Sentinel, expande *Configuración* en el menú de navegación y selecciona *Automatización*.
 
 1. Selecciona Crear y elige Regla de automatización.
 
@@ -96,7 +98,7 @@ En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con
 
 1. Deja el nombre de la regla analítica como Todo.
 
-1. Haz clic en Agregar y elige Y.
+1. Selecciona **+ Agregar** y elige *Condición (AND)*.
 
 1. En el menú desplegable, selecciona Tácticas.
 
@@ -120,6 +122,6 @@ En esta tarea, actualizarás el nuevo cuaderno de estrategias que has creado con
 
 1. Seleccione **Aplicar** en la parte inferior.
 
-A partir de aquí, dependiendo de tu rol, seguirás haciendo más ejercicios de arquitecto o pasarás a los ejercicios de analista.
+Ahora has creado un cuaderno de estrategias y una regla de automatización en Microsoft Sentinel.
 
 ## Continúa con el ejercicio 3

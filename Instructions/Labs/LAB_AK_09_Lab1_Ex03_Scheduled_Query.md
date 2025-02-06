@@ -14,13 +14,47 @@ Las reglas de análisis buscan eventos o conjuntos de eventos específicos en tu
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 9 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
-### Tiempo estimado para completar este laboratorio: 30 minutos
-
-### Tarea 1: crear una consulta programada
-
-En esta tarea crearás una consulta programada y la conectarás al canal de Teams que creaste en el ejercicio anterior.
+### Tiempo estimado para completar este laboratorio: 45 minutos
 
 >**Nota:** Microsoft Sentinel se ha preimplementado en la suscripción a Azure con el nombre **defenderWorkspace** y se han instalado las soluciones de *Centro de contenido* necesarias.
+
+<!--- >>**Important:** To sucessfully complete this task you wil need to rerun Task 3 of **[Lab 08 Exercise 1](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_08_Lab1_Ex01_Connect_Services.html)** to connect the Azure Activity data connector. --->
+
+Para completar correctamente esta tarea, deberás completar las siguientes tareas de requisito previo.
+
+### Tarea de requisito previo: Conexión del conector de datos de actividad de Azure
+
+En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad de Azure*.
+
+1. En el menú de navegación de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Gestión de contenidos* y selecciona **Centro de contenido**.
+
+1. En el *Centro de contenido*, busca la solución **Actividad de Azure** y selecciónala en la lista.
+
+1. En la página de detalles de la solución *Actividad de Azure*, selecciona **Administrar**.
+
+    >**Nota:** la solución *Actividad de Azure* instala el conector de datos *Actividad de Azure*, 12 reglas analíticas, 14 consultas de búsqueda y 1 libro.
+
+1. Selecciona el conector de datos *Actividad de Azure* y luego selecciona **Abrir página del conector**.
+
+1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
+
+1. En la pestaña **Datos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona tu suscripción *MOC Subscription-XXXXXXXXXXX* en la lista desplegable y haz clic en **Seleccionar**.
+
+1. Seleccione la pestaña **Parámetros** y elija el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
+
+1. Seleccione la pestaña **Corrección** y active la casilla **Crear una tarea de corrección**. Esta acción aplicará la directiva a los recursos de Azure ya existentes.
+
+1. Seleccione el botón **Revisar y crear** para revisar la configuración.
+
+1. Seleccione **Crear** para finalizar.
+
+1. Espera a que el conector de datos de *actividad de Azure* muestre un estado *Conectado* antes de continuar.
+
+### Tarea 1: crear una regla de consulta programada
+
+En esta tarea, crearás una *regla de consulta programada de análisis de Microsoft Sentinel*.
+
+>**Nota:** las siguientes tareas funcionan mejor actualmente en el Portal de vista previa de Azure: <https://preview.portal.azure.com/>.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
@@ -38,7 +72,7 @@ En esta tarea crearás una consulta programada y la conectarás al canal de Team
 
 1. En la hoja de resumen de reglas, asegúrate de que recibes datos revisando el icono verde en *Orígenes de datos: actividad de Azure*.
 
-    >**Nota:** si no lo ves conectado, asegúrate de haber completado la tarea 3 del laboratorio de ruta de aprendizaje 6, ejercicio 1.
+    >**Nota:** Si no lo ves en un estado conectado y vuelves a realizar la Ruta de aprendizaje 8 Laboratorio, Ejercicio 1, Tarea 3, como se indicó anteriormente, es posible que tengas que esperar unos minutos para que se complete el proceso.
 
 1. Selecciona **Crear regla** para continuar.
 
@@ -113,7 +147,7 @@ En esta tarea probará la nueva regla de consulta programada.
 
 1. En la ventana *Le damos la bienvenida a Azure Cloud Shell*, seleccione **Powershell**.
 
-1. En la página *Introducción*, seleccione la **cuenta de almacenamiento de montaje** y, después, seleccione **Pase para Azure: patrocinio** en el elemento de menú desplegable *Suscripción de la cuenta de almacenamiento* y seleccione el botón **Aplicar**.
+1. En la página *Introducción*, selecciona **Montar cuenta de almacenamiento** y, después, selecciona tu **MOC Subscription-XXXXXXXXXXX** en el elemento de menú desplegable *suscripción de la cuenta de almacenamiento* y selecciona el botón **Aplicar**.
 
     >**Importante:** No seleccione la opción de botón de radio *No se requiere ninguna cuenta de almacenamiento*. Esto hará que se produzca un error en la creación del incidente.
 
