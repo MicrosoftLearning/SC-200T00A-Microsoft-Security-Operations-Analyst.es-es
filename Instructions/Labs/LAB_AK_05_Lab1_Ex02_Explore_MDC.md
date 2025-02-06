@@ -34,6 +34,8 @@ En esta tarea, revisarás la configuración de cumplimiento normativo en Microso
 
 1. En *Seguridad en la nube*, selecciona **Cumplimiento normativo** en los elementos de menú de la izquierda.
 
+    >**Nota:** es posible que tengas que actualizar esta página si no ves las pestañas de la *barra de herramientas*.
+
 1. Selecciona **Administrar estándares de cumplimiento** en la barra de herramientas.
 
 1. Selecciona tu suscripción.
@@ -56,29 +58,25 @@ En esta tarea, revisarás la configuración de cumplimiento normativo en Microso
 
     >**Nota:** es posible que quieras volver más adelante al *Cumplimiento normativo* para revisar los nuevos controles y recomendaciones estándar.
 
-### Tarea 2: explorar la posición de seguridad y las recomendaciones
+### Tarea 2: Explorar las recomendaciones de seguridad
 
-En esta tarea, revisarás la administración de la posición de seguridad en la nube.  La información de puntuación de seguridad puede tardar 24 horas en recalcularse. Se recomienda volver a realizar esta tarea en 24 horas.
+En esta tarea, revisarás las recomendaciones de administración de la posición de seguridad en la nube.
 
-1. En *Seguridad en la nube*, selecciona **Posición de seguridad** en los elementos de menú de la izquierda.
-
-1. La *puntuación de seguridad* tiene como valor predeterminado el *entorno de Azure*.
-
-1. En la pestaña *Entorno*, selecciona **Ver recomendaciones > vínculo **.
+1. En la sección *General*, selecciona **Recomendaciones** en el menú de navegación.
 
 1. Selecciona **Agregar filtro** y, después, selecciona **Tipo de recurso**.
 
 1. Activa la casilla **Máquinas: Azure Arc** y, a continuación, selecciona el botón **Aplicar**.
 
-    >**Nota:** si no ves **Máquinas: Azure Arc** en la lista, asegúrate de que has completado la ruta de aprendizaje 3: Laboratorio 1: Ejercicio 1 tarea 4..
+    >**Nota:** si no ves **Máquinas: Azure Arc** en la lista, actualiza la página.
 
-1. Selecciona cualquier recomendación en la que el estado no sea *"Completado"*.
+1. Selecciona cualquier recomendación cuyo estado no sea *Completado*. Es posible que tengas que desplazarte hacia la derecha para ver la columna *Estado*.
 
 1. Revisa la recomendación y, en la pestaña **Tomar acción** desplázate hacia abajo hasta **Delegado** y selecciona **Asignar propietario y establecer fecha de vencimiento**.
 
 1. En la ventana **Crear asignación**, deje *Tipo* establecido en *Defender for Cloud* y expande los detalles de **Asignación**.
 
-1. En el cuadro `Set owner`*dirección de correo electrónico*, escribe el correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
+1. En el cuadro *Dirección de correo electrónico*, escribe tu correo electrónico de administrador. **Sugerencia:** puedes copiarlo en las instrucciones de la pestaña *Recursos*.
 
 1. Explora las opciones *Establecer plazo de corrección* y *Establecer notificaciones por correo electrónico* y selecciona **Crear**.
 
@@ -114,4 +112,4 @@ En esta tarea, cargarás alertas de seguridad de ejemplo y revisarás los detall
 
     - Revisa la información *Realizar acción*. Examina las secciones disponibles para tomar medidas en función del tipo de alerta: Inspeccionar el contexto de recursos, Mitigar la amenaza, Evitar ataques futuros, Desencadenar respuesta automatizada y Suprimir alertas similares.
 
-## Has completado el laboratorio.
+## Has completado el laboratorio

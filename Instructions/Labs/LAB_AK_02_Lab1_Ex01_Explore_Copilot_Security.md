@@ -45,7 +45,7 @@ Una vez que se le haya asignado el rol Administrador de acceso de usuario en Azu
 1. Ahora que puede ver todos los recursos y asignar acceso en cualquier suscripción o grupo de administración del directorio, asígnese el rol Propietario para la suscripción de Azure.
     1. En el banner azul de la parte superior de la página, seleccione **Microsoft Azure** para volver a la página de aterrizaje de Azure Portal.
     1. Seleccione **Suscripciones**, a continuación, seleccione la suscripción **Woodgrove - GTP Demos (Exernal/Sponsored)**.
-    1. Seleccione **Control de acceso (IAM)**.
+    1. Seleccione **Access Control (IAM)** .
     1. Seleccione **Agregar** y, a continuación, **Agregar asignación de roles**.
     1. En la pestaña Rol, seleccione **roles de administrador con privilegios**.
     1. Seleccione **Propietario** y, después, **Siguiente**.
@@ -79,11 +79,11 @@ En este ejercicio, aprovisiona la capacidad a través de Security Copilot. Cuand
     1. Seleccione la casilla **Reconozco que he leído, comprendido y acepto los Términos y Condiciones**.
     1. Seleccione **Continuar** en la esquina inferior derecha de la página.
 
-1. El asistente muestra información sobre dónde se almacenarán los datos del cliente. La región que se muestra se basa en la región seleccionada en el campo Evaluación del aviso. Selecciona **Continuar**.
+1. El asistente muestra información sobre dónde se almacenarán los datos del cliente. La región que se muestra se basa en la región seleccionada en el campo Evaluación del aviso. Seleccione **Continuar**.
 
-1. Puede seleccionar opciones para ayudar a mejorar Copilot. Puede seleccionar el botón de alternancia en función de sus preferencias.  Selecciona **Continuar**.
+1. Puede seleccionar opciones para ayudar a mejorar Copilot. Puede seleccionar el botón de alternancia en función de sus preferencias.  Seleccione **Continuar**.
 
-1. Como parte de la configuración inicial, Copilot proporciona acceso de colaborador a todos los usuarios de manera predeterminada e incluye administradores globales y administradores de seguridad como propietarios de Copilot. En el entorno de producción, puede cambiar quién tiene acceso a Copilot una vez que haya completado la configuración inicial. Selecciona **Continuar**.
+1. Como parte de la configuración inicial, Copilot proporciona acceso de colaborador a todos los usuarios de manera predeterminada e incluye administradores globales y administradores de seguridad como propietarios de Copilot. En el entorno de producción, puede cambiar quién tiene acceso a Copilot una vez que haya completado la configuración inicial. Seleccione **Continuar**.
 1. ¡Ya está a punto! Seleccione **Finalizar**.
 1. Cierre la pestaña del explorador, ya que el ejercicio siguiente usará un vínculo independiente al entorno similar al laboratorio.
 
@@ -134,7 +134,7 @@ En esta tarea, la exploración comienza en el menú Inicio.
     1. Seleccione el filtro de fecha para ver las opciones disponibles.
     1. Seleccione el icono de menú inicio para abrir el menú principal.
 
-1. Seleccione **Configuración**.
+1. Haga clic en **Configuración**.
     1. Seleccione las preferencias. Desplácese hacia abajo para ver las opciones disponibles.
     1. Seleccione datos y privacidad.
     1. Seleccione Acerca de.
@@ -274,7 +274,7 @@ Esta tarea es compleja y requiere la participación de más analistas de alto ni
 
 1. Vuelva a la página del incidente seleccionando la pestaña **Historia de ataque** en la parte superior de la página.
 
-1. Seleccione los puntos suspensivos junto al resumen de incidentes de Copilot y seleccione **Abrir en Copilot para seguridad**.
+1. Seleccione los puntos suspensivos junto al resumen de incidentes de Copilot y seleccione **Abrir en Security Copilot**.
 
 1. Copilot se abre en la experiencia independiente y muestra el resumen de incidentes. También puede ejecutar más mensajes. En este caso, ejecutará la secuencia de indicaciones para un incidente. Selecciona el **icono de indicación**![icono de indicación](../Media/prompt-icon.png). 
     1. Seleccione **Ver todos los mensajes**.
