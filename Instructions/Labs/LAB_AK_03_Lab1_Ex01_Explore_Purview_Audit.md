@@ -20,7 +20,7 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 1. Abre el explorador Microsoft Edge.
 
-1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender XDR en (<https://security.microsoft.com>).
+1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender XDR en <https://security.microsoft.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -30,7 +30,9 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 1. En el panel **Más recursos**, selecciona el botón **Abrir** en el icono de *Microsoft Purview portal*.
 
-1. Cuando se abra Microsoft Purview portal, aparecerá un mensaje sobre el *nuevo Microsoft Purview portal* en la pantalla. Selecciona la opción para aceptar los términos de divulgación del flujo de datos y la declaración de privacidad y, después, selecciona **Probar ahora**.
+1. Cuando se abra Microsoft Purview portal, aparece un mensaje que indica que *se retira el portal de cumplimiento*. Este mensaje expirará y te redirigirá al nuevo *Microsoft Purview portal*.
+
+1. En el mensaje *Bienvenido al nuevo Microsoft Purview portal*, selecciona la opción para aceptar los términos de divulgación del flujo de datos y la declaración de privacidad y, después, selecciona **Probar ahora**.
 
     ![Captura de pantalla que muestra la pantalla de bienvenida al nuevo Microsoft Purview portal.](../Media/welcome-purview-portal.png)
 

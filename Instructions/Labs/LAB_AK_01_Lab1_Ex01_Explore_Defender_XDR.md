@@ -35,7 +35,7 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 1. Abre el explorador Microsoft Edge.
 
-1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender XDR en (<https://security.microsoft.com>).
+1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender XDR en <https://security.microsoft.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
