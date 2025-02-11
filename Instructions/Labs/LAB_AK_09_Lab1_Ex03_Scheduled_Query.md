@@ -72,7 +72,7 @@ En esta tarea, crearás una *regla de consulta programada de análisis de Micros
 
 1. En la hoja de resumen de reglas, asegúrate de que recibes datos revisando el icono verde en *Orígenes de datos: actividad de Azure*.
 
-    >**Nota:** Si no lo ves en un estado conectado y vuelves a realizar la Ruta de aprendizaje 8 Laboratorio, Ejercicio 1, Tarea 3, como se indicó anteriormente, es posible que tengas que esperar unos minutos para que se complete el proceso.
+    >**Nota:** si no lo ves en un estado conectado y ejecutaste la *tarea Requisitos previos* anterior, es posible que tengas que esperar más tiempo para que se complete el proceso.
 
 1. Selecciona **Crear regla** para continuar.
 

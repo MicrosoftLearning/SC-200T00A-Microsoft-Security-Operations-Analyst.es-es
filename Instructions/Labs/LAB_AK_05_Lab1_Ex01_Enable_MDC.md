@@ -72,7 +72,14 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Revisa los recursos de Azure que ahora están protegidos con los planes de Defender for Cloud.
 
-    >**Importante:** si todos los planes de Defender están *Desactivados*, selecciona **Habilitar todos los planes**. Selecciona el *Plan 1 de Microsoft Defender para API de 200 USD/mes* y, luego, **Guardar**. Selecciona **Guardar** en la parte superior de la página y espera a que la notificación *"Los planes de Defender (para la suscripción) se han guardado correctamente"* aparezca.
+<!---
+    >**Important:** If all Defender plans are *Off*, select **Enable all plans**. Select the *$200/month Microsoft Defender for APIs Plan 1* and then select **Save**. Select **Save** at the top of the page and wait for the *"Defender plans (for your) subscription were saved successfully!"* notifications to appear.--->
+
+1. En la sección *Administración de la postura de seguridad en la nube (CSPM)*, selecciona **Activado** para el *Defender CSPM*.
+
+1. En la sección *Protección de cargas de trabajo en la nube (CWP)*, selecciona **Activado** para el *Plan de servidores 2*.
+
+1. Selecciona el botón **Guardar** en la parte superior de la página.
 
 1. Selecciona la pestaña **Configuración y supervisión** en el área Configuración (junto a Guardar).
 
@@ -107,6 +114,8 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 1. En la barra de menú superior, selecciona **Subscripciones de Azure**. Esto te llevará a la configuración del entorno donde puedes seleccionar entre las suscripciones disponibles.
 
 1. Vuelva a la página **Información general** y revisa el mosaico **Posición de seguridad**. Puedes ver tu *Puntuación de seguridad* actual junto con el número de controles y recomendaciones completadas. Al seleccionar este icono, se te redirigirá a una vista de exploración en profundidad entre suscripciones
+
+    >**Nota:** La puntuación de seguridad y otra información de la ventana *Posición de seguridad* pueden tardar hasta 24 horas en calcularse. Es posible que no se rellene completamente durante este laboratorio.
 
 1. En el mosaico **Cumplimiento normativo**, puedes obtener información sobre tu posición de cumplimiento en función de la evaluación continua de entornos de Azure y de nube híbrida. En este mosaico se muestran los siguientes estándares, que son el banco de pruebas de Microsoft Cloud Security y el estándar normativo de cumplimiento más bajo. Para ver los datos, primero es necesario agregar directivas de seguridad.
 
