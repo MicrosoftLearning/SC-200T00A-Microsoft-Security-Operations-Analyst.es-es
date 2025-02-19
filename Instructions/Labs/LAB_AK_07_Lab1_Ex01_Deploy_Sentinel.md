@@ -28,7 +28,7 @@ Cree un área de trabajo de Log Analytics, incluida la opción de región. Obten
 
 1. En la barra de búsqueda de Azure Portal, escribe "Microsoft Sentinel" y luego selecciona
 
-1. Seleccione **+ Create (+ Crear)**.
+1. Selecciona **+ Crear**.
 
 1. Seleccione **Crear área de trabajo**.
 
@@ -48,7 +48,11 @@ Cree un área de trabajo de Log Analytics, incluida la opción de región. Obten
 
 Implemente Microsoft Sentinel en el área de trabajo.
 
-1. Cuando se complete la implementación del espacio de trabajo, selecciona **Refrescar** para mostrar el nuevo espacio de trabajo.
+1. Cuando finalice la implementación del área de trabajo, selecciona **Inicio** en el menú "ruta de navegación" de Microsoft Azure.
+
+1. Deberías ver **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
+
+1. Selecciona **+ Crear** en el menú superior.
 
 1. Selecciona el espacio de trabajo al que deseas agregar Sentinel (creado en la Tarea 1).
 
@@ -62,7 +66,7 @@ Implemente Microsoft Sentinel en el área de trabajo.
 
 1. Expande la sección *Configuración* en el menú de navegación y selecciona **Uso y costes estimados**.
 
-1. Seleccione **Retención de datos**.
+1. Selecciona **Retención de datos** en los elementos del menú.
 
 1. Cambie el período de retención de datos a **180 días**.
 
@@ -90,6 +94,10 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. Cierre el Bloc de notas.
 
+1. Selecciona **Inicio** en el menú "ruta de navegación" de Microsoft Azure.
+
+1. Deberías ver **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
+
 1. En Microsoft Sentinel, selecciona la opción **Lista de control** en el área Configuración.
 
 1. Seleccione **+Nuevo** en la barra de comandos.
@@ -114,6 +122,8 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. La pantalla vuelve a la página de lista de control.
 
+1. Selecciona **Actualizar** en el menú para ver la nueva lista de reproducción.
+
 1. Selecciona la lista de reproducción *HighValueHosts* y, en el panel derecho, selecciona **Ver en los registros**.
 
     >**Importante:** la lista de reproducción puede tardar hasta diez minutos en aparecer. **Continúa con la siguiente tarea y ejecuta este comando en el siguiente laboratorio**.
@@ -130,21 +140,29 @@ En esta tarea, crearás un indicador en Microsoft Sentinel.
 
 1. Selecciona **+ Agregar nuevo** en la barra de comandos.
 
-1. Revisa los distintos tipos de indicador disponibles en la lista desplegable *Tipos*. Selecciona **Nombre de dominio**. 
+1. Selecciona el **objeto de TI**.
+
+1. En la lista desplegable *Tipo de objeto*, selecciona **Indicador**.
+
+1. Selecciona la lista desplegable **+ Nuevo observable** y selecciona **Nombre de dominio**.
 
 1. Para el dominio, escribe el nombre del dominio; por ejemplo, *contoso.com*.
 
-1. *En Tipos de amenazas*, selecciona **+ Agregar** y escribe **actividad malintencionada**. Seleccione **Aplicar**.
+1. En el campo **Nombre** escribe el mismo valor usado para el dominio.
 
-1. Escriba una **Descripción**.
-
-1. En **Nombre**, escribe el mismo valor usado para el dominio.
+1. En *Tipos de indicadores*, selecciona **malicious-activity**.
 
 1. Establece el campo **Válido del** hasta la fecha de hoy.
 
-1. Seleccione **Aplicar**.
+1. Desplázate hacia abajo hasta **Descripción** e introduce *Se sabe que este dominio es malintencionado*.
 
-1. Selecciona la opción **Registros** en el área General. Es posible que quieras deshabilitar la opción "Mostrar siempre las consultas" y cerrar la ventana *Consultas* para ejecutar las instrucciones KQL.
+1. Seleccione **Agregar**.
+
+1. Selecciona la opción **Registros** en el área *General* del menú de navegación *Sentinel*. Es posible que quieras deshabilitar la opción "Mostrar siempre las consultas" y cerrar la ventana *Consultas* para ejecutar las instrucciones KQL.
+
+    >**Nota:** en la pestaña predeterminada *Nueva consulta 1*, la consulta **_GetWatchList('HighValueHosts')** debería seguir ahí, y ahora generará resultados si se ejecuta.
+
+1. Selecciona el signo *+* para crear una nueva pestaña de consulta.
 
 1. Ejecuta la instrucción KQL siguiente:
 
@@ -154,7 +172,7 @@ En esta tarea, crearás un indicador en Microsoft Sentinel.
 
     >**Nota:** el indicador puede tardar hasta cinco minutos en aparecer.
 
-1. Desplázate a la derecha para ver la columna DomainName. También puedes ejecutar la siguiente instrucción KQL para ver simplemente la columna DomainName. 
+1. Desplázate a la derecha para ver la columna DomainName. También puedes ejecutar la siguiente instrucción KQL para ver simplemente la columna DomainName.
 
     ```KQL
     ThreatIntelligenceIndicator 
@@ -171,11 +189,15 @@ En esta tarea, cambiarás el período de retención de la tabla SecurityEvent.
 
 1. En el área de trabajo de Log Analytics, selecciona la opción **Tablas** en el área *Configuración*.
 
-1. Busca y selecciona la tabla **SecurityEvent** y luego selecciona el botón de puntos suspensivos (...).
+1. Busca y selecciona la tabla **SecurityEvent** y después selecciona el vínculo de puntos suspensivos (...).
+
+    >**Nota:** es posible que tengas que desplazarte hacia la derecha para ver el vínculo de puntos suspensivos.
 
 1. Selecciona **Administrar tabla**.
 
-1. Selecciona **180 días** para *Período total de retención*. Observa que el *Período de archivado* es de solo 150 días, ya que usa 30 días a partir de la *Retención interactiva*. 
+1. Cambia el *periodo de retención interactivo* a **90 días**.
+
+1. Restablece el *periodo de retención total* a **180 días** (si es necesario). Ten en cuenta que *Período de archivo* se ha establecido ahora en *90 días*, ya que *Azure Monitor* trata automáticamente los 90 días restantes de retención total como retención a largo plazo de bajo coste.
 
 1. Seleccione **Guardar** para aplicar los cambios.
 

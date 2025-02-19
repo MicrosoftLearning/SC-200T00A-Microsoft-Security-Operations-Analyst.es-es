@@ -58,13 +58,15 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Para habilitar la sincronización bidireccional, selecciona el vínculo **Habilitar Microsoft Defender para todas las suscripciones**.
 
+    >**Nota:** Es posible que tengas que desplazarte hacia la derecha para ver el vínculo.
+
 1. En la página *Microsoft Defender for Cloud - Introducción*, la casilla de *MOC Subscription-XXXXXXXXXXX* debe estar seleccionada y el *plan de Microsoft Defender* debe mostrar *Activo - Parcial (30 días de prueba restantes)*.
 
 1. A continuación, selecciona el botón **X (Cerrar)** de la esquina superior derecha para cerrar la página *Introducción*. Debes regresar a la página de configuración de *Microsoft Defender for Cloud*.
 
 1. El *Estado* para *MOC Subscription-XXXXXXXXXXX* debe ser ahora **Conectado** y la *sincronización bidireccional* debe ser *Habilitada*.
 
-    <!--- 1. Scroll down and under the *Create incidents - Recommended!* area, verify that *Create incidents automatically from all alerts generated in this connected service* is **Enabled**. --->
+    >**Nota:**: es posible que tengas que actualizar la página.
 
 ### Tarea 3: establecer una conexión con el conector de datos Actividad de Azure
 

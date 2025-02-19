@@ -24,7 +24,7 @@ En esta tarea, activarás una regla de seguridad de Microsoft.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Microsoft Edge, ve a Azure Portal en (<https://portal.azure.com>).
+1. En el explorador Microsoft Edge, ve a Azure Portal en <https://portal.azure.com>.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
