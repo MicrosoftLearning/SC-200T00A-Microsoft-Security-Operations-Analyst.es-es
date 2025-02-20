@@ -52,9 +52,9 @@ En esta tarea, conectarás un host de Linux a Microsoft Sentinel mediante el Com
 
 1. Selecciona el conector de datos *Common Events Format (CEF) a través de AMA* y selecciona **Abrir página del conector** en la hoja de información del conector.
 
-1. En la sección *Configuración*, en la pestaña *Instrucciones*, copia en el Portapapeles el comando que se muestra en *1.2 Instalación del recopilador CEF en la máquina Linux*.
+1. En la sección *Configuración*, copia en el Portapapeles el comando que se muestra en *Ejecutar el siguiente comando para instalar y aplicar el recopilador CEF:*.
 
-1. Inicia la máquina virtual **LIN1**. Inicia sesión con el nombre de usuario y la contraseña que da el host de laboratorio. **Sugerencia:** es posible que tengas que presionar la tecla Entrar para ver el símbolo del sistema de inicio de sesión.
+1. Inicia la máquina virtual **LIN1**. Inicia sesión con el nombre de usuario y la contraseña que da el host de laboratorio. **Sugerencia:** es posible que tengas que presionar la tecla Entrar para ver el símbolo de sistema de inicio de sesión, y es recomendable apuntar el *nombre de usuario y la contraseña*.
 
 1. Anota la dirección IP del servidor LIN1. Vea la captura de pantalla siguiente como ejemplo:
 
@@ -72,16 +72,17 @@ En esta tarea, conectarás un host de Linux a Microsoft Sentinel mediante el Com
 
     ![inicio de sesión de Linux](../Media/PSconnectLinux.png)
 
-1. Ya estás listo para pegar el comando * 1.2 Instalación del recopilador de CEF en la máquina Linux* del paso anterior. Asegúrate de que el script de Azure esté en el portapapeles. En PowerShell, haz clic con el botón derecho en la barra superior y elige **Editar** y después, **Pegar**. 
+1. Ya estás listo para pegar el comando *Ejecutar el siguiente comando para instalar y aplicar el recopilador CEF:* del paso anterior. Asegúrate de que el script de Azure esté en el portapapeles. En la sesión SSH de PowerShell, haz clic con el botón derecho para pegar el comando en el símbolo del sistema.
 
-1. Una vez pegado y antes de presionar Entrar, agrega el carácter **3** a la palabra *python* como se muestra a continuación:
+1. Una vez pegado y antes de presionar *Entrar*, agrega el carácter **3** a la palabra *python* como se muestra a continuación:
 
     ![ConnectorScript](../Media/ConnectorScript.png)
-
 
 1. Una vez ajustado el script, presiona Entrar. El script se ejecutará en el servidor Linux de forma remota. Cuando el script procesa correctamente, debe tener un aspecto similar a esta pantalla:
 
     ![ConnectorScript](../Media/LinuxConnected.png)
+
+    >**Nota:** es posible que la pantalla no sea exactamente como se muestra, pero deberías ver que la *instalación se ha completado correctamente*.
 
 1. Escribe **exit** para cerrar la conexión del shell remoto a LIN1.
 
@@ -98,9 +99,9 @@ En esta tarea, conectarás un host de Linux a Microsoft Sentinel con el conector
 
 1. En la página de la solución *Syslog*, selecciona **Administrar**.
 
-    >**Nota:** la solución *Syslog* instala el conector de datos *Syslog*, 5 reglas de análisis, 9 consultas de búsqueda y 1 libro.
+    >**Nota:** la solución *Syslog* instala dos conectores de datos *Syslog*, 7 reglas de análisis, 9 consultas de búsqueda, 2 analizadores y 21 libros.
 
-1. Selecciona el conector de datos *Syslog* y selecciona **Abrir página del conector** en la hoja de información del conector.
+1. Selecciona el conector de datos *Syslog a través de agente antiguo* y selecciona **Abrir página del conector** en la hoja de información del conector.
 
 1. En la sección *Configuración*, expande **Instalar agente en una máquina Linux que no sea de Azure**.
 

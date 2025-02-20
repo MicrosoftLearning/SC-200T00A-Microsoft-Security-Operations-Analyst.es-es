@@ -86,7 +86,7 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 1. Configura las entidades en *Mejora de alertas: asignación de entidades* mediante los parámetros de la tabla siguiente.
 
-    |Entidad|Identifier|Campo de datos|
+    |Entity|Identifier|Campo de datos|
     |:----|:----|:----|
     |Cuenta|FullName|AccountCustomEntity|
     |administrador de flujos de trabajo|Nombre de host|HostCustomEntity|
@@ -113,7 +113,7 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
     |Nombre de la regla de Automation|RegKey de inicio|
     |Desencadenador|Al crear un incidente|
     |Acciones |Ejecución de playbooks|
-    |guía |PostMessageTeams-OnIncident|
+    |guía |Defender_XDR_Ransomware_Playbook_SecOps-Tasks|
 
     >**Nota:** ya has asignado permisos en el cuaderno de estrategias, por lo que estará disponible.
 
