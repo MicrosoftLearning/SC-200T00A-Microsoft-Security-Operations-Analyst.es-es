@@ -4,33 +4,29 @@ Guía de preparación del instructor
 
 ## Propósito
 
-Este documento está dirigido a los moderadores que se preparan para impartir el Día de aprendizaje virtual de seguridad de Microsoft para `Defend Against Threats with Extended Detection and Response` y `Configure Security Operations Using Microsoft Sentinel`. Este material es un subconjunto del curso de certificación SC-200: Analista de operaciones de seguridad de Microsoft.
+Este documento está dirigido a los moderadores que se preparan para impartir el Día de aprendizaje virtual de seguridad de Microsoft para `Defend Against Threats with Extended Detection and Response` y `Configure Security Operations Using Microsoft Sentinel`. Este material es un subconjunto del curso de certificación SC-200: Microsoft Security Operations Analyst.
 
 ## Requisitos previos de demostración
 
-Los laboratorios de este curso requieren un inquilino con licencia de Microsoft 365 E5, así como una suscripción de Azure.
+Los laboratorios de este curso requieren un inquilino con licencia de Microsoft 365 E5 con una licencia de Microsoft Defender para punto de conexión P2 y una suscripción a Azure.
 
-* Puedes solicitar pases para Azure de Microsoft Learning para ti.
-* Asegúrate de solicitar estos pases al menos dos semanas antes de que comience la clase. Después de recibir el pase, deberás activarlo. 
-* El pase para Azure funciona efectivamente de la misma manera que la suscripción de prueba de Microsoft Azure disponible públicamente. Esto significa que hay limitaciones en lo que puede hacer con el pase.
-* Las instrucciones de laboratorio están en el [repositorio SC-200 de Microsoft Learning en GitHub](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Instructions/VTD_Demos/).
+* Al igual que en el curso SC-200 Microsoft Security Operations Analyst, estas demostraciones se han diseñado para ejecutarse en un entorno de hospedaje de laboratorio autorizado.
+* Las instrucciones para el laboratorio están en el [repositorio SC-200 de Microsoft Learning en GitHub](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Instructions/VTD_Demos/).
 * Asegúrate de que el equipo que vas a usar para las demostraciones tenga instalado el nuevo explorador Microsoft Edge.
 
-## Activación de pase para Azure
+>**Nota:** como se indicó anteriormente, hay demostraciones que requieren una suscripción a Azure conectada a un inquilino de Microsoft 365 E5. Puedes usar tu propia suscripción a Azure y el inquilino de Microsoft 365 E5. Visita el sitio web del [Programa para desarrolladores de Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program/) para solicitar la suscripción y configurar una suscripción gratuita para desarrolladores de Microsoft 365 E5.
 
->**Nota:** son determinadas demostraciones que requieren una suscripción a Azure conectada a un inquilino de Microsoft 365 E5. Puedes usar tu propia suscripción a Azure y el inquilino de Microsoft 365 E5 si los pases para Azure no están disponibles. Visita el sitio web del [Programa para desarrolladores de Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program/) para solicitar la suscripción y configurar una suscripción gratuita para desarrolladores de Microsoft 365 E5.
-
-## Implementar Defender para puntos de conexión
+## Implementación de Defender para punto de conexión
 
 ### Obtención de tus credenciales de Microsoft 365
 
-Una vez que inicies el laboratorio, se pondrá a tu disposición un inquilino de evaluación gratuita para acceder al entorno de Microsoft Virtual Lab. A este inquilino se le asignará automáticamente un nombre de usuario y una contraseña únicos. Debes recuperar este nombre de usuario y contraseña para que puedas iniciar sesión en Azure y Microsoft 365 en el entorno de Microsoft Virtual Lab.
+Una vez que inicias el laboratorio alojado, tienes a tu disposición un inquilino de prueba gratuito al que podrás acceder en el entorno de Laboratorio virtual de Microsoft. Automáticamente, se le asigna un nombre de usuario y una contraseña únicos a este inquilino. Debes recuperar este nombre de usuario y contraseña para que puedas iniciar sesión en Azure y Microsoft 365 en el entorno de Microsoft Virtual Lab.
 
 Dado que los asociados de aprendizaje pueden ofrecer este curso mediante cualquiera de los diversos proveedores de hospedaje de laboratorio autorizados, los pasos reales necesarios para recuperar el identificador de inquilino asociado al inquilino pueden variar según el proveedor de hospedaje de laboratorio. Por lo tanto, tu instructor te dará las instrucciones necesarias sobre cómo recuperar esta información para tu curso. La información que debes tener en cuenta para uso posterior incluye:
 
-    - **Id. de sufijo de inquilino.** Este identificador es para las cuentas de onmicrosoft.com que usarás para iniciar sesión en Microsoft 365 en todos los laboratorios. Se trata del formato **{username}@M365xZZZZZZ.onmicrosoft.com**, donde ZZZZZZ es el identificador de sufijo de inquilino único que ha facilitado el proveedor de hospedaje de laboratorio. Anota este valor ZZZZZZ para más adelante. Cuando cualquiera de los pasos del laboratorio te dirija a iniciar sesión en los portales de Microsoft 365, debes escribir el valor ZZZZZZ que has obtenido aquí.
-    - **Contraseña de inquilino.** Escribe la contraseña de administrador que te ha facilitado tu proveedor de hospedaje de laboratorio.
-    
+-**Id. de sufijo de inquilino.** Este identificador es para las cuentas de onmicrosoft.com que usarás para iniciar sesión en Microsoft 365 en todos los laboratorios. Se trata del formato **{username}@M365xZZZZZZ.onmicrosoft.com**, donde ZZZZZZ es el identificador de sufijo de inquilino único que ha facilitado el proveedor de hospedaje de laboratorio. Anota este valor ZZZZZZ para más adelante. Cuando cualquiera de los pasos del laboratorio te dirija a iniciar sesión en los portales de Microsoft 365, debes escribir el valor ZZZZZZ que has obtenido aquí.
+
+-**Contraseña de inquilino.** Escribe la contraseña de administrador que te ha facilitado tu proveedor de hospedaje de laboratorio.
 
 ### Inicialización de Microsoft Defender para punto de conexión
 
@@ -38,27 +34,27 @@ En esta tarea, realizarás la inicialización de Microsoft Defender para punto d
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Edge, ve al portal de Microsoft Defender en (https://security.microsoft.com).
+1. En el explorador Microsoft Edge, ve al portal de Microsoft Defender en (https://security.microsoft.com)).
 
-1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino para el nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
+1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta de correo electrónico del inquilino del nombre de usuario de administrador que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
-1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la contraseña de inquilino del administrador que facilita el proveedor de hospedaje de laboratorio y luego selecciona **Iniciar sesión**.
+1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la contraseña de inquilino del administrador que ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Iniciar sesión**.
 
-En el portal de **Microsoft Defender** en el menú de navegación, seleccione **Inicio** a la izquierda.
+En el portal de **Microsoft Defender** en el menú de navegación, selecciona **Inicio** a la izquierda.
 
     >**Note:** You may need to scroll all the way to the menu top.
 
 1. En la página del portal **Inicio**, se muestra **Bienvenido a Microsoft Defender**.
 
-1. Desplácese por los elementos del menú hasta **Activos** y seleccione **Dispositivos**.
+1. Desplázate por los elementos del menú hasta **Recursos** y selecciona **Dispositivos**.
 
-1. El proceso para implementar el área de trabajo de Defender XDR debería comenzar y debería ver mensajes que digan *cargando e Inicializando* brevemente en la parte superior de la página, y luego va a ver una imagen de una taza de café y un mensaje que dice: **¡Espera! Preparamos nuevos espacios para sus datos y los conectamos.** Tarda aproximadamente 5 minutos en finalizar. *Deje abierta la página y asegúrese de que finaliza, ya que es necesario para el siguiente laboratorio.*
+1. El proceso para implementar el área de trabajo de Defender XDR debería comenzar y deberías ver mensajes que digan *cargando e Inicializando* brevemente en la parte superior de la página, y luego vas a ver una imagen de una taza de café y un mensaje que dice: **¡Espera! Preparamos nuevos espacios para tus datos y los conectamos.** Tarda aproximadamente 5 minutos en finalizar. *Deja abierta la página y asegúrate de que finaliza, ya que es necesario para el siguiente laboratorio.*
 
-    >**Nota:** ignora los mensajes de error emergentes que indican que *algunos de los datos no se pueden recuperar*. Si el mensaje "Espere, se están preparando nuevos espacios para tus datos y conectándolos" no aparece, o bien se abre la página "Configuración > Microsoft Defender XDR > Cuenta", pero aparece el mensaje *Error al cargar la ubicación del almacenamiento de datos. Inténtalo de nuevo más tarde*, selecciona "Configuración del servicio de alertas" en el menú "General".
+    >**Nota:** ignora los mensajes de error emergentes que indican que *algunos de los datos no se pueden recuperar*. Si el mensaje "Espera, se están preparando nuevos espacios para tus datos y conectándolos" no aparece, o bien se abre la página "Configuración > Microsoft Defender XDR > Cuenta", pero aparece el mensaje *Error al cargar la ubicación del almacenamiento de datos. Inténtalo de nuevo más tarde*, selecciona "Configuración del servicio de alertas" en el menú "General".
 
 1. Cuando la nueva inicialización del área de trabajo se complete correctamente, la página **Inicio** del portal principal mostrará un banner de **Obtención de SIEM y XDR en un solo lugar**. Además, en **Configuración**, la configuración general de Microsoft Defender XDR para la cuenta, las notificaciones por correo electrónico, las **características en versión preliminar**, la configuración del servicio de alertas, los permisos y los roles y la API de streaming están ahora activadas.
 
-1. Cuando el nuevo espacio se complete correctamente, verás la configuración general de Microsoft 365 Defender para la cuenta, las notificaciones por correo electrónico, la configuración del servicio de alertas, los permisos y los roles y la API de streaming. También verás **Características en vista previa** activadas.
+1. Cuando el nuevo espacio se complete correctamente, verás la configuración general de Microsoft 365 Defender para la cuenta, las notificaciones por correo electrónico, la configuración del servicio de alertas, los permisos y los roles y la API de streaming. También verás las **características en versión preliminar** activadas.
 
     >**Nota**: en el entorno de laboratorio hospedado, la ubicación de almacenamiento de datos debe seleccionarse automáticamente. Además, debe estar en la geografía adecuada para el lugar donde se administra este inquilino de entrenamiento. Todavía puedes seleccionar la longitud de retención de datos, pero no es necesaria.
 
@@ -70,7 +66,7 @@ En el portal de **Microsoft Defender** en el menú de navegación, seleccione **
 
 1. En el "1. Al incorporar un área de dispositivo asegúrate de que, en el menú desplegable Método de implementación, aparezca "Script local (para un máximo de 10 dispositivos)" y selecciona el botón **Descargar paquete de incorporación**.
 
-1. Extraer en una carpeta local como la carpeta Documentos el contenido del archivo zip descargado.
+1. Extrae en una carpeta local como la carpeta Documentos el contenido del archivo zip descargado.
 
 1. Haz clic con el botón derecho en el archivo extraído WindowsDefenderATPLocalOnboardingScript.cmd y elige **Ejecutar como administrador**.  Si encuentras Windows SmartScreen, elige Ejecutar de todos modos.
 
@@ -93,9 +89,9 @@ En esta tarea, configurarás roles para su uso con grupos de dispositivos.
 
 1. Selecciona **Puntos de conexión** y luego selecciona **Roles** en el área de permisos.
 
-1. Seleccione el botón **Activar roles**.
+1. Selecciona el botón **Activar roles**.
 
-1. Seleccione **Agregar elemento**.
+1. Selecciona **Agregar elemento**.
 
 1. En el cuadro de diálogo Añadir rol, escribe lo siguiente:
 
@@ -104,11 +100,11 @@ En esta tarea, configurarás roles para su uso con grupos de dispositivos.
     |Nombre de rol|**Soporte técnico de nivel 1**|
     |Permisos|Funciones avanzadas de respuesta dinámica|
 
-1. Seleccione **Siguiente**.
+1. Selecciona **Siguiente**.
 
 1. En la pestaña Grupos de usuarios asignados. Selecciona **sg-IT** y luego selecciona **Agregar grupos seleccionados**.
 
-1. Seleccione **Guardar**.
+1. Selecciona **Guardar**.
 
 ### Configuración de los grupos de dispositivos
 
@@ -118,7 +114,7 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
 
 1. Selecciona **Puntos de conexión** y, en el área de permisos, selecciona **Grupos de dispositivos**.
 
-1. Seleccione **Agregar** grupo de dispositivos.
+1. Selecciona **Agregar** grupo de dispositivos.
 
 1. En la pestaña General, escribe la siguiente información:
 
@@ -127,16 +123,16 @@ En esta tarea, configurarás los grupos de dispositivos que permiten el control 
     |Nombre del grupo de dispositivos|**Regular**|
     |Nivel de automatización|Completo: corregir las amenazas automáticamente|
 
-1. Seleccione **Siguiente**.
+1. Selecciona **Siguiente**.
 
 1. . En la pestaña Dispositivos, para la condición del sistema operativo, selecciona **Windows 10** y **Siguiente**.
 
-1. En la pestaña Vista previa de dispositivos, selecciona **Mostrar vista previa** para ver la máquina virtual WIN1. Seleccione **Siguiente**. 
+1. En la pestaña Vista previa de dispositivos, selecciona **Mostrar vista previa** para ver la máquina virtual WIN1. Selecciona **Siguiente**. 
 **Sugerencia:** si no ves la máquina virtual en la lista de vista previa, vuelve y selecciona también *Ninguno* para la condición del sistema operativo. Los datos de la máquina virtual todavía no están rellenados.
 
 1. En la pestaña Acceso de usuario, selecciona **sg-IT** y después, **Agregar grupos seleccionados**
 
-1. Seleccione **Listo**.
+1. Selecciona **Listo**.
 
 1. La configuración del grupo de dispositivos ha cambiado. Selecciona **Aplicar cambios** para comprobar las coincidencias y recalcular las agrupaciones.
 
@@ -169,9 +165,9 @@ In this task, you will load sample security alerts and review the alert details.
 
 En esta tarea, crearás un área de trabajo de Microsoft Sentinel.
 
- >**Nota:** deberás tener una suscripción de Azure Pass u otra suscripción de Azure activa para la siguiente demo.
+ >**Nota:** deberás tener una suscripción a Azure activa para la siguiente demostración.
 
-1. En el explorador Edge, ve a Azure Portal en https://portal.azure.com.
+1. En el explorador Microsoft Edge, ve a Azure Portal en https://portal.azure.com.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -179,7 +175,7 @@ En esta tarea, crearás un área de trabajo de Microsoft Sentinel.
 
 1. En la barra de búsqueda de Azure Portal, escribe *Sentinel* y luego selecciona **Microsoft Sentinel**.
 
-1. Seleccione **+ Create** (+ Crear).
+1. Selecciona **+ Crear**.
 
 1. Selecciona **+ Crear una nueva área de trabajo**.
 
@@ -195,23 +191,23 @@ En esta tarea, crearás un área de trabajo de Microsoft Sentinel.
 
 1. Selecciona la región que sea apropiada para ti.  La región adecuada puede ser predeterminada o el instructor puede tener consejos específicos sobre qué región seleccionar.  
 
-1. Seleccione **Revisar + crear**.
+1. Selecciona **Revisar + crear**.
 
-1. Seleccione **Crear**. Espera a que la nueva área de trabajo de Log Analytics aparezca en la lista de la página Agregar Microsoft Sentinel a un área de trabajo.  Esta operación puede tardar unos minutos.
+1. Selecciona **Crear**. Espera a que la nueva área de trabajo de Log Analytics aparezca en la lista de la página Agregar Microsoft Sentinel a un área de trabajo.  Esta operación puede tardar unos minutos.
 
 1. Selecciona el área de trabajo recién creada cuando aparezca y luego selecciona **Agregar**.
 
 ## Implementación de soluciones y conectores de datos del Centro de contenido para Microsoft Sentinel
 
-### Tarea 1: acceder al área de trabajo de Microsoft Sentinel
+### Tarea 1: Acceso al área de trabajo de Microsoft Sentinel
 
 En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. Abre el explorador, busca, descarga e instala el nuevo explorador Microsoft Edge. Inicia el nuevo explorador Edge.
+1. Abre el explorador, busca, descarga e instala el nuevo explorador Microsoft Edge. Abre el nuevo explorador Microsoft Edge.
 
-1. En el explorador Edge, ve a Azure Portal en https://portal.azure.com.
+1. En el explorador Microsoft Edge, ve a Azure Portal en https://portal.azure.com.
 
 1. En el cuadro de diálogo **Iniciar sesión**, copia y pega la cuenta **Correo electrónico de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Siguiente**.
 
@@ -221,9 +217,9 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Selecciona el área de trabajo de Microsoft Sentinel que has creado en la tarea anterior.
 
-### Tarea 2: establecer conexión con el conector de datos de actividad de Azure
+### Tarea 2: Establecimiento de conexión con el conector de datos de actividad de Azure
 
-En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad de Azure*.
+En esta tarea, conectarás el conector de datos de *Actividad de Azure*.
 
 1. En el menú izquierdo de Microsoft Sentinel, desplázate hacia abajo hasta la sección *Administración de contenido* y selecciona **Centro de contenido**.
 
@@ -237,19 +233,19 @@ En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad 
 
 1. Selecciona el conector de datos *Actividad de Azure* y luego selecciona **Abrir página del conector**.
 
-1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
+1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecta las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
 
-1. En la pestaña **Aspectos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona la suscripción "Pase para Azure: Patrocinio" en la lista desplegable y haz clic en **Seleccionar**.
+1. En la pestaña **Datos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito**, elige la suscripción a Azure alojada en la lista desplegable y selecciona **Seleccionar**.
 
-1. Selecciona la pestaña **Parámetros** y elige el área de trabajo de la lista desplegable **Área de trabajo de Log Analytics principal** Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
+1. Selecciona la pestaña **Parámetros** y elige el área de trabajo de la lista desplegable **Área de trabajo de Log Analytics principal** Esta acción aplica la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
 
-1. Seleccione la pestaña **Corrección** y active la casilla **Crear una tarea de corrección**. Esta acción aplicará la directiva a los recursos de Azure ya existentes.
+1. Selecciona la pestaña **Corrección** y activa la casilla **Crear una tarea de corrección**. Esta acción aplica la directiva a los recursos de Azure ya existentes.
 
-1. Seleccione el botón **Revisar y crear** para revisar la configuración.
+1. Selecciona el botón **Revisar y crear** para revisar la configuración.
 
-1. Seleccione **Crear** para finalizar.
+1. Selecciona **Crear** para finalizar.
 
-### Tarea 3: crear una máquina virtual Windows en Azure
+### Tarea 3: Creación de una máquina virtual Windows en Azure
 
 En este ejercicio, crearás una máquina virtual Windows en Azure.
 
@@ -261,7 +257,7 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
 1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Iniciar sesión**.
 
-1. Seleccione **+ Crear un recurso**. **Sugerencia:** si ya estabas en Azure Portal, es posible que tengas que seleccionar *Microsoft Azure* en la barra superior para ir a Inicio.
+1. Selecciona **+ Crear un recurso**. **Sugerencia:** si ya estabas en Azure Portal, es posible que tengas que seleccionar *Microsoft Azure* en la barra superior para ir a Inicio.
 
 1. En el cuadro **Servicios de búsqueda y marketplace**, escribe *Windows 10* y selecciona **Microsoft Window 10** en la lista desplegable.
 
@@ -297,9 +293,9 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
     >**Nota:** si se produce un error de validación *Redes*, selecciona dicha pestaña, revisa su contenido y luego vuelve a seleccionar **Revisar y crear**.
 
-1. Seleccione **Crear**. Espera hasta que se cree el recurso, lo que puede tardar unos minutos.
+1. Selecciona **Crear**. Espera hasta que se cree el recurso, lo que puede tardar unos minutos.
 
-### Tarea 4: establecer conexión de una máquina virtual de Azure Windows
+### Tarea 4: Conexión a una máquina virtual de Azure Windows
 
 En esta tarea, conectarás una máquina virtual Windows de Azure a Microsoft Sentinel.
 
@@ -335,11 +331,11 @@ En esta tarea, conectarás una máquina virtual Windows de Azure a Microsoft Sen
 
 1. Espera un minuto y selecciona **Actualizar** para ver la nueva regla de recopilación de datos en la lista.
 
-### Tarea 5: instalar Azure Arc y conexión de un servidor local
+### Tarea 5: Instalación de Azure Arc y conexión de un servidor local
 
 En esta tarea, instalarás Azure Arc en un servidor local para facilitar la incorporación.
 
->**Importante:** Los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
+>**Importante:** los pasos siguientes se realizan en una máquina diferente a la que trabajabas anteriormente. Busca las referencias de nombre de máquina virtual.
 
 1. Inicia sesión en la máquina virtual **WINServer** como administrador con la contraseña: **Passw0rd!** si es necesario.  
 
@@ -367,7 +363,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. Revisa las etiquetas disponibles predeterminadas. Selecciona **Siguiente** para ir a la pestaña Descargar y ejecutar script.
 
-1. Desplázate hacia abajo y selecciona el botón **Descargar**. **Sugerencia:** si el explorador bloquea la descarga, realiza una acción en el explorador para permitirla. En el explorador Edge, selecciona el botón de puntos suspensivos (...) si es necesario y luego selecciona **Mantener**.
+1. Desplázate hacia abajo y selecciona el botón **Descargar**. **Sugerencia:** si el explorador bloquea la descarga, realiza una acción en el explorador para permitirla. En el explorador Microsoft Edge, selecciona el botón de puntos suspensivos (...) si es necesario y luego selecciona **Mantener**.
 
 1. Haz clic con el botón derecho en Inicio de Windows y selecciona **Windows PowerShell (Administrador)**.
 
@@ -387,7 +383,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
 1. Escribe **R** para ejecutar una vez y presiona entrar (esto puede tardar un par de minutos).
 
-1. El proceso de configuración abrirá una nueva pestaña del explorador Edge para autenticar al agente de Azure Arc. Selecciona la cuenta de administrador, espera el mensaje "Autenticación completada" y vuelve a la ventana de Windows PowerShell.
+1. El proceso de configuración abrirá una nueva pestaña del explorador Microsoft Edge para autenticar al agente de Azure Arc. Selecciona la cuenta de administrador, espera el mensaje "Autenticación completada" y vuelve a la ventana de Windows PowerShell.
 
 1. Cuando finalice la instalación, vuelve a la página de Azure Portal donde has descargado el script y selecciona **Cerrar**. Cierra la página **Agregar servidores con Azure Arc** para volver a la página **Máquinas** de Azure Arc.
 
@@ -395,7 +391,7 @@ En esta tarea, instalarás Azure Arc en un servidor local para facilitar la inco
 
     >**Nota:** esto puede tardar varios minutos.
 
-### Tarea 6: proteger un servidor local
+### Tarea 6: Protección de un servidor local
 
 En esta tarea, agregarás una máquina virtual Windows que no sea de Azure Arc conectada a Microsoft Sentinel.  
 
@@ -602,13 +598,13 @@ You should still be connected to the WIN2 virtual machine.  The following instru
 
 ## Realización de ataques
 
-### Tarea 1: atacar Windows configurado con Defender para puntos de conexión
+### Tarea 1: Ataque a Windows configurado con Defender para punto de conexión
 
-En esta tarea, realizarás ataques en un host con Microsoft Defender para un punto de conexión configurado.
+En esta tarea, realizarás ataques en un host con Microsoft Defender para punto de conexión configurado.
 
 1. Inicia sesión en la máquina virtual `WIN1` como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se mostrará en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
+1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se muestra en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
 
 1. En el símbolo del sistema, escribe el comando en cada fila presionando la tecla Entrar después de cada fila:
 
@@ -624,13 +620,13 @@ En esta tarea, realizarás ataques en un host con Microsoft Defender para un pun
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
 
-### Tarea 2: crear un ataque C2 (comando y control)
+### Tarea 2: Creación de un ataque C2 (comando y control)
 
 1. Inicia sesión en la máquina virtual `WIN1` como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se mostrará en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
+1. En la búsqueda de la barra de tareas, escribe *Comando*.  El símbolo del sistema se muestra en los resultados de la búsqueda.  Haz clic con el botón derecho en el símbolo del sistema y selecciona **Ejecutar como administrador**. Confirma las indicaciones del Control de cuentas de usuario que aparezcan.
 
-1. Ataque 2: copiar y ejecutar este comando:
+1. Ataque 2: Copia y ejecución de este comando:
 
     ```CommandPrompt
     notepad c2.ps1
@@ -638,7 +634,7 @@ En esta tarea, realizarás ataques en un host con Microsoft Defender para un pun
 
 Selecciona **Sí** para crear un nuevo archivo y copia el siguiente script de PowerShell en c2.ps1 y selecciona **Guardar**.
 
->**Nota:** Pegar en la máquina virtual puede tener una longitud limitada.  Pégalo en tres secciones para asegurarte de que todo el script se pegue en la máquina virtual.  Asegúrate de que el script tiene el mismo aspecto que en estas instrucciones en el archivo c2.ps1 del Bloc de notas.
+>**Nota:** pegar en la máquina virtual puede tener una longitud limitada.  Pégalo en tres secciones para asegurarte de que todo el script se pegue en la máquina virtual.  Asegúrate de que el script tiene el mismo aspecto que en estas instrucciones en el archivo c2.ps1 del Bloc de notas.
 
     ```PowerShell
     
@@ -695,22 +691,22 @@ Selecciona **Sí** para crear un nuevo archivo y copia el siguiente script de Po
     Until ($TimeNow -ge $RunEnd)
     ```
 
-En el símbolo del sistema, escribe lo siguiente y escribe el comando en cada fila presionando la tecla Entrar después de cada fila:
+En el símbolo del sistema, escribe lo siguiente: Escribe el comando en cada fila presionando la tecla ENTRAR después de cada fila:
 
     ```PowerShell
     .\c2.ps1
     ```
 
 >**Nota:** verás que se resuelven errores. Esto es lo que se espera.
-Deja que este comando o script de PowerShell se ejecute en segundo plano. No cierre la ventana.  El comando debe generar entradas de registro durante algunas horas.  Puedes continuar con la siguiente tarea y los ejercicios siguientes mientras se ejecuta este script.  Los datos creados por esta tarea se usarán en el laboratorio de búsqueda de amenazas más adelante.  Este proceso no creará cantidades considerables de datos o procesamiento.
+Deja que este comando o script de PowerShell se ejecute en segundo plano. No cierres la ventana.  El comando debe generar entradas de registro durante algunas horas.  Puedes continuar con la siguiente tarea y los ejercicios siguientes mientras se ejecuta este script.  Los datos creados por esta tarea se usarán en el laboratorio de búsqueda de amenazas más adelante.  Este proceso no creará cantidades considerables de datos o procesamiento.
 
-### Tarea 2: ataque de Windows configurado con el agente de Azure Monitor (AMA)
+### Tarea 2: Ataque de Windows configurado con el agente de Azure Monitor (AMA)
 
 En esta tarea, realizarás ataques en un host con el conector de eventos de seguridad y Sysmon configurado.
 
 1. Selecciona la red virtual `AZWIN01` que has creado antes.  
 
-1. En el menú izquierdo desplázate hacia abajo hasta **Operaciones** y selecciona **Ejecutar comando**
+1. En el menú de navegación izquierdo desplázate hacia abajo hasta **Operaciones** y selecciona **Ejecutar comando**
 
 1. En el panel **Ejecutar comando**, selecciona **RunPowerShellScript.**
 
