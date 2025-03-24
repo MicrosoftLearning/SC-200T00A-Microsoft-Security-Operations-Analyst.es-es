@@ -58,7 +58,7 @@ En esta tarea, investigará las alertas e incidentes generados por el script de 
 
 1. Para desactivar el filtro *Gravedad de la alerta*, seleccione la **X** situada a la derecha del filtro.
 
-1. Aparece un nuevo incidente denominado *[TestAlert] Línea de comandos de PowerShell sospechosa* en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
+1. Aparece un nuevo incidente denominado *Incidente de ejecución en un punto de conexión* en el panel derecho. Selecciona el nombre del incidente para cargar sus detalles.
 
 1. Seleccione el vínculo **Administrar incidentes** (con un icono de lápiz) y aparecerá una nueva hoja de ventana.
 
