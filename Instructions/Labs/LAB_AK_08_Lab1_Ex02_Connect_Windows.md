@@ -28,7 +28,7 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
 1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la **Contraseña de inquilino** que ha facilitado el proveedor de hospedaje de laboratorio y luego selecciona **Iniciar sesión**.
 
-1. Seleccione **+ Crear un recurso**. **Sugerencia:** si ya estabas en Azure Portal, es posible que tengas que seleccionar *Microsoft Azure* en la barra superior para ir a Inicio.
+1. Selecciona **+ Crear un recurso**. **Sugerencia:** si ya estabas en Azure Portal, es posible que tengas que seleccionar *Microsoft Azure* en la barra superior para ir a Inicio.
 
 1. En el cuadro **Servicios de búsqueda y marketplace**, escribe *Windows 10* y selecciona **Microsoft Window 10** en la lista desplegable.
 
@@ -64,7 +64,7 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
     >**Nota:** si se produce un error de validación *Redes*, selecciona dicha pestaña, revisa su contenido y luego vuelve a seleccionar **Revisar y crear**.
 
-1. Seleccione **Crear**. Espera hasta que se cree el recurso, lo que puede tardar unos minutos.
+1. Selecciona **Crear**. Espera hasta que se cree el recurso, lo que puede tardar unos minutos.
 
 ### Tarea 2: Conectar un servidor local a Azure
 
@@ -126,7 +126,7 @@ En esta tarea, conectarás una máquina virtual Windows de Azure a Microsoft Sen
 
 1. Selecciona el conector de datos *Eventos de seguridad de Windows a través de AMA* y selecciona **Abrir página del conector** en la hoja de información del conector.
 
-1. En la sección *Configuración*, selecciona **Crear regla de recopilación de datos**.
+1. En la sección *Configuración*, selecciona el botón **+Crear regla de recopilación de datos**.
 
 1. Escribe **AZWINDCR** como Nombre de regla y luego selecciona **Siguiente: recursos**.
 
