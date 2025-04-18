@@ -89,15 +89,11 @@ En esta tarea, asignará directivas de seguridad preestablecidas para Exchange O
 
 ### Tarea 3: Preparación del área de trabajo de Microsoft Defender XDR
 
-1. En el portal de **Microsoft Defender** en el menú de navegación, seleccione **Inicio** a la izquierda.
+1. En la pantalla **Inicio** del portal de *Microsoft Defender*, desplaza hacia abajo los elementos del menú de navegación a la sección **Recursos** y selecciona **Dispositivos**.
 
-    >**Nota:** es posible que tengas que desplazarte hasta la parte superior del menú.
+1. El proceso para implementar el área de trabajo de Defender XDR debería comenzar y deberías ver mensajes que digan *cargando e Inicializando* brevemente en la parte superior de la página, y luego vas a ver una imagen de una taza de café y un mensaje que dice: **¡Espera! Preparamos nuevos espacios para tus datos y los conectamos.** Tarda aproximadamente 5 minutos en finalizar. *Deja abierta la página y asegúrate de que finaliza, ya que es necesario para el siguiente laboratorio.*
 
-1. Desplácese por los elementos del menú hasta **Activos** y seleccione **Dispositivos**.
-
-1. El proceso para implementar el área de trabajo de Defender XDR debería comenzar y debería ver mensajes que digan *cargando e Inicializando* brevemente en la parte superior de la página, y luego va a ver una imagen de una taza de café y un mensaje que dice: **¡Espera! Preparamos nuevos espacios para sus datos y los conectamos.** Tarda aproximadamente 5 minutos en finalizar. *Deje abierta la página y asegúrese de que finaliza, ya que es necesario para el siguiente laboratorio.*
-
-    >**Nota:** ignora los mensajes de error emergentes que indican que *algunos de los datos no se pueden recuperar*. Si el mensaje "Espere, se están preparando nuevos espacios para tus datos y conectándolos" no aparece, o bien se abre la página "Configuración > Microsoft Defender XDR > Cuenta", pero aparece el mensaje *Error al cargar la ubicación del almacenamiento de datos. Inténtalo de nuevo más tarde*, selecciona "Configuración del servicio de alertas" en el menú "General".
+    >**Nota:** ignora los mensajes de error emergentes que indican que *algunos de los datos no se pueden recuperar*. Si el mensaje "Espera, se están preparando nuevos espacios para tus datos y conectándolos" no aparece, o bien se abre la página "Configuración > Microsoft Defender XDR > Cuenta", pero aparece el mensaje *Error al cargar la ubicación del almacenamiento de datos. Inténtalo de nuevo más tarde*, selecciona "Configuración del servicio de alertas" en el menú "General".
 
 1. Cuando la nueva inicialización del área de trabajo se complete correctamente, la página **Inicio** del portal principal mostrará un banner de **Obtención de SIEM y XDR en un solo lugar**. Además, en **Configuración**, la configuración general de Microsoft Defender XDR para la cuenta, las notificaciones por correo electrónico, las **características en versión preliminar**, la configuración del servicio de alertas, los permisos y los roles y la API de streaming están ahora activadas.
 
