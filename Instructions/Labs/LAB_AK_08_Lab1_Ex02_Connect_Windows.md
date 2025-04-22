@@ -10,7 +10,7 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de la organización. El siguiente origen de datos es máquinas virtuales Windows dentro y fuera de Azure, como entornos locales u otras nubes públicas.
+Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de la organización. El siguiente origen de datos es Windows Virtual Machines dentro y fuera de Azure, como entornos locales u otras nubes públicas.
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 8 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
@@ -132,9 +132,9 @@ En esta tarea, conectarás una máquina virtual Windows de Azure a Microsoft Sen
 
 1. Expande tu *Suscripción de MOC* en *Ámbito* en la pestaña *Recursos*.
 
-    >**Sugerencia:** puede expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
+    >**Sugerencia:** puedes expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
 
-1. Expande **defender-RG** y selecciona **AZWIN01**.
+1. Expande **RG-AZWIN01** y selecciona **AZWIN01**.
 
 1. Selecciona **Siguiente: Recopilar**.
 
@@ -156,7 +156,7 @@ En esta tarea, agregarás una máquina virtual Windows que no sea de Azure Arc c
 
 1. Selecciona **Siguiente: recursos**, y expande tu *Suscripción de MOC* en *Ámbito* en la pestaña *Recursos*.
 
-    >**Sugerencia:** puede expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
+    >**Sugerencia:** puedes expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
 
 1. Expande **defender-RG** (o el grupo de recursos que hayas creado) y selecciona **WINServer**.
 
