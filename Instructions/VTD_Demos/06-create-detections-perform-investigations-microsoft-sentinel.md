@@ -14,7 +14,7 @@ En esta tarea, crearás una regla de consulta de análisis de NRT (casi en tiemp
 
 1. Esto inicia el "Asistente de reglas de análisis". Para el tipo de pestaña *General*:
 
-    |Configuración|Value|
+    |Configuración|Valor|
     |---|---|
     |Nombre|**Búsqueda de PowerShell NRT**|
     |Descripción|**Buscar PowerShell de NRT**|

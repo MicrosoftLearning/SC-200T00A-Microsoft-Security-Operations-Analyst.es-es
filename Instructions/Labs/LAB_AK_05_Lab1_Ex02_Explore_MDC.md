@@ -34,6 +34,8 @@ En esta tarea, revisarás la configuración de cumplimiento normativo en Microso
 
 1. En *Seguridad en la nube*, selecciona **Cumplimiento normativo** en los elementos de menú de la izquierda.
 
+    >**Nota:** es posible que tengas que actualizar esta página si no ves las pestañas de la *barra de herramientas*.
+
 1. Selecciona **Administrar estándares de cumplimiento** en la barra de herramientas.
 
 1. Selecciona tu suscripción.
@@ -110,4 +112,4 @@ En esta tarea, cargarás alertas de seguridad de ejemplo y revisarás los detall
 
     - Revisa la información *Realizar acción*. Examina las secciones disponibles para tomar medidas en función del tipo de alerta: Inspeccionar el contexto de recursos, Mitigar la amenaza, Evitar ataques futuros, Desencadenar respuesta automatizada y Suprimir alertas similares.
 
-## Has completado el laboratorio.
+## Has completado el laboratorio

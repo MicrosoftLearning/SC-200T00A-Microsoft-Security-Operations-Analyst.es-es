@@ -100,7 +100,7 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. En Microsoft Sentinel, selecciona la opción **Lista de control** en el área Configuración.
 
-1. Seleccione **+Nuevo** en la barra de comandos.
+1. Selecciona **+Nuevo** en la barra de comandos.
 
 1. En el Asistente para lista de seguimiento, escribe lo siguiente:
 

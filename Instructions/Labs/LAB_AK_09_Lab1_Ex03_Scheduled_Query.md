@@ -34,19 +34,19 @@ En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad 
 
 1. Selecciona el conector de datos *Actividad de Azure* y luego selecciona **Abrir página del conector**.
 
-1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
+1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecta las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
 
 1. En la pestaña **Datos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona tu suscripción *MOC Subscription-XXXXXXXXXXX* en la lista desplegable y haz clic en **Seleccionar**.
 
     >**Nota:***No* selecciones un grupo de recursos opcional.
 
-1. Seleccione la pestaña **Parámetros** y elija el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
+1. Selecciona la pestaña **Parámetros** y elige el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
 
 1. Seleccione la pestaña **Corrección** y active la casilla **Crear una tarea de corrección**. Esta acción aplicará la directiva a los recursos de Azure ya existentes.
 
 1. Seleccione el botón **Revisar y crear** para revisar la configuración.
 
-1. Seleccione **Crear** para finalizar.
+1. Selecciona **Crear** para finalizar.
 
 1. Espera a que el conector de datos de *actividad de Azure* muestre un estado *Conectado* antes de continuar.
 
