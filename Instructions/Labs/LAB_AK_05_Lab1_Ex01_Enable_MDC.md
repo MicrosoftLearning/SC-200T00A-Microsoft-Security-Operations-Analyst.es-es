@@ -85,7 +85,7 @@ En esta tarea, incorporarás y configurarás Microsoft Defender for Cloud.
 
 1. Revisa las extensiones de supervisión. Incluye configuraciones para máquinas virtuales, contenedores y cuentas de almacenamiento.
 
-1. Selecciona el botón **Continuar** o cierra la página "Configuración y supervisión" seleccionando la "X" en la esquina superior derecha de la página.
+1. Selecciona el botón **Continuar** o la "X" de la esquina superior derecha para cerrar la página "Configuración y supervisión".
 
 1. Cierra la página de configuración seleccionando la "X" en la esquina superior derecha de la página para volver a la **Configuración del entorno**.
 

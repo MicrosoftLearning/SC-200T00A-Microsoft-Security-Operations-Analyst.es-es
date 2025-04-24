@@ -90,7 +90,7 @@ En esta tarea, agregarás una máquina local de Azure Arc conectada a Microsoft 
 
 1. Expande tu *Suscripción* en *Ámbito* en la pestaña *Recursos*.
 
-    >**Sugerencia:** puede expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
+    >**Sugerencia:** puedes expandir toda la jerarquía de *Ámbito* seleccionando el signo ">" antes de la columna *Ámbito*.
 
 1. Expande el grupo de recursos **defender-RG** y luego selecciona **WINServer**.
 

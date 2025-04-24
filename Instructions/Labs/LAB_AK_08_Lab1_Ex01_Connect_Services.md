@@ -10,13 +10,13 @@ lab:
 
 ![Introducción al laboratorio.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de la organización. La organización tiene datos de Microsoft 365, Microsoft 365 Defender, recursos de Azure, máquinas virtuales que no son de Azure, etc. Primero empezarás a conectar los orígenes de Microsoft.
+Eres un analista de operaciones de seguridad que trabaja en una empresa que ha implementado Microsoft Sentinel. Debes aprender a conectar los datos de registro de los numerosos orígenes de datos de la organización. La organización tiene datos de Microsoft 365, Microsoft 365 Defender, recursos de Azure, máquinas virtuales que no son de Azure, etc. Primero empezarás a conectar los orígenes de Microsoft.
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 8 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
 ### Tiempo estimado para completar este laboratorio: 20 minutos
 
-### Tarea 1: acceder al área de trabajo de Microsoft Sentinel
+### Tarea 1: Acceso al área de trabajo de Microsoft Sentinel
 
 En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
@@ -24,7 +24,7 @@ En esta tarea, accederás al área de trabajo de Microsoft Sentinel.
 
 1. Inicia sesión en la máquina virtual **WIN1** como administrador con la contraseña: **Pa55w.rd**.  
 
-1. Abra el explorador Microsoft Edge.
+1. Abre el explorador Microsoft Edge.
 
 1. En el explorador Edge, ve a Azure Portal en <https://portal.azure.com>.
 
@@ -82,13 +82,13 @@ En esta tarea, configurarás Sentinel para usar el conector de datos *Actividad 
 
 1. Selecciona el conector de datos *Actividad de Azure* y luego selecciona **Abrir página del conector**.
 
-1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecte las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
+1. En el área *Instrucciones*, en la pestaña *Instrucciones*, desplázate hacia abajo hasta "2. Conecta las suscripciones..." y selecciona **Iniciar asistente para asignación de directivas de Azure>**.
 
 1. En la pestaña **Datos básicos**, selecciona el botón de puntos suspensivos (...) en **Ámbito** y selecciona tu suscripción *MOC Subscription-XXXXXXXXXXX* en la lista desplegable y haz clic en **Seleccionar**.
 
     >**Nota:***No* selecciones un grupo de recursos opcional.
 
-1. Seleccione la pestaña **Parámetros** y elija el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
+1. Selecciona la pestaña **Parámetros** y elige el área de trabajo *uniquenameDefender* en la lista desplegable **Área de trabajo de Log Analytics**. Esta acción aplicará la configuración de la suscripción para enviar la información al área de trabajo de Log Analytics.
 
 1. Seleccione la pestaña **Corrección** y active la casilla **Crear una tarea de corrección**. Esta acción aplicará la directiva a los recursos de Azure ya existentes.
 
