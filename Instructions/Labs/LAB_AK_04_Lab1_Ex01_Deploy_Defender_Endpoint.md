@@ -96,7 +96,9 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
 
 1. En la página **Permisos**, selecciona los siguientes permisos:
 
-    |Grupo de permisos |Descripción|  |Operaciones de seguridad |Administra las operaciones diarias y responde a incidentes y avisos|
+    |Grupo de permisos|Descripción|
+    |---|---|
+    |Operaciones de seguridad|Administra las operaciones diarias y responde a incidentes y avisos|
 
 1. En la página emergente de *operaciones de seguridad*, selecciona el botón de radio **Todos los permisos de lectura y administración**.
 
@@ -109,7 +111,7 @@ En esta tarea, configurarás los roles para usarlos con grupos de dispositivos.
     |Configuración de asignación|Valor|
     |---|---|
     |Nombre de asignación|**Soporte técnico de nivel 1**|
-    |Employees|****sg-IT**|
+    |Employees|**sg-IT**|
     |Orígenes de datos|**Deje el valor predeterminado**|
 
 1. Selecciona **Agregar** y, a continuación, **Siguiente**.
