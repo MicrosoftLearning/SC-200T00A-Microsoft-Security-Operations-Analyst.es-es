@@ -127,6 +127,8 @@ En esta tarea, crearás una detección para el primer ataque del ejercicio anter
 
 En esta tarea, crearás una detección para el segundo ataque del ejercicio anterior.
 
+>**Nota:** hemos configurado la directiva de seguridad local en la máquina WINServer para registrar eventos 4732. Esto se configura en *Configuración de directiva de auditoría avanzada > Directivas de auditoría del sistema: objeto de directiva de grupo local > Administración de cuentas > Auditar administración de grupos de seguridad: correcto y error*.
+
 1. En el portal de Microsoft Sentinel, selecciona **Registros** en la sección General en caso de que hayas salido de esta página.
 
 1. **Ejecuta** la siguiente instrucción KQL para identificar cualquier entrada que haga referencia a los administradores:
@@ -217,7 +219,7 @@ En esta tarea, crearás una detección para el segundo ataque del ejercicio ante
    |Nombre de la regla de Automation|Agregación de usuario a administradores locales de SecurityEvent|
    |Desencadenador|Al crear un incidente|
    |Acciones |Ejecución de playbooks|
-   |guía |PostMessageTeams-OnIncident|
+   |guía |Defender_XDR_Ransomware_Playbook_SecOps-Tasks|
 
    >**Nota:** ya has asignado permisos en el cuaderno de estrategias, por lo que estará disponible.
 
