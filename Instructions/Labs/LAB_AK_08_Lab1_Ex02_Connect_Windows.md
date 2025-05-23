@@ -30,11 +30,11 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
 1. Selecciona **+ Crear un recurso**. **Sugerencia:** si ya estabas en Azure Portal, es posible que tengas que seleccionar *Microsoft Azure* en la barra superior para ir a Inicio.
 
-1. En el cuadro **Servicios de búsqueda y marketplace**, escribe *Windows 10* y selecciona **Microsoft Window 10** en la lista desplegable.
+1. En el cuadro **Servicios de búsqueda y marketplace**, escribe *Windows 11* y selecciona **Microsoft Windows 11** en la lista desplegable.
 
-1. Selecciona el cuadro de **Microsoft Window 10**.
+1. Selecciona el cuadro de **Windows 11**.
 
-1. Abre la lista desplegable *Plan* y selecciona **Windows 10 Enterprise, versión 22H2**.
+1. Abre la lista desplegable *Plan* y selecciona **Windows 11 Enterprise, versión 22H2**.
 
 1. Selecciona **Iniciar con una configuración preestablecida** para continuar.
 
@@ -48,15 +48,15 @@ En este ejercicio, crearás una máquina virtual Windows en Azure.
 
 1. Deja el valor predeterminado **(EE. UU.) Este de EE. UU.**  en *Región*.
 
-1. Desplázate hacia abajo y revisa la *Imagen* de la máquina virtual. Si aparece vacío, selecciona **Windows 10 Enterprise, versión 22H2**.
+1. Desplázate hacia abajo y revisa la *Imagen* de la máquina virtual. Si aparece vacío, selecciona **Windows 11 Enterprise, versión 22H2**.
 
-1. Revisa el *Tamaño* de la máquina virtual. Si aparece vacío, selecciona **Ver todos los tamaños**, elige el primer tamaño de máquina virtual en *Más usados por los usuarios de Azure de Azure* y selecciona **Seleccionar**.
+1. Revisa el *Tamaño* de la máquina virtual. Si aparece vacío, selecciona **Ver todos los tamaños**, elige el primer tamaño de máquina virtual (serie D) y selecciona **Seleccionar**.
 
     >**Nota:** en caso de que veas el mensaje *Esta imagen no es compatible con Azure Automanage, para deshabilitar esta característica, ve a la pestaña Administración. De lo contrario, selecciona una imagen admitida.* Ve a la pestaña Administración y deshabilita "Automanage". El proceso de creación se realizará correctamente después.
 
 1. Desplázate hacia abajo y escribe un *Nombre de usuario* que elijas. **Sugerencia:** evita palabras reservadas como admin o root.
 
-1. Escribe una *contraseña* de tu preferencia. **Sugerencia:** puede ser más fácil volver a usar la contraseña del inquilino. Se puede encontrar en la pestaña recursos.
+1. Escribe una *contraseña* de tu preferencia. **Sugerencia:** puede ser más fácil volver a usar la contraseña de LabUser. Se puede encontrar en la pestaña recursos. Es posible que tengas que escribirlo dos veces.
 
 1. Desplázate hacia abajo hasta la parte inferior de la página y activa la casilla de *Licencias* para confirmar que tienes la licencia adecuada.
 
