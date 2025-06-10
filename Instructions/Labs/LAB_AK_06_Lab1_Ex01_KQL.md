@@ -12,7 +12,12 @@ lab:
 
 Usted es un analista de operaciones de seguridad que trabaja en una empresa que va a implementar Microsoft Sentinel. Usted es responsable de analizar los datos de los registros para buscar actividad malintencionada, mostrar visualizaciones y buscar amenazas. Para consultar los datos de los registros, utiliza el lenguaje de consulta Kusto (KQL).
 
->**Nota:** de conformidad con *Iniciativa para un futuro seguro* (SFI) de Microsoft, cualquier información que se pueda considerar *información de identificación personal* (PII), como ubicaciones, nombres de usuario, direcciones IP, identificadores de recursos, etc. se ha quitado de las tablas de demostración de LA, como *SigninLogs*. Esto puede producir mensajes de *No se encontraron resultados* para algunas consultas.
+>**Importante:** el área de trabajo de Log Analytics de la [demostración de LA](https://aka.ms/lademo) que se usa para este laboratorio está experimentando una transición. Si no puedes acceder al entorno o si recibes un mensaje de error, puedes intentar ejecutar las consultas en tu propia suscripción a Azure con Microsoft Sentinel implementado. Si no tiene una suscripción a Azure, cree una [cuenta gratuita](https://azure.microsoft.com/free/?azure-portal=true) antes de empezar.
+
+>**Nota:** si decides usar el área de trabajo de Log Analytics de la [demostración de LA](https://aka.ms/lademo) para este laboratorio, es necesario establecer un intervalo de tiempo personalizado en la ventana Consulta. Se recomienda establecer el intervalo de tiempo personalizado al 1 de abril de 2025.
+
+<!--- 
+>**Note:** Per Microsoft's *Secure Future Initiative* (SFI), any information that could be considered *Personally Identifiable Information* (PII), such as locations, usernames, IP addresses, resource IDs etc.. have been removed from the LA Demo tables such as *SigninLogs*. This may produce *No results were found* messages for some queries. --->
 
 >**Importante:** este laboratorio implica escribir muchos scripts KQL en Microsoft Sentinel. Los scripts se han facilitado en un archivo al principio de este laboratorio. Una ubicación alternativa para descargarlos es: <https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles>
 
