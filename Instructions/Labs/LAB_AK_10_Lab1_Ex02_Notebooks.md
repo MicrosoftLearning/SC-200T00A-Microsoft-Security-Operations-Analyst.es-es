@@ -77,7 +77,7 @@ En esta tarea, explorará el uso de cuadernos en Microsoft Sentinel.
 
 1. Seleccione el botón **Revisar y crear** en la parte inferior de la pantalla y, a continuación, desplácese hacia abajo y seleccione **Crear**. Cierra cualquier ventana de comentarios que pueda aparecer. Esto tarda unos minutos, verá una notificación (icono de campana) cuando haya terminado y el icono izquierdo de la *instancia de proceso* cambie de azul a verde.
 
-1. Una vez creado y ejecutado el proceso, compruebe que el kernel que se va a usar es *Python 3.8: Pytorch y Tensorflow*. **Sugerencia:** esto aparece a la derecha de la barra de comandos.
+1. Una vez creado y ejecutado el proceso, comprueba que el kernel que se va a usar es *Python 3.10: Pytorch y Tensorflow*. **Sugerencia:** esto aparece a la derecha de la barra de comandos.
 
 1. Selecciona el botón **Autenticar** y espera a que se complete la autenticación.
 
