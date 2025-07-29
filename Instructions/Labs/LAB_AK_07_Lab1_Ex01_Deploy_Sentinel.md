@@ -8,7 +8,7 @@ lab:
 
 ## Escenario del laboratorio
 
-Usted es un analista de operaciones de seguridad que trabaja en una empresa que implementa Microsoft Sentinel. Eres responsable de configurar el entorno de Microsoft Sentinel para cumplir los requisitos de la empresa de minimizar los costes, satisfacer las normas de cumplimiento y brindar el entorno más fácil de administrar para que el equipo de seguridad desempeñe sus responsabilidades de trabajo diarias.
+Usted es un analista de operaciones de seguridad que trabaja en una empresa que va a implementar Microsoft Sentinel. Es responsable de configurar el entorno de Microsoft Sentinel para cumplir los requisitos de la empresa de minimizar los costos, satisfacer las normas de cumplimiento y proporcionar el entorno más fácil de administrar para que el equipo de seguridad desempeñe sus responsabilidades de trabajo diarias.
 
 >**Importante:** Los ejercicios de laboratorio de la ruta de aprendizaje n.º 7 se encuentran en un entorno *independiente*. Si sales del laboratorio sin completarlo, deberás volver a ejecutar algunas configuraciones de nuevo.
 
@@ -54,7 +54,7 @@ Implemente Microsoft Sentinel en el área de trabajo.
 
 1. Selecciona **+ Crear** en el menú superior.
 
-1. Selecciona el espacio de trabajo al que deseas agregar Sentinel (creado en la Tarea 1).
+1. Selecciona el área de trabajo a la que deseas agregar Microsoft Sentinel (creada en la tarea 1).
 
 1. Seleccione **Agregar**.
 
@@ -96,7 +96,9 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. Selecciona **Inicio** en el menú "ruta de navegación" de Microsoft Azure.
 
-1. Deberías ver **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
+1. Deberías ver el icono de **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
+
+1. Selecciona el área de trabajo **defenderWorkspace** de Microsoft Sentinel.
 
 1. En Microsoft Sentinel, selecciona la opción **Lista de control** en el área Configuración.
 
@@ -112,9 +114,9 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 1. Selecciona **Siguiente: Origen >**.
 
-1. Selecciona **Buscar archivos** en *Cargar archivo* y busca el archivo *HighValue.csv* que acabas de crear.
+1. Selecciona **Buscar archivos** en *Cargar archivo* y busca el archivo *HighValue.csv* que creaste.
 
-1. En el *campo SearchKey* selecciona **Nombre de host**.
+1. En el *campo SearchKey*, selecciona **Nombre de host**.
 
 1. Selecciona **Siguiente: Revisar y crear >**.
 
@@ -148,7 +150,7 @@ En esta tarea, crearás un indicador en Microsoft Sentinel.
 
 1. Para el dominio, escribe el nombre del dominio; por ejemplo, *contoso.com*.
 
-1. En el campo **Nombre** escribe el mismo valor usado para el dominio.
+1. En el campo **Nombre**, escribe el mismo valor usado para el dominio.
 
 1. En *Tipos de indicadores*, selecciona **malicious-activity**.
 
@@ -197,7 +199,7 @@ En esta tarea, cambiarás el período de retención de la tabla SecurityEvent.
 
 1. Cambia el *periodo de retención interactivo* a **90 días**.
 
-1. Restablece el *periodo de retención total* a **180 días** (si es necesario). Ten en cuenta que *Período de archivo* se ha establecido ahora en *90 días*, ya que *Azure Monitor* trata automáticamente los 90 días restantes de retención total como retención a largo plazo de bajo coste.
+1. Restablece el *periodo de retención total* a **180 días** (si es necesario). Ten en cuenta que el *Archivar período* se ha establecido en *90 días*, porque *Azure Monitor* trata automáticamente los 90 días restantes de retención total como retención a largo plazo de bajo coste.
 
 1. Seleccione **Guardar** para aplicar los cambios.
 
