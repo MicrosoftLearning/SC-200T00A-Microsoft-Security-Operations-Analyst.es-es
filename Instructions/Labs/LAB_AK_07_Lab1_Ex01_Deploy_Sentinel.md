@@ -26,7 +26,7 @@ Cree un área de trabajo de Log Analytics, incluida la opción de región. Obten
 
 1. En el cuadro de diálogo **Escribir contraseña**, copia y pega la contraseña de inquilino del administrador que ha facilitado el proveedor de hospedaje del laboratorio y luego selecciona **Iniciar sesión**.
 
-1. En la barra de búsqueda de Azure Portal, escribe "Microsoft Sentinel" y luego selecciona
+1. En la barra de búsqueda de Azure Portal, escriba "Microsoft Sentinel" y luego seleccione
 
 1. Selecciona **+ Crear**.
 
@@ -50,11 +50,11 @@ Implemente Microsoft Sentinel en el área de trabajo.
 
 1. Cuando finalice la implementación del área de trabajo, selecciona **Inicio** en el menú "ruta de navegación" de Microsoft Azure.
 
-1. Deberías ver **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
+1. Debería ver un icono de **Microsoft Sentinel** en la sección *Servicios de Azure* del portal. Selecciónelo.
 
 1. Selecciona **+ Crear** en el menú superior.
 
-1. Selecciona el área de trabajo a la que deseas agregar Microsoft Sentinel (creada en la tarea 1).
+1. Seleccione *defenderWorkspace*, que ha creado en la Tarea 1.
 
 1. Seleccione **Agregar**.
 
@@ -62,7 +62,9 @@ Implemente Microsoft Sentinel en el área de trabajo.
 
 1. En el menú "ruta de navegación" de Microsoft Azure, selecciona **Inicio**.
 
-1. En la barra de búsqueda de Azure Portal, escribe "Log Analytics" y selecciona el espacio de trabajo creado en la Tarea 1.
+1. En la barra de búsqueda de Azure Portal, escriba "Log Analytics" y seleccione **Áreas de trabajo de Log Analytics** en la sección *Servicios*.
+
+1. Seleccione *defenderWorkspace*, que ha creado en la Tarea 1.
 
 1. Expande la sección *Configuración* en el menú de navegación y selecciona **Uso y costes estimados**.
 
@@ -74,7 +76,7 @@ Implemente Microsoft Sentinel en el área de trabajo.
 
 ### Tarea 4: crear una lista de reproducción
 
-En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
+En esta tarea, creará una lista de seguimiento en Microsoft Sentinel.
 
 1. En el cuadro de búsqueda de la parte inferior de la pantalla de Windows 10, escribe *Bloc de notas*. Selecciona **Bloc de notas** en los resultados.
 
@@ -136,7 +138,7 @@ En esta tarea, crearás una lista de reproducción en Microsoft Sentinel.
 
 ### Tarea 5: crear un indicador de amenazas
 
-En esta tarea, crearás un indicador en Microsoft Sentinel.
+En esta tarea, creará un indicador en Microsoft Sentinel.
 
 1. En Microsoft Sentinel, selecciona la opción **Inteligencia sobre amenazas** en el área Administración de amenazas.
 
