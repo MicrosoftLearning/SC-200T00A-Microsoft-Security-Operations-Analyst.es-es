@@ -54,19 +54,19 @@ En esta tarea, conectarás el conector de datos de Microsoft Defender for Cloud.
 
 1. En la sección *Configuración*, **selecciona** la casilla *MOC Subscription-XXXXXXXXXXX* y selecciona el vínculo **Conectar**.
 
+1. Ahora el **Estado** debe ser **Conectado**.
+
 1. Para habilitar la sincronización bidireccional, selecciona el vínculo **Habilitar Microsoft Defender para todas las suscripciones**.
 
     >**Nota:** Es posible que tengas que desplazarte hacia la derecha para ver el vínculo.
 
-1. En la página *Microsoft Defender for Cloud - Introducción*, la casilla *MOC Subscription-XXXXXXXXXXX* debe estar seleccionada y el *plan de Microsoft Defender* debe mostrar *Desactivado (30 días de prueba restantes)*.
+1. En la página *Microsoft Defender for Cloud - Introducción*, la casilla de *MOC Subscription-XXXXXXXXXXX* debe estar seleccionada y el *plan de Microsoft Defender* debe mostrar *Activo - Parcial (30 días de prueba restantes)*.
 
 1. A continuación, selecciona el botón **X (Cerrar)** de la esquina superior derecha para cerrar la página *Introducción*. Debes regresar a la página de configuración de *Microsoft Defender for Cloud*.
 
-1. Desliza la opción **Estado** hacia la derecha.
+1. El *Estado* para *Suscripción de MOC-XXXXXXXXXXX* ahora debe ser *Conectado* y *Sincronización bidireccional* debe estar**Habilitada**.
 
-1. El *Estado* para *MOC Subscription-XXXXXXXXXXX* debe ser ahora **Conectado** y la *sincronización bidireccional* debe ser *Habilitada*.
-
-    >**Nota:**: es posible que tengas que actualizar la página.
+    >**Nota:** Es posible que tenga que volver a intentar este procedimiento para ver *Sincronización bidireccional habilitada*. Después de volver a ejecutar los pasos, pruebe a establecer la lista desplegable *Sincronización bidireccional* en **Habilitada**.
 
 ### Tarea 3: establecer una conexión con el conector de datos Actividad de Azure
 
