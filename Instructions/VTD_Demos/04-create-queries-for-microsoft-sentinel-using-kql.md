@@ -1,16 +1,22 @@
 # Módulo 4: creación de consultas para Microsoft Sentinel mediante el Lenguaje de consulta de Kusto (KQL)
 
-**Nota**: la finalización correcta de esta demostración depende de completar todos los pasos del [documento de requisitos previos](00-prerequisites.md). 
+<!--- **Note** Successful completion of this demo depends on completing all of the steps in the  [Pre-requisites document](00-prerequisites.md). --->
+
+>**Importante:** Se recomienda realizar las consultas para este laboratorio en el entorno de demostración Zava (anteriormente Alpine Ski House). La alternativa es usar el entorno de laboratorio SC-200 con el Laboratorio 06: [Creación de consultas para Microsoft Sentinel mediante Lenguaje de consulta Kusto (KQL)](https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/Instructions/Labs/LAB_AK_06_Lab1_Ex01_KQL.html/). Para este último se necesitan 30 minutos de tiempo de implementación.
 
 ## Acceso al área de pruebas de KQL
 
-En esta tarea, accederás a un entorno de Log Analytics donde podrás practicar la escritura de instrucciones KQL.
+En esta tarea, accederá a un entorno de Log Analytics de Microsoft Sentinel donde podrá practicar la escritura de instrucciones KQL.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador, vaya a https://aka.ms/lademo. Inicia sesión con credenciales de administrador MOD. 
+1. En el explorador, vaya a <https://security.microsoft.com>. Inicie sesión con las credenciales de usuario de Zava o Alpine Ski House.
 
-1. Explora las tablas disponibles que aparecen en la pestaña del lado izquierdo de la pantalla.
+1. Expanda la **sección Investigación y respuesta** en el panel de navegación de la izquierda.
+
+1. Expanda la **sección Búsqueda** y seleccione **búsqueda avanzada de amenazas**.
+
+1. Explore las tablas disponibles que aparecen en la pestaña *Esquema* del lado izquierdo de la pantalla. Observe las tablas de *Microsoft Sentinel* y de*Security and Audit*.
 
 1. En el editor de consultas, escribe la siguiente consulta y luego selecciona Ejecutar.  Deberías ver los resultados de la consulta en la ventana inferior.
 
@@ -25,6 +31,8 @@ En esta tarea, accederás a un entorno de Log Analytics donde podrás practicar 
 En esta tarea, crearás instrucciones KQL básicas.
 
 1. El operador `search` da una experiencia de búsqueda de varias tablas o varias columnas. En el siguiente ejemplo se muestra el uso del operador `search`.
+
+    > **Nota:** El operador `search` consume muchos recursos. Limite el valor *Intervalo de tiempo* a *Últimas 3 horas* y use *límite | 100*.
 
 ```KQL
 search "err" 

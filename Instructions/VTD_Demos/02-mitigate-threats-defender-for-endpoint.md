@@ -6,7 +6,7 @@
 
 En esta tarea, ejecutará dos ataques simulados para explorar las funcionalidades de Microsoft Defender para punto de conexión.
 
-1. Si aún no está en el portal de Microsoft Defender XDR en el explorador, vaya a Microsoft Defender XDR en (https://security.microsoft.com) ha iniciado sesión como administrador para el inquilino.
+1. Si aún no está en el portal de Microsoft Defender XDR en el explorador, vaya a Microsoft Defender XDR en (<https://security.microsoft.com>) como administrador para el inquilino.
 
 Ejecutará los ataques *simulados* mediante *PowerShell* en *WIN1* para explorar las funcionalidades de Microsoft Defender para punto de conexión.
 
