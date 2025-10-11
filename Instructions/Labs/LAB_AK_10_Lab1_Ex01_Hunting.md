@@ -321,7 +321,9 @@ En esta tarea, en lugar de usar una retransmisión en directo, crearás una regl
 
 1. Selecciona **Probar con datos actuales** en *Simulación de resultados*. Observa la cantidad prevista de *Alertas al día*.
 
-1. En *Asignación de entidades*, selecciona:
+1. En *la sección Mejora* de alertas, seleccione *Asignación de entidades >*, **+ Agregar nueva entidad**.
+
+1. En la *entidad*, seleccione:
 
     - En la lista desplegable *Tipo de entidad*, selecciona **Host**.
     - En la lista desplegable *Identificador*, selecciona **HostName**.

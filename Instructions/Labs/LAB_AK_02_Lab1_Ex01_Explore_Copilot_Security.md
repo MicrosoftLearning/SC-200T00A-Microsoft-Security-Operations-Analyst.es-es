@@ -28,14 +28,18 @@ Este ejercicio debería tardar aproximadamente **15** minutos en completarse.
 
 Para que los usuarios puedan empezar a usar Copilot, los administradores deben aprovisionar y asignar capacidad. Para aprovisionar capacidad:
 
-- Debe tener una suscripción de Azure.
+- Debe tener una suscripción a Azure.
 - Debes ser propietario de Azure o colaborador de Azure, en un nivel de grupo de recursos, como mínimo.
 
 En esta tarea se le muestra el proceso de asegurarse de que tiene los permisos de rol adecuados. Para comenzar, se habilita la administración de acceso para los recursos de Azure.
 
 Una vez que se le haya asignado el rol Administrador de acceso de usuario en Azure, puede asignar a un usuario el acceso necesario para aprovisionar SCUs para Copilot.  Solo a efectos de este ejercicio, que consiste en mostrarte los pasos necesarios, tu mismo te asignarás el acceso necesario.  Los pasos siguientes le guiarán por el proceso.
 
-1. Para abrir el entorno simulado, seleccione este vínculo: **[Azure portal](https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**.
+1. Asegúrese de que tiene asignado el rol Administrador de acceso de usuario a su cuenta.
+
+1. Para abrir el entorno simulado, seleccione este vínculo: <https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true>.
+
+    <!--- Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**.--->
 
 1. Para comenzar, habilite la administración de acceso para los recursos de Azure. Para acceder a esta configuración:
     1. En Azure Portal, seleccione **Microsoft Entra ID**.

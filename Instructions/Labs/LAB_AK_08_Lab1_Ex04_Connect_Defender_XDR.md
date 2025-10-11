@@ -22,7 +22,9 @@ En esta tarea, implementará el conector de Microsoft Defender XDR.
 
 1. Inicia sesión en la máquina virtual WIN1 como administrador con la contraseña: **Pa55w.rd**.  
 
-1. En el explorador Microsoft Edge, abre el entorno simulado seleccionando este vínculo: **[Azure Portal]( https://app.highlights.guide/start/1c894b46-4b0a-40cb-b0f0-1e1c86c615f3?token=16d48b6c-eace-4a1f-8050-098d29d23a89)**.
+1. En el explorador Microsoft Edge, abra el entorno simulado seleccionando este vínculo: <https://app.highlights.guide/start/1c894b46-4b0a-40cb-b0f0-1e1c86c615f3?token=16d48b6c-eace-4a1f-8050-098d29d23a89>
+
+    <!--- [Azure portal]( https://app.highlights.guide/start/1c894b46-4b0a-40cb-b0f0-1e1c86c615f3?token=16d48b6c-eace-4a1f-8050-098d29d23a89). --->
 
 1. En la *página principal* de Azure Portal, selecciona el icono de **Microsoft Sentinel**.
 
@@ -60,9 +62,9 @@ En esta tarea, continuarás con la simulación y conectarás un área de trabajo
 
 1. En la página **Establecer un área de trabajo principal**, debería aparecer el área de trabajo **woodgrove-loganalyiticsworkspace** de Microsoft Sentinel en el menú desplegable. Seleccione el botón **Siguiente**.
 
-1. En la página *Revisar y finalizar*, comprueba que la selección del *Área de trabajo* es correcta y revisa los elementos con viñetas en la sección *Qué esperar cuando el área de trabajo está conectada*. Selecciona el botón **Conectar**.
+1. En la página *Revisar y finalizar*, comprueba que la selección del *Área de trabajo* es correcta y revisa los elementos con viñetas en la sección *Qué esperar cuando el área de trabajo está conectada*. Seleccione el botón **Conectar**.
 
-1. Deberías ver un mensaje *Estás a punto de conectar un área de trabajo*. Selecciona el botón **Conectar**.
+1. Deberías ver un mensaje *Estás a punto de conectar un área de trabajo*. Seleccione el botón **Conectar**.
 
 1. Ahora deberías estar en la página *Área de trabajo conectada correctamente*.
 

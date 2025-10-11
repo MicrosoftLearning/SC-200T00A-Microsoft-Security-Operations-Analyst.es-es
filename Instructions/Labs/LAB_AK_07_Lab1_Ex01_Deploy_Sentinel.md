@@ -199,9 +199,9 @@ En esta tarea, cambiarás el período de retención de la tabla SecurityEvent.
 
 1. Selecciona **Administrar tabla**.
 
-1. Cambia el *periodo de retención interactivo* a **90 días**.
+1. Cambie la *Retención de análisis* a **90 días**.
 
-1. Restablece el *periodo de retención total* a **180 días** (si es necesario). Ten en cuenta que el *Archivar período* se ha establecido en *90 días*, porque *Azure Monitor* trata automáticamente los 90 días restantes de retención total como retención a largo plazo de bajo coste.
+1. Restablezca *Retención total* a **180 días** (si es necesario). Observe que *Retención a largo plazo* se ha establecido en *90 días*, porque *Azure Monitor* trata automáticamente los 90 días restantes de retención total como retención a largo plazo de bajo coste.
 
 1. Seleccione **Guardar** para aplicar los cambios.
 
