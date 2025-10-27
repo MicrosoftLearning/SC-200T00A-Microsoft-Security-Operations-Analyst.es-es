@@ -130,10 +130,10 @@ En esta tarea, crearás instrucciones KQL básicas.
 1. La siguiente instrucción muestra el uso de la instrucción **let** para declarar *variables*. En la ventana de consulta, escribe la siguiente instrucción y luego selecciona **Ejecutar**.
 
     ```KQL
-    let timeOffset = 1h;
+    let timeOffset = 10m;
     let discardEventID = 4688;
     SecurityEvent_CL
-    | where TimeGenerated > ago(timeOffset*2) and TimeGenerated < ago(timeOffset)
+    | where TimeGenerated > ago(timeOffset*60) and TimeGenerated < ago(timeOffset)
     | where EventID_s != discardEventID
     ```
 
@@ -189,14 +189,14 @@ En esta tarea, crearás instrucciones KQL para agregar datos. **Resumen** agrupa
     | summarize dcount(IpAddress)
     ```
 
-1. La siguiente instrucción es una regla para detectar errores de contraseña no válida en varias aplicaciones para la misma cuenta. En la ventana de consulta, escribe la siguiente instrucción y luego selecciona **Ejecutar**.
+1. La siguiente instrucción es una regla para detectar errores que indican *La cuenta del usuario está deshabilitada* en varias aplicaciones para la misma cuenta. En la ventana de consulta, escribe la siguiente instrucción y luego selecciona **Ejecutar**.
 
     ```KQL
     let timeframe = 30d;
     let threshold = 1;
     SigninLogs_CL
     | where TimeGenerated >= ago(timeframe)
-    | where ResultDescription has "Invalid password"
+    | where ResultDescription has "User account is disabled"
     | summarize applicationCount = dcount(AppDisplayName_s) by UserPrincipalName_s, IPAddress
     | where applicationCount >= threshold
     ```
@@ -309,10 +309,10 @@ En esta tarea, crearás instrucciones KQL de varias tablas.
 
     >**Nota:** La "fila vacía" en los resultados mostrará el recuento resumido de SigninLogs_CL.
 
-1. En la siguiente instrucción se muestra la compatibilidad del operador **union** para unir varias tablas con caracteres comodín. En la ventana de consulta, escribe la siguiente instrucción y luego selecciona **Ejecutar**. 
+1. En la siguiente instrucción se muestra la compatibilidad del operador **union** para unir varias tablas con caracteres comodín. En la ventana de consulta, escribe la siguiente instrucción y luego selecciona **Ejecutar**.
 
     ```KQL
-    union App*  
+    union Sec*  
     | summarize count() by Type
     ```
 
